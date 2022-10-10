@@ -1,0 +1,334 @@
+.career-header{
+   width: 100vw;
+   margin-bottom: 70px;
+}
+.career-header img{
+   width: 100vw;
+   max-height: 750px;
+}
+.take-step-head{
+   position: absolute;
+   top: 150px;
+   left: 10%;
+   font-size: 2.2rem;
+   font-family: 'izmir-medium' !important;
+}
+.portfolio-opening{
+   margin-top: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.job-opening-card{
+   width: 86%;
+   max-width: 1366px;
+   border: 0.2px solid #b3b3b3;
+   border-radius: 7px;
+   padding: 15px 30px;
+}
+.job-post-date-time{
+   font-size: 15px;
+   font-weight: 300;
+   margin: 5px 2px;
+   display: flex;
+   justify-content: space-between;
+}
+.career-information{
+   text-align: center;
+   margin-top: 60px;
+   margin: 60px 15%;
+   text-align: justify;
+}
+#phone-img-head,#phone-img-2head{
+   display: none;
+}
+#career-open{
+   font-size: 2.2rem;
+}
+#img-open{
+   margin-top: 5px !important;
+}
+.title-dev{
+   font-family: 'izmir-medium' !important;
+   margin-bottom: 13px;
+   font-size: 1.3rem;
+}
+
+.job-post-date-time{
+   margin-bottom: 16px;
+   font-family: 'izmir1';
+}
+.job-desc-container{
+   margin: 5px 2px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.job-desc{
+   font-size: 15px;
+   font-weight: 300;
+   width: 60%;
+   font-family: 'izmir';
+   color: #808080;
+}
+.apply-btn button {
+   background-color: #106570;
+   border: none;
+   color: white;
+   border-radius: 7px;
+   font-size: 16px;
+   padding: 10px 26px;
+   font-family: 'izmir';
+   margin-top: 20px;
+   cursor: pointer;
+}
+.hr{
+   width: 35%;
+   margin: 10px 0px;
+}
+.job-loc,.job-date{
+   font: 16px !important;
+}
+
+#phone-img-head{
+   width: 80%;
+   float: right;
+   margin-top: 15px;
+}
+#phone-img-2head{
+   width: 70%;
+   margin-bottom: 10px;
+}
+
+
+
+
+
+.job-desc-drop{
+   height: 0px;
+   transition-duration: 3s;
+   
+}
+.job-desc-drop-inner-main{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 60px;
+   background-color: white;
+   padding: 15px;
+}
+.left-drop{
+   width: 44%;
+   text-align: justify;
+}
+.left-drop ul{
+   list-style: disc;
+}
+.left-drop ul li{
+   list-style: disc outside none ;
+   display: list-item;
+   margin-left: 1em;
+   list-style-type: disc;
+
+}
+.right-drop{
+   width: 44%;
+   text-align: justify;
+   margin-right: 30px;
+}
+.right-drop ul li{
+   list-style-type: disc;
+    margin-left: 1.2rem;
+    margin-bottom: 2rem;
+    list-style: circle;
+}
+.left-drop ul li{
+   list-style-type: disc;
+    margin-left: 1.2rem;
+    margin-bottom: 2rem;
+    list-style: circle;
+}
+.Download-job{
+   border: 1.5px solid #106570;
+   background-color: transparent;
+   color: #106570;
+   padding: 10px;
+   border-radius: 7px;
+   margin-top: 15px;
+}
+.Download-job:hover{
+   border: 1.5px solid #106570;
+   background-color: #106570;
+   color: #ffffff;
+   padding: 10px;
+   border-radius: 7px;
+   margin-top: 15px;
+   transition-duration: 0.5s;
+   cursor: pointer;
+}
+.apply-now-btn-pup{
+   border-radius: 10px;
+   width: 90%;
+   margin: auto;
+   position: fixed;
+   left: 3%;
+   top: 7%;
+   background-color: #ffffff;
+   z-index: 999999;
+   padding: 2%;
+   max-height: calc();
+   box-shadow: 0px 0px 20px 20px rgb(195, 195, 195);
+ }
+ .apply-now-x{
+   cursor: pointer;
+   position: absolute;
+   right: 50px;
+   font-weight: bold;
+   top: 10px;
+   font-size: 1.3rem;
+   
+ }
+ #apply-id-popup{
+   display: none;
+ }
+
+
+
+@media screen and (max-width: 700px) {
+   
+      .apply-now-btn-pup {
+         border-radius: 10px;
+         width: 90%;
+         margin: auto;
+         position: fixed;
+         left: 3%;
+         top: 2%;
+         background-color: #ffffff;
+         z-index: 999999;
+         padding: 2%;
+         padding-top: 30px;
+         max-height: 100vh;
+         box-shadow: 0px 0px 20px 20px rgb(195 195 195);
+     }
+   
+
+   .career-header{
+      background-image: url('./assets/Designs/Path.png');
+      background-size: contain;
+   }
+   #hide-mob{
+      display: none;
+   }
+   .take-step-head {
+      position: absolute;
+      top: 84px;
+      width: 210px;
+      left: 8%;
+      font-size: 1.4rem;
+   }
+   .job-opening-card {
+      width: 93%;
+      margin: 13px;
+      max-width: 1200px;
+      border: 0.2px solid rgb(175, 175, 175);
+      border-radius: 7px;
+      padding: 30px 20px;
+  }
+  .career-information{
+   text-align: center;
+   margin-top: 60px;
+   margin: 30px 8%;
+   text-align: justify;
+}
+
+
+  .hr {
+   width: 100%;
+   margin: 10px 1px;
+   }
+   .job-desc {
+      font-size: small;
+      font-weight: 300;
+      width: 100%;
+      text-align: center;
+      color: #545454;
+  }
+  .apply-btn button {
+   background-color: #106570;
+   border: none;
+   color: white;
+   border-radius: 7px;
+   font-size: 13px;
+   padding: 10px 25px;
+   margin-top: 20px;
+   display: block;
+   margin: auto;
+   margin-top: 40px;
+}
+.apply-btn{
+   width: 100%;
+}
+.portfolio-opening {
+   margin-top: 20px;
+}
+.nav {
+   display: flex;
+   width: 100vw;
+   padding-top: 6px;
+   padding-bottom: 5px;
+}
+#career-open {
+   font-size: 1.7rem;
+}
+.job-post-date-time{
+   font-size: 14px;
+}
+.title-dev {
+   font-family: 'izmir-medium' !important;
+   margin-bottom: 16px;
+   font-size: 1.3rem;
+}
+.job-desc-container {
+   margin: 5px 2px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 24px;
+}
+#phone-img-head,#phone-img-2head{
+   display: block;
+   margin-top: 70px;
+}
+ }
+
+ @media screen and (max-height: 780px){
+   .apply-now-btn-pup {
+    
+      max-height: 90vh;
+
+  }
+  .apply-now-x{
+   position: fixed;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

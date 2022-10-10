@@ -1,0 +1,2908 @@
+@font-face {
+   font-family: 'izmir';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Regular.otf);
+}
+
+@font-face {
+   font-family: 'izmir-bold';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Bold.otf);
+}
+
+@font-face {
+   font-family: 'izmir1';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Extralight.otf);
+}
+
+@font-face {
+   font-family: 'izmir-medium';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Medium.otf);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   font-family: 'izmir', sans-serif;
+   scroll-behavior: smooth;
+    
+}
+
+body {
+   background-color: #ffffff;
+}
+
+.top-nav {
+   text-align: center;
+   padding: 10px;
+   padding-bottom: 15px;
+   background-color: #000000;
+   color: white;
+}
+.new-btn{
+   background-color: white;
+   color: black;
+   border-radius: 10px;
+   font-size: 0.7rem;
+   padding: 3px 7px;  
+   font-family: 'izmir-bold';
+
+}
+
+#cut-nav {
+   position: absolute;
+   right: 20px;
+   cursor: pointer;
+}
+.cookies{
+   position: fixed;
+   bottom: 0;
+   background-color: #106570;
+   color: white;
+   width: 100vw;
+   padding-left: 12%;
+   padding: 10px 50px;
+   font-size: 1.2rem;
+   z-index: 99999999;
+
+}
+.btn-cookie{
+   position: absolute;
+   bottom: 10px;
+   right: 12%;
+   color: white;
+   cursor: pointer;
+}
+#btn-cookies{
+   /* display: none; */
+}
+.lower-header-main-container{
+   padding: 60px;
+    line-height: 45px;
+    font-family: 'izmir';
+    position: relative;
+    bottom: 100px;
+   background-color: #F9FAFE;
+   text-align: center;
+}
+.lower-header-main{
+   width: 60vw;
+   opacity: 0.9;
+   font-size: 1.5rem;
+    max-width: 980px;
+    display: block;
+    margin: auto;
+}
+/* NAVBAR */
+.nav {
+   display: flex;
+   width: 100vw;
+   justify-content: space-between;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   overflow: visible;
+   left: -35px;
+   margin-right: 290px;
+}
+
+#img-logo-new {
+   margin-left: 70px;
+}
+
+.nav-div {
+   position: relative;
+   z-index: 2;
+   overflow: visible;
+}
+
+.nav-ul {
+   overflow: hidden;
+   padding-right: 10px;
+}
+
+.logo-div {
+   display: flex;
+   overflow: hidden;
+}
+
+.logo-div img {
+   margin-left: 50px;
+   height: 50px;
+}
+
+#three-line {
+   display: none;
+   width: 30px;
+   height: 20px;
+   position: absolute;
+   right: 7%;
+   top: 30px;
+}
+
+.mob-navbar {
+   width: 100vw;
+   height: 100vh;
+   background-color: #1e181c;
+   top: 0;
+   z-index: 99999;
+   color: white;
+   position: fixed;
+}
+
+#mob-navbar {
+   display: none;
+}
+
+#x {
+   color: rgba(255, 255, 255, 0.864);
+   position: absolute;
+   top: 2%;
+   font-size: 2rem;
+   right: 13%;
+}
+
+#woodstock-img {
+   height: 50%;
+}
+
+.mov-nav-ul {
+   color: white;
+   text-align: center;
+   margin-top: 35%;
+}
+
+.active {
+   color: #106570;
+}
+
+.mob-navbar ul li {
+   margin: 25px 5px;
+   font-size: 16px;
+}
+
+.mob-navbar ul hr {
+   width: 70%;
+   display: block;
+   margin: auto;
+   border: 0.2px solid rgba(227, 227, 227, 0.566);
+}
+
+.logo-div ul li {
+   float: left;
+   text-decoration: none;
+   list-style: none;
+   margin-left: 70px;
+   margin-top: 15px;
+   color: #1E1C2D;
+   cursor: pointer;
+   font-family: 'izmir-medium';
+}
+
+.hover-div:hover {
+   transform: scale(1.2);
+   overflow: hidden;
+}
+
+.nav-contact {
+   overflow: hidden;
+   margin-left: 70px;
+   position: relative;
+   top: 10px;
+}
+
+.nav-contact button {
+   padding: 10px 20px;
+   border: none;
+}
+
+.nav-contact button:hover {
+   transform: scale(1.05);
+}
+
+#downarrow {
+   width: 8px;
+   height: 4px;
+   margin-left: 10px;
+   position: relative;
+   bottom: 2px;
+}
+
+/* HEADER */
+.header-container {
+   /* overflow: hidden; */
+   width: 100vw;
+   height: 101vh;
+   position: relative;
+   bottom: 100px;
+   z-index: 0;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.accept-btn{
+   background-color: #0f9257;
+   color: white;
+   padding: 4px 5px;
+   border: none;
+}
+
+#semi-up-circle {
+   position: absolute;
+   right: -200px;
+   width: 45%;
+   top: -200px;
+   
+}
+
+.left-header-container {
+   width: 39%;
+   padding-top: 24vh;
+}
+
+.right-header-container {
+   width: 45%;
+}
+
+.subscribe-form-up form {
+   margin-top: 20px;
+}
+
+.right-header-container img {
+   width: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+}
+
+#woodstock {
+
+   font-size: 3rem;
+}
+
+.woodstock-container {
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+   font-family: 'izmir' !important;
+   margin-left: 8%;
+   margin-bottom: 50px;
+   font-size: 3rem;
+}
+
+.lower-div-form-header {
+   margin-left: 5%;
+   margin-top: 30px;
+   display: flex;
+}
+
+#small-vertical img {
+   height: 290px;
+}
+
+.subscribe-form-up {
+   width: 75%;
+   color: #9197A7;
+   font-family: 'izmir', sans-serif;
+   font-size: 1.2rem;
+   line-height: 30px;
+   margin-left: 20px;
+}
+.size-40{
+   font-size: 34px;
+   
+}
+#plant-information-3th{
+   overflow: hidden;
+}
+#subscribe {
+   background-color: #ffffff;
+   border: none;
+   padding: 13px;
+   width: 56%;
+   border: 1px solid #ffffff;
+   border-radius: 0px;
+   color: #000000;
+   border: 1px solid rgba(204, 204, 204, 0.538);
+   /* border: 2px solid rgba(204, 204, 204, 0.538);*/
+}
+
+#subscribe:active {
+   border: 2px solid rgb(179, 179, 179);
+   outline: none;
+}
+
+#subscribe:focus {
+   border: 2px solid rgb(208, 208, 208);
+   outline: none;
+}
+
+#subscribe::placeholder {
+   color: rgb(0, 0, 0);
+}
+
+line .line {
+   width: 20px;
+}
+
+#subscribe-button {
+   padding: 14px;
+   position: relative;
+   right: 50px;
+   background-color: #106570;
+   border: none;
+   font-family: 'izmir1' !important;
+   width: 44px;
+   color: rgb(255, 255, 255);
+   
+}
+
+.below-header-section {
+   width: 100%;
+}
+
+.our-team-linkedin {
+   margin: 5px;
+   width: 25px !important;
+}
+
+.below-header-container-heading {
+   font-family: 'izmir', sans-serif;
+   font-size: 2rem;
+   text-align: center;
+   font-weight: 600;
+}
+
+.below-header-four-box {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding-top: 70px;
+}
+
+.below-header-box {
+   width: 20%;
+   max-width: 264px;
+   font-family: 'izmir', sans-serif;
+   justify-content: space-evenly;
+   font-size: small;
+   margin: 20px;
+   text-align: center;
+   border: 0.1px solid #106570;
+   border-radius: 15px;
+   padding: 25px;
+   padding-top: 52px;
+}
+
+.below-header-box p {
+   color: #000000cd;
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
+   font-family: 'izmir1';
+}
+
+.below-header-box img {
+   padding-bottom: 15px;
+   width: 60px;
+   height: 60px;
+}
+
+#add-more-btn {
+   background-color: #106570;
+   color: white;
+   border: none;
+   padding: 14px 30px;
+   display: none;
+   margin: auto;
+   margin-top: 117px;
+}
+
+#add-more-btn:hover {
+   font-size: 0.85rem;
+   cursor: pointer;
+}
+
+.a-text {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+
+}
+
+.a-text:hover {
+   transform: scale(1.2);
+   color: rgb(220, 220, 220);
+
+
+}
+
+#origin-wood {
+   display: none;
+}
+
+/* PLANT GROW SECTION */
+
+
+
+#anm-box {
+   background-color: #087d5c;
+   height: 0px;
+   max-height: 1200px !important;
+   width: 10px;
+   z-index: 99999;
+   border-radius: 10px;
+   margin-left: 21px;
+}
+
+#anm-box-side {
+   background-color: #C0BEC2;
+   height: 1200px;
+   max-height: 1200px !important;
+   width: 5px;
+   position: relative;
+   left: 2px;
+   margin-left: 22px;
+}
+
+#icon-plant {
+   height: 50px;
+   /* position: relative;
+   right: 20px;
+   z-index: 99999; */
+}
+
+
+.plant-grow-section {
+   /* background-image: url(./assets/Images/Group\ 461.png); */
+   background-position: center;
+   background-size: cover;
+   width: 100vw;
+   height: 1680px;
+   background-color: #ffffff;
+   margin-top: 0px;
+   padding-top: 100px;
+}
+
+.plant-container {
+   display: flex;
+   justify-content: left;
+   margin-left: 20vw;
+   padding-top: 70px;
+   height: 1470px;
+   overflow: hidden;
+}
+
+.plant-date-container {
+   position: relative;
+   top: 45px;
+   text-align: right;
+}
+
+.plant-date-container p {
+   font-size: 13px;
+   margin-bottom: 4px;
+   color: #0000009e;
+}
+
+.plant-date-container h5 {
+   font-size: 1.1rem;
+}
+
+.plant-img-container {
+   position: relative;
+   top: 50px;
+   margin: 0px 50px;
+   margin-left: 0px;
+   z-index: 0;
+}
+
+.plant-img-container img {
+   height: 1220px;
+}
+
+.plant-information {
+   overflow: hidden;
+}
+
+.plant-information-heading {
+   width: 200px;
+   height: 140px;
+}
+
+.leave-container img {
+   width: 33px;
+   margin-bottom: 263px;
+   position: relative;
+
+}
+
+#second-stop,
+#three-stop,
+#four-stop {
+   /* filter: grayscale(100%);
+   -webkit-filter: grayscale(100%); */
+   display: none;
+}
+
+.leave-container {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 49px;
+   z-index: 1;
+   left: 42px;
+}
+
+.last-leafs {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   bottom: 20px;
+}
+
+.last-leafs img {
+   width: 56px;
+   height: 22px;
+   position: relative;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+
+#one-leaf {
+   bottom: -9px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+
+#two-leaf {
+   bottom: -28px;
+   width: 54px;
+   right: -1px;
+   height: 29px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+.flower-img img{
+   scale: 0.85;
+   margin-right: 30px;
+}
+
+.upper-leafs img {
+   height: 26px;
+   width: 34px;
+}
+
+#zero-leaf {
+   height: 26px;
+   width: 30px;
+   position: relative;
+   position: relative;
+   top: 38px;
+   left: 12px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+.about-wood-stock{
+   width: 100vw;
+   padding-top: 120px;
+   padding-bottom: 100px;
+   background-color: #F9FAFE;
+}
+.vis{
+   font-family: 'izmir-bold';
+   font-size: 1.5rem;
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+.about-woodstock{
+   text-align: center;
+   font-family: 'izmir-bold';
+   font-size: 2rem;
+   margin-bottom: 40px;
+}
+.about-stock-content p{
+   color: #9197A7;
+   font-size: 20px;
+}
+.about-image-container{
+   display: flex;
+   justify-content: center;
+}
+.about-img-right{
+   width: 27vw;
+   margin: 50px;
+ 
+}
+.about-img-left{
+   width: 28vw;
+   margin: 50px;
+  
+}
+.about-img-left img{
+   overflow: hidden;
+   border-radius: 20px;
+   border: 0.5px solid rgb(110, 110, 110);
+   padding: 20px;
+   width: 91%;
+  
+}
+.about-img-right img{
+   overflow: hidden;
+   border-radius: 20px;
+   border: 0.5px solid rgb(110, 110, 110);
+   opacity: 0.8;
+   width: 99%;
+}
+#up-two-leaf {
+   height: 20px;
+   width: 37px;
+}
+.about-stock-content{
+   width: 80%;
+    text-align: justify;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.btn-know-more{
+   background-color: #106570;
+   color: white;
+   padding: 15px 55px;
+   border: none;
+   font-family: 'izmir';
+   font-size: 1rem;
+   display: block;
+   margin: auto;
+   margin-top: 30px;
+
+}
+.portfolio-new{
+   padding: 70px 5px;
+   text-align: center;
+   
+}
+.portfolio-new div{
+   font-family: 'izmir-bold';
+   font-size: 1.7rem;
+   margin-bottom: 20px;
+}
+.portfolio-new p{
+   width: 50vw;
+   max-width: 900px;
+   display: block;
+   margin: auto;
+   line-height: 35px;
+   color: #9197A7;
+   font-size: 20px;
+}
+.media-new{
+   background-color: #f9fafe;
+   width: 100vw;
+   padding-top: 150px;
+   padding-bottom: 150px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.media-new-2{
+   background-color: #ffffff;
+   width: 100vw;
+   padding-top: 150px;
+   padding-bottom: 150px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.img-meida-img{
+   width: 600px;
+   background-color: white;
+   height: 500px;
+}
+.content-media-2{
+   width: 36vw;
+   line-height: 35px;
+   margin-top: 40px;
+   margin-left: 100px;
+}
+.img-meida-img-2{
+   width: 650px;
+   background-color: #f9fafe;
+   height: 550px;
+}
+.content-media{
+   width: 47vw;
+   line-height: 35px;
+   margin-top: 40px;
+}
+.content-inner-content-2 {
+   width: 100%;
+}
+.content-inner-content{
+   width: 80%;
+}
+.content-inner-content-2 h3{
+   font-size: 2rem;
+   font-family: 'izmir-bold';
+   overflow: hidden;
+   margin-bottom: 40px;
+}
+.content-media h3{
+   font-family: 'izmir-bold';
+   margin-bottom: 30px;
+   font-size: 2rem;
+   overflow: hidden;
+}
+.content-inner-content p,.content-inner-content-2 p{
+   font-size: 20px;
+   color: #9197A7;
+}
+
+.people{
+   display: flex;
+}
+.people-left{
+   width: 40vw;
+}
+.people-left h2{
+   font-family: 'izmir-bold';
+   margin-bottom: 20px;
+   font-size: 2rem;
+}
+.people-btn{
+   display: flex;
+   border: 1px solid ;
+}
+.people-inner-container{
+   width: 60%;
+}
+.people-inner-container p{
+   font-size: 20px;
+   color: #9197A7;
+   margin-bottom: 20px;
+}
+.people-btn div{
+   margin: 20px;
+}
+.people-first-section{
+   width: 60vw;
+   background-color: #F9FAFE;
+}
+
+
+
+
+
+.plant-information-information {
+   width: 250px;
+   height: 100px;
+   font-size: 19px;
+   font-weight: 200;
+   color: #000000;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5px;
+   margin-bottom: 50px;
+}
+
+.plant-information-information p {
+   text-align: justify;
+   margin: 18px 5px;
+   font-weight: lighter;
+   color: rgb(0, 0, 0);
+   font-family: 'izmir' !important;
+   opacity: 1;
+   /* margin-left: 15px; */
+   margin-bottom: 23px;
+   margin-left: 0px;
+}
+
+#des-5 {
+   scale: 0.8;
+   position: relative;
+   bottom: 40px;
+   /* filter: grayscale(100%); */
+}
+
+#des-5:hover {
+   /* scale: 0.84; */
+   position: relative;
+   bottom: 40px;
+   filter: grayscale(0%);
+   cursor: pointer;
+   transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+   .cookies{
+      position: fixed;
+   bottom: 0;
+   background-color: #106570;
+   color: white;
+   width: 100vw;
+   padding-left: 12%;
+   padding: 10px 5px;
+   font-size: 1rem;
+   z-index: 99999999;
+   }
+   .btn-cookie{
+      position: relative;
+      top:0;
+      right: 0;
+      margin-top: 5px;
+   }
+   
+   #des-5 {
+      scale: 0.4;
+      position: relative;
+      bottom: 40px;
+      /* filter: grayscale(100%); */
+   }
+
+   .images-illustration {
+      position: relative;
+      bottom: 250px !important;
+   }
+
+   #des-5:hover {
+      /* scale: 0.51; */
+      position: relative;
+      bottom: 40px;
+      filter: grayscale(0%);
+      cursor: pointer;
+      transition-duration: 0.5s;
+   }
+}
+
+
+.about-div {
+   padding: 10px;
+   position: absolute;
+   background-color: white;
+   color: black;
+   /* margin-top: 8px; */
+   font-size: 14px;
+   padding-top: 0px;
+
+}
+
+#blog-div {
+   visibility: hidden;
+   /* visibility: visible; */
+   /* opacity: 1; */
+   /* opacity: 0; */
+   border-radius: 3px;
+   height: 0px;
+   width: 130px;
+   visibility: hidden;
+   opacity: 0;
+   /* height: 0px; */
+   /* overflow: hidden;
+   visibility: visible;
+   opacity: 1; */
+   opacity: 0;
+}
+
+.break-line {
+   height: 0.5px;
+   width: 122%;
+   background: #00000030;
+   position: relative;
+   left: -12px;
+}
+
+#about-div {
+   border-radius: 3px;
+
+   width: 140px;
+   visibility: hidden;
+   opacity: 0;
+   height: 0px;
+   /* overflow: hidden;
+   visibility: visible;
+   opacity: 1; */
+   opacity: 0;
+}
+
+#about-p {
+   color: black;
+   font-weight: lighter;
+}
+
+#about-p:hover {
+   position: relative;
+   font-weight: bolder;
+   color: #85200C;
+
+   position: relative;
+   border-left: 6px solid #85200C;
+   left: -13px;
+   transition-duration: 0.3s;
+   /* margin-right: -53px; */
+
+   margin: 1px;
+   padding: 10px;
+   padding-left: 17px;
+}
+
+#side-border {
+   width: 30px;
+   height: 30px;
+
+   background-color: #106570;
+}
+
+#about-main:hover>#about-div {
+   visibility: visible;
+   opacity: 1;
+   height: 154px;
+   overflow: hidden;
+   transition-duration: 0.8s;
+}
+
+/* #about-main:hover > #about-p{
+   color: black;
+} */
+.blog-main:hover>#blog-div {
+   visibility: visible;
+   opacity: 1;
+   height: 117px;
+   overflow: hidden;
+   transition-duration: 0.8s;
+}
+
+.about-div p {
+   margin: 11px;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+}
+
+#border-img {
+   opacity: 0;
+   height: 1px;
+   margin-left: 0px !important;
+   margin-top: 1px;
+   width: 20px;
+   position: relative;
+}
+
+
+.about-div p a {
+   margin: 0px;
+   cursor: pointer;
+   color: black;
+   font-weight: lighter;
+}
+
+.about-div p a:hover {
+   color: #85200C;
+   font-weight: 600;
+}
+
+.about-div p:hover {
+   color: #85200C;
+   font-weight: 600;
+}
+
+/* PORTFOLIO */
+.protfolio-container {
+   background-color: #1e181c;
+   height: 90vh;
+   max-height: 850px;
+   color: white;
+   width: 100vw;
+   display: flex;
+   position: relative;
+   flex-wrap: wrap;
+
+}
+
+#big-portfolio-img img {
+   /* filter: grayscale(100%); */
+   /* -webkit-filter: grayscale(100%); */
+   height: 80%;
+   position: absolute;
+   bottom: 0;
+   right: 3%;
+   margin-top: 100px;
+
+}
+
+#big-portfolio-img img:hover {
+   filter: none;
+   -webkit-filter: grayscale(0);
+}
+
+.portfolio-information {
+   width: 550px;
+   margin-left: 100px;
+   margin-top: 100px;
+   font-size: 13px;
+   color: rgba(255, 255, 255, 0.666);
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
+}
+
+.portfolio-information p {
+   font-size: 13px;
+   color: rgba(255, 255, 255, 0.666);
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
+}
+
+.portfolio-information2 {
+   font-size: 14px;
+   width: 625px;
+   margin-left: 100px;
+   margin-top: 100px;
+   font-weight: lighter;
+   color: rgba(255, 255, 255, 0.7);
+   font-family: 'izmir1', sans-serif !important;
+}
+
+.our-portfolio-company {
+   padding-top: 70px;
+   background-color: rgba(249, 249, 249, 1);
+}
+
+.portfolio-heading-names {
+   display: flex;
+   margin: 50px 0px;
+   justify-content: space-evenly;
+}
+
+.portfolio-heading-names p {
+   font-family: 'izmir' !important;
+   cursor: pointer;
+   transition-duration: 0.4s;
+}
+.portfolio-heading-names p:hover{
+  color: green;
+  transition-duration: 0.4s;
+ 
+
+}
+.company-name {
+   display: flex;
+   justify-content: space-evenly;
+   width: 90%;
+   max-width: 1400px;
+   margin: auto;
+   overflow: hidden;
+   flex-wrap: wrap;
+   padding: 60px;
+
+   padding-top: 20px;
+}
+
+#workstock-img {
+   height: 26px;
+}
+
+.boxess {
+   overflow: visible;
+   width: 165px;
+   height: 100px;
+   margin: 20px;
+   position: relative;
+   overflow: hidden;
+}
+
+.boxess:hover {
+   overflow: visible;
+}
+
+.boxess:hover>.hover-container {
+   display: block;
+   transform: scale(1.4);
+   transition-duration: 0.5s;
+   height: auto !important;
+   box-shadow: 1px 1px 5px 1px rgba(124, 124, 124, 0.296);
+   z-index: 99999;
+   /* width: 200px;
+   opacity: 1;
+   bottom: 40px;border: 2px solid rgb(0, 41, 128);
+   right: 40px;
+   padding: 15px; */
+
+}
+
+.boxess:hover>.imge {
+   display: none;
+}
+
+.hover-container {
+   width: 200px;
+   height: 130px;
+   opacity: 1;
+   bottom: 10px;
+   right: 40px;
+   position: relative;
+   overflow: hidden;
+   font-family: 'izmir' !important;
+   background-color: rgb(255, 255, 255);
+   text-align: center;
+   font-size: 7px;
+   z-index: -1;
+   border-radius: 3px;
+   padding: 5px;
+
+}
+
+.img-margin-5px {
+   margin-left: 3px;
+}
+
+#linkedin-img {
+   width: 17px;
+   margin-top: 14px;
+   margin-bottom: 10px;
+   /* filter: grayscale(100%);
+   -webkit-filter: grayscale(100%); */
+   cursor: pointer;
+}
+
+#linkedin-img-team {
+   width: 17px;
+   margin-top: 14px;
+   margin-bottom: 10px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   cursor: pointer;
+}
+
+#linkedin-img-team:hover {
+   filter: none;
+   -webkit-filter: grayscale(0);
+}
+
+.imge {
+   width: 100%;
+   position: absolute;
+   width: 100%;
+   top: 0;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+
+}
+
+.imge-hover {
+   width: 105px;
+   height: 58px;
+   display: block;
+   margin: auto;
+   margin-top: 10px;
+}
+
+.company-images {
+   margin: 10px;
+   height: 100px;
+   width: 200px;
+   overflow: visible;
+}
+
+.img-comp {
+   width: 70%;
+   height: 70%;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   z-index: 10;
+}
+
+.img-comp:hover {
+   filter: none;
+   -webkit-filter: grayscale(0);
+   position: relative;
+   /* transform: scale(2.5); */
+   /* height: 200px;
+   width: 200px;
+   top: -20px;
+   right: 20px; */
+
+   overflow: visible;
+   transition-duration: 0.5s;
+   z-index: 9999;
+}
+
+.hover-img-div {
+   background-color: red;
+   position: relative;
+   z-index: 999;
+   width: 300px;
+   height: 300px;
+}
+
+.core-team {
+   padding-top: 70px;
+   padding-bottom: 50px;
+}
+
+
+.img-team {
+   width: 200px;
+   height: 200px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   margin: 30px;
+}
+
+.team-name-details {
+   /* filter: grayscale(100%);
+   -webkit-filter: grayscale(100%); */
+}
+
+.team-name-details:hover>.img-team {
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.05);
+   transition-duration: 0.5s;
+   overflow: hidden;
+}
+
+.team-name-details:hover>#linkedin-img-team {
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.05);
+   transition-duration: 0.5s;
+
+}
+
+.team-2-person {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#advisor-id {
+   margin-left: 10px;
+   margin-right: 5px;
+}
+
+.team-name-details {
+   text-align: center;
+   font-size: small;
+   font-weight: 700;
+   margin-left: 54px;
+   margin-right: 46px;
+}
+
+.team-name-details p {
+   text-align: center;
+   font-size: small;
+   font-weight: 700;
+   font-family: 'izmir' !important;
+   font-size: 18px;
+   display: block;
+   margin: auto;
+}
+
+.team-name-details img :nth-child(2) {
+   width: 20px;
+}
+
+.span-pos-details {
+   text-align: center;
+   font-size: smaller;
+   font-weight: 400;
+   color: rgba(0, 0, 0, 0.712);
+}
+
+.span-pos-details2 {
+   text-align: center;
+   font-size: smaller;
+   font-weight: 400;
+   color: rgb(255 255 255 / 49%);
+}
+
+.advisor-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: #1e181c;
+}
+
+.advisor-inner {
+   width: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1320px;
+   color: white;
+   margin-top: 50px;
+   margin-bottom: 100px;
+   padding: 0% 5%;
+}
+
+.advisor-img {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-top: 70px;
+}
+
+.img-team1 {
+   width: 150px;
+   height: 150px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   margin: 15px;
+}
+
+.img-team1:hover {
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.1);
+   transition-duration: 0.5s;
+}
+
+.newletter-container {
+   background-color: #1e181c;
+   border: 1px solid #ffffff5c;
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px 5px;
+   width: 40%;
+   max-width: 860px;
+   border-radius: 15px;
+}
+
+.subscribe-news-letter {
+   display: flex;
+   justify-content: center;
+}
+
+.input-newsletter {
+   width: 50%;
+
+}
+
+#email-input-subscribe {
+   padding: 7px;
+   border-radius: 8px;
+   width: 70%;
+   border: none;
+}
+
+#email-input-subscribe:active {
+   outline: none;
+   border: none;
+   border: 1px solid white;
+}
+
+#email-input-subscribe:focus {
+   outline: none;
+   border: 1px solid white;
+   border: none;
+
+}
+
+#email-input-subscribe ::placeholder {
+   font-size: smaller;
+   font-family: 'izmir1' !important;
+   margin-left: 10px;
+}
+
+#submit-news {
+   background-color: #106570;
+   color: white;
+   border: solid #106570;
+   padding: 8.04px;
+   font-size: 10px;
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
+   position: relative;
+   left: -25px;
+   bottom: 2px;
+}
+
+.news-text {
+   margin-left: 4%;
+   font-weight: bold;
+   font-family: 'izmir' !important;
+   font-size: 20px;
+   margin-top: 2px;
+   opacity: 0.7;
+}
+
+.final-container {
+   display: flex;
+   POSITION: RELATIVE;
+   padding-top: 50px;
+   top: 44px;
+   padding-bottom: 24px;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #1E181C;
+   color: white;
+}
+
+.final-container img {
+   width: 150px;
+   display: flex;
+   margin: auto;
+   margin-top: 30px;
+}
+
+.final-container p {
+   width: 60%;
+   max-width: 1200px;
+   margin: auto;
+   margin-top: 40px;
+   color: white;
+   font-size: small;
+   font-weight: 200;
+   text-align: center;
+   font-family: 'izmir1' !important;
+}
+
+.social-icons {
+   display: flex;
+   margin-top: 24px;
+   margin-bottom: 20px;
+   justify-content: center;
+}
+
+.social-icons img {
+   width: 30px;
+   height: 30px;
+   margin: 5px;
+}
+
+.footer {
+   background-color: #ffffff;
+   padding: 20px;
+   color: #cecece;
+   font-weight: bold;
+   font-size: 11px;
+   text-align: center;
+   font-family: 'izmir-medium';
+}
+
+.footer a {
+   color: #bababa;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+/* IDEOLOGY */
+.ideology-container {
+   width: 100vw;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   height: 680px;
+   margin-top: 70px;
+   padding-top: 100px;
+   margin-bottom: 0px !important;
+
+}
+
+.idology-container-main {
+   width: 90%;
+   margin-top: 70px;
+   max-width: 1200px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   overflow: hidden;
+
+}
+
+.ideology-text {
+   width: 42%;
+   color: rgba(145, 151, 167, 0.8);
+   opacity: 0.8;
+   font-size: 16px;
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
+}
+
+.hide-mob-text {
+   font-family: 'izmir1' !important;
+   cursor: pointer;
+}
+
+.illustration-container {
+   width: 55%;
+   min-width: 525px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.illustration-container img {
+   display: block;
+   margin: auto;
+   position: relative;
+}
+
+#des-1 {
+   opacity: 0.8;
+   filter: grayscale(100%);
+   width: 230px;
+   -webkit-filter: grayscale(100%);
+   padding-top: 10px;
+}
+
+#des-1:hover {
+   opacity: 1;
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.1);
+   transition-duration: 0.5s;
+
+}
+
+#des-2 {
+   opacity: 0.8;
+   bottom: 119px;
+   width: 396px;
+   position: relative;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+
+#des-2:hover {
+   opacity: 1;
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.17);
+   transition-duration: 0.5s;
+}
+
+#des-3 {
+   opacity: 0.8;
+   bottom: 265px;
+   width: 401px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+
+#des-3:hover {
+   opacity: 1;
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.17);
+   transition-duration: 0.5s;
+}
+
+#des-4 {
+   opacity: 0.8;
+   bottom: 327px;
+   width: 358px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+
+#des-4:hover {
+   opacity: 1;
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.17);
+   transition-duration: 0.5s;
+}
+
+.text-idology {
+   color: rgba(255, 255, 255, 0.741);
+   position: relative;
+   width: 200px;
+   font-size: 12px;
+}
+
+.images-illustration {
+   position: relative;
+   bottom: 125px;
+}
+
+#text-1 {
+   left: 70%;
+   visibility: hidden;
+}
+
+#text-2 {
+   left: 72%;
+   top: 0%;
+   visibility: hidden;
+}
+
+#text-3 {
+   left: 70%;
+   top: -6%;
+   visibility: hidden;
+}
+
+#text-4 {
+   left: 70%;
+   top: -10%;
+   visibility: hidden;
+}
+
+.bg-woodstock {
+   background-image: url(./assets/Designs/a_span.png);
+   color: black;
+   font-weight: 500;
+}
+
+.ideology-text h3 {
+   font-size: 40px;
+   overflow: hidden;
+   font-family: 'izmir-bold';
+   font-weight: bold;
+   margin-bottom: 40px;
+}
+
+#contact-us-btn {
+   border: none;
+   background-color: #106570;
+   color: white;
+   padding: 7px 30px;
+   margin-top: 30px;
+}
+
+#contact-us-btn:hover {
+   transform: scale(1.01);
+}
+
+.show-mob-text {
+   display: none !important;
+}
+
+#font-bold {
+   font-family: 'izmir-bold' !important;
+}
+
+#color-white {
+   color: white;
+   font-size: 14px;
+   width: 60%;
+   display: block;
+   text-align: center;
+   position: relative;
+   bottom: 114px;
+   margin: auto;
+
+}
+
+#color-white button {
+   background-color: #087d5c;
+}
+
+.plant-container-mob {
+   display: none;
+   justify-content: center;
+}
+
+.plant-information-information {
+   width: 312px;
+   height: 120px;
+   font-size: 19px;
+   padding: 10px;
+   font-weight: 200;
+   color: #000000;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5px;
+   margin-bottom: 175px;
+   overflow: hidden;
+}
+
+#plant-information-3th {
+   margin-bottom: 128px;
+    height: 132px;
+}
+
+#plant-information-4th {
+   height: 246px;
+   font-size: 18px;
+   margin-bottom: 60px;
+}
+
+#plant-information-5th {
+   height: 300px;
+    font-size: 17px;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.plant-information-heading {
+   width: 216px;
+   height: 296px;
+}
+
+.plant-date-container {
+   position: relative;
+   overflow: hidden;
+   top: 45px;
+   text-align: right;
+}
+
+.protfolio-container h1 {
+   font-size: 2.3rem;
+   color: rgb(255, 255, 255);
+}
+
+.protfolio-container p {
+   font-size: 14px;
+   font-family: 'izmir', sans-serif !important;
+   color: rgba(255, 255, 255, 0.658);
+}
+
+
+#companyName5,
+#companyName4,
+#companyName3,
+#companyName2,
+#companyName1,
+#companyName01,
+#companyName05,
+#companyName04,
+#companyName03,
+#companyName02 {
+   display: none;
+}
+
+.company-border {
+   margin: auto;
+   display: block;
+   width: 40px;
+   margin-top: 7px;
+   height: 3px;
+}
+
+
+
+.quick-link-parent-container {
+   display: flex;
+   justify-content: center;
+   width: 100vw;
+}
+
+.quick-links-container {
+   display: flex;
+   width: 85%;
+   max-width: 1200px;
+}
+
+#workstock-quick-logo {
+   width: 210px;
+   display: flex;
+   margin: auto;
+   margin-top: 0px;
+}
+
+#strong {
+   font-weight: bold;
+   font-size: 16px;
+   font-family: 'izmir-bold' !important;
+}
+
+.quick-link-boxes {
+   margin: 30px;
+}
+
+#one-link {
+   margin-left: 100px;
+}
+
+.quick-link-boxes ul li {
+   margin: 10px 20px;
+   cursor: pointer;
+   font-family: 'izmir1' !important;
+   opacity: 0.7;
+}
+
+.quick-link-boxes ul li a {
+   cursor: pointer;
+   font-family: 'izmir1' !important;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   opacity: 0.7;
+}
+
+.quick-link-boxes ul li a:hover {
+   font-family: 'izmir' !important;
+}
+
+.quick-link-boxes ul li:hover {
+   font-family: 'izmir' !important;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1620px) {
+   .subscribe-form-up {
+      font-size: 1.1rem;
+   }
+
+   .images-illustration {
+      bottom: 150px;
+   }
+
+   #small-vertical img {
+      height: 340px;
+   }
+
+   .idology-container-main {
+      max-width: 1635px;
+   }
+
+   .ideology-text h3 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      font-family: 'izmir-bold';
+      overflow: hidden;
+      color: black;
+      font-weight: bold;
+   }
+
+   .ideology-container {
+      width: 100vw;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      height: 87vh;
+      min-height: 672px;
+      max-height: 700px;
+      margin-top: 70px;
+      margin-bottom: 0px;
+      padding-top: 100px;
+   }
+
+   .woodstock-container {
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-family: 'izmir' !important;
+      margin-left: 5%;
+      margin-bottom: 50px;
+      font-size: 3.5rem;
+   }
+
+   #woodstock {
+      font-size: 3.5rem;
+   }
+   
+
+   .subscribe-form-up {
+      width: 100%;
+    color: #9197A7;
+    font-family: 'izmir', sans-serif;
+    font-size: 1.1rem;
+    line-height: 37px;
+    margin-left: 0px;
+   }
+
+   .ideology-text {
+      width: 45%;
+      color: rgba(145, 151, 167, 0.8);
+      font-size: 20px;
+      font-weight: lighter;
+      font-family: 'izmir1' !important;
+   }
+
+   #contact-us-btn {
+      border: none;
+      background-color: rgb(16, 101, 112);
+      color: white;
+      padding: 12px 40px;
+      margin-top: 30px;
+   }
+
+   .plant-information-information {
+      width: 461px;
+      height: 148px;
+      font-size: 19px;
+      font-weight: 200;
+      color: #000000;
+      background-color: rgb(255, 255, 255);
+      border-radius: 5px;
+      margin-bottom: 176px;
+      height: 120px;
+      padding: 10px;
+   }
+
+   #plant-information-3th {
+      margin-bottom: 135px;
+   }
+
+   #plant-information-4th {
+      height: 245px;
+      margin-bottom: 60px;
+   }
+
+   #plant-information-5th {
+      height: 280px;
+      margin-bottom: 30px;
+   }
+
+   .plant-information-heading {
+      width: 216px;
+      height: 296px;
+   }
+
+   .plant-date-container {
+      position: relative;
+      overflow: hidden;
+      top: 45px;
+      text-align: right;
+   }
+
+   .protfolio-container {
+      background-color: rgb(30, 24, 28);
+      height: 90vh;
+      max-height: 850px;
+      color: white;
+      width: 100vw;
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+   }
+
+   #big-portfolio-img img {
+      /* filter: grayscale(100%); */
+      /* -webkit-filter: grayscale(100%); */
+      height: 80%;
+      position: absolute;
+      right: 3%;
+      bottom: 0;
+      margin-top: 100px;
+   }
+}
+
+@media screen and (max-width: 1620px) {
+   .newletter-container {
+      width: 50%;
+   }
+}
+
+@media screen and (max-width: 1400px) {
+   .plant-container {
+      display: flex;
+      justify-content: left;
+      margin-left: 18vw;
+      padding-top: 70px;
+      height: 1470px;
+      overflow: hidden;
+  }
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 1270px) {
+   #workstock-img {
+      height: 22px;
+   }
+   .plant-container {
+      display: flex;
+      justify-content: left;
+      margin-left: 15vw;
+      padding-top: 70px;
+      height: 1470px;
+      overflow: hidden;
+  }
+
+   #submit-news {
+      background-color: #106570;
+      color: white;
+      border: solid #106570;
+      padding: 8px;
+      font-size: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      left: -25px;
+      bottom: 1px;
+   }
+
+   .newletter-container {
+      background-color: #1e181c;
+      border: 1px solid #ffffff5c;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px 25px;
+      width: 70%;
+      max-width: 1000px;
+      border-radius: 15px;
+   }
+
+   .input-newsletter {
+      width: 45%;
+   }
+
+   #submit-news {
+      border: none;
+      padding: 10px;
+   }
+
+   .ideology-text h3 {
+      font-size: 30px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      font-family: 'izmir-bold';
+   }
+
+   .woodstock-container {
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-family: 'izmir' !important;
+      margin-left: 8%;
+      margin-bottom: 50px;
+      font-size: 2rem;
+   }
+
+   #woodstock {
+      font-size: 2rem;
+   }
+
+   #big-portfolio-img img {
+      /* filter: grayscale(100%); */
+      /* -webkit-filter: grayscale(100%); */
+      height: 60%;
+      position: absolute;
+      bottom: 0;
+      right: 3%;
+      margin-top: 100px;
+
+   }
+
+   #woodstock-img {
+      height: 26px;
+   }
+
+}
+
+@media screen and (max-width: 1000px) {
+   #email-input-subscribe {
+      width: 50%;
+   }
+   .plant-container {
+      display: flex;
+      justify-content: left;
+      margin-left: 0vw;
+      padding-top: 70px;
+      height: 1470px;
+      overflow: hidden;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+   #img-logo-new {
+      margin-left: 5px;
+   }
+
+   .nav {
+      display: flex;
+      width: 100vw;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      overflow: visible;
+      left: 0px;
+      margin-right: 290px;
+   }
+
+   #workstock-img {
+      height: 15px;
+   }
+
+   .show-mob-text {
+      display: block !important;
+   }
+
+   .nav-ul {
+      display: none;
+   }
+
+   .nav-contact {
+      display: none;
+   }
+
+   .logo-div img {
+      margin-left: 10px;
+      height: 60px;
+   }
+
+   #three-line {
+      display: block;
+   }
+
+   .header-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+   }
+
+   .left-header-container {
+      padding-top: 19vh;
+      width: 100%;
+   }
+
+   .right-header-container {
+      width: 100%;
+   }
+
+   .right-header-container img {
+      position: relative;
+      width: 113vw;
+      /* padding-right: 82px; */
+      padding-top: 0px;
+      position: relative;
+      left: -41px;
+   }
+
+   .woodstock-container {
+      margin-left: 0%;
+      text-align: center;
+      font-size: 2rem;
+   }
+
+   #woodstock {
+      font-size: 2rem;
+   }
+
+   .lower-div-form-header {
+      margin-left: 1%;
+   }
+
+   #small-vertical img {
+      height: 245px;
+   }
+
+   .subscribe-form-up {
+      font-size: 0.9rem;
+   }
+
+   #subscribe {
+      padding: 15px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      width: 56%;
+      position: relative;
+      left: 20px;
+   }
+
+   #subscribe-button {
+      padding: 14px;
+      position: relative;
+      right: 31px;
+      background-color: #106570;
+      border: none;
+      font-family: 'izmir1' !important;
+      width: 46px;
+      color: rgb(255, 255, 255);
+   }
+
+   #subscribe-button {
+      padding: 15px;
+   }
+
+   #subscribe::placeholder {
+      font-size: 12px;
+   }
+
+   #small-vertical {
+      display: none;
+   }
+
+   .subscribe-form-up {
+      width: 90%;
+      color: #9197A7;
+      display: block;
+      margin: auto;
+      text-align: center;
+   }
+
+   .team-name-details {
+      text-align: center;
+      font-size: small;
+      font-weight: 700;
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   #advisor-id {
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   .below-header-container-heading {
+      font-size: 1.4rem;
+      width: 90%;
+      margin: auto;
+      display: block;
+      text-align: center;
+      font-weight: 600;
+   }
+
+   .below-header-section {
+      width: 100%;
+      position: relative;
+      bottom: 46px;
+   }
+
+   .below-header-box {
+      max-width: 400px;
+      text-align: center;
+      justify-content: space-evenly;
+      font-size: small;
+      margin-bottom: 46px;
+      width: 70%;
+   }
+
+   #add-more-btn {
+      margin-top: 20px;
+   }
+
+   .hide-mob-text {
+      display: none;
+   }
+
+   .ideology-text {
+      width: 90%;
+      color: #ffffffa8;
+      font-size: 12px;
+      font-weight: lighter;
+      line-height: 25px;
+      font-family: 'izmir1' !important;
+      text-align: center;
+   }
+
+   .bg-woodstock {
+      background-image: none;
+      color: white;
+      font-family: 'izmir-bold' !important;
+      position: relative;
+      right: 10px;
+   }
+
+   .illustration-container {
+      width: 55%;
+      min-width: 525px;
+      display: flex;
+      z-index: 0;
+      position: relative;
+      bottom: 81px;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   #color-white {
+      color: #ffffffa8;
+      font-size: 12px;
+      width: 60%;
+      display: block;
+      text-align: center;
+      position: relative;
+      bottom: 144px;
+      margin: auto;
+      font-family: 'izmir1';
+      line-height: 25px;
+
+   }
+
+   #des-1 {
+      width: 140px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+
+   #des-2 {
+      bottom: 60px;
+      width: 219px;
+      position: relative;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+   #des-3 {
+      bottom: 138px;
+      width: 218px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+   #des-4 {
+      bottom: 171px;
+      width: 200px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+   .images-illustration {
+      /* margin-top: 60px; */
+   }
+
+   .ideology-container {
+      height: 1220px;
+   }
+
+   #contact-us-btn {
+      border: none;
+      background-color: #106570;
+      color: white;
+      padding: 10px 30px;
+      /* width: 35%; */
+      text-align: center;
+      position: relative;
+      margin: auto;
+      bottom: 121px;
+   }
+
+   .hide-mob-text {
+      display: none;
+   }
+
+   #text-4 {
+      left: 46%;
+      top: 12%;
+      visibility: hidden;
+   }
+
+   .plant-container-mob {
+      display: flex;
+      justify-content: flex-start;
+      overflow: hidden;
+      padding-bottom: 70px;
+      height: 1200px;
+      margin-left: 10px;
+   }
+
+   .news-text {
+      margin-left: 2%;
+      font-weight: bold;
+      font-family: 'izmir-bold' !important;
+      font-size: 18px;
+   }
+
+   .plant-information-information {
+      width: 220px;
+      height: 53px;
+      padding: 0px;
+      font-size: 19px;
+      margin-top: 15px;
+      font-weight: 200;
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+      margin-bottom: 105px;
+   }
+   #mob-plantinform-3{
+      margin-bottom: 50px;
+   }
+   #mob-plantinform-4{
+      height: 190px;
+      margin-bottom: 50px;
+      overflow: hidden;
+   }
+   #mob-plantinform-44{
+      height: 180px;
+      margin-bottom: 50px;
+   }
+   #mob-plantinform-5{
+      height: 295px;
+      margin-bottom: 10px;
+    
+   }
+   #mob-plantinform-55{
+      height: 250px;
+      margin-bottom: 10px;
+      
+   }
+   .plant-container {
+      height: auto;
+      display: none;
+
+   }
+
+   .plant-grow-section {
+      height: auto;
+   }
+
+   .ideology-text h3 {
+      color: rgba(0, 0, 0, 0.8);
+      height: 30px;
+      font-size: 22px;
+      overflow: hidden;
+      font-weight: bold;
+      font-family: 'izmir-bold';
+      padding-bottom: 20px;
+   }
+
+   .portfolio-heading-names p {
+      font-family: 'izmir1' !important;
+      /* border: 0.5px solid rgb(167, 167, 167); */
+      font-size: 12px;
+      margin: 10px;
+      padding: 5px;
+   }
+
+   .portfolio-heading-names {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .plant-img-container {
+      position: relative;
+      top: 50px;
+      margin: 0px 0px;
+      margin-right: 7px;
+   }
+
+   .leave-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 49px;
+      z-index: 1;
+      left: 20px;
+   }
+
+   .plant-img-container {
+      position: relative;
+      top: 50px;
+      margin: 0px 0px;
+      margin-right: 7px;
+      left: -20px;
+   }
+
+   #zero-leaf-mob {
+      height: 26px;
+      width: 30px;
+      position: relative;
+      position: relative;
+      top: 38px;
+      left: 12px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+   #one-leaf-mob {
+      bottom: -9px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+   #two-leaf-mob {
+      bottom: -28px;
+      width: 54px;
+      right: -1px;
+      height: 29px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+   #one-leaf-mob {
+      height: 21px;
+   }
+
+   #thre-leaf-mob {
+      height: 21px;
+   }
+
+   .plant-date-container {
+      position: relative;
+      top: 45px;
+      font-size: 14px;
+      text-align: left;
+   }
+
+   .plant-img-container img {
+      height: 1030px;
+   }
+
+   .plant-information-heading {
+      width: auto;
+      height: 163px;
+    overflow: hidden;
+    margin-bottom: 60px;
+   }
+
+   .plant-information-information p {
+      margin: 18px 5px;
+      font-weight: lighter;
+      font-family: 'izmir' !important;
+      font-size: 14px;
+      opacity: 1;
+      /* margin-left: 5px; */
+      margin-bottom: -7px;
+      color: rgb(0, 0, 0);
+      margin-left: 0px;
+   }
+
+   .plant-date-container h5 {
+      font-size: 22px;
+   }
+
+   .plant-information-information p {
+      font-family: sans-serif !important;
+   }
+
+   #big-portfolio-img img {
+      /* filter: grayscale(100%); */
+      /* -webkit-filter: grayscale(100%); */
+      height: 292px;
+      width: 101%;
+      position: absolute;
+      right: 0%;
+      margin-top: 299px;
+      /* bottom: 47px; */
+   }
+
+   .protfolio-container {
+      height: 570px;
+   }
+
+   .protfolio-container h1 {
+      font-size: 2.3rem;
+      text-align: center;
+   }
+
+   .protfolio-container p {
+      font-size: 14px;
+      color: #ffffffbd;
+      text-align: center;
+      font-family: 'izmir1' !important;
+   }
+
+   .team-name-details p {
+      text-align: center;
+      font-size: small;
+      font-weight: 700;
+      font-size: 14px;
+   }
+
+   .protfolio-container img {
+      display: block;
+      margin: auto;
+   }
+
+   .portfolio-information {
+      width: 90%;
+      margin-left: 15px;
+      margin-top: 32px;
+      font-size: 13px;
+   }
+
+   .company-images img {
+      width: 100%;
+      height: 89%;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+   }
+
+   .company-images {
+      margin: 10px;
+      width: 40%;
+   }
+
+   .portfolio-heading-names {
+      display: flex;
+      margin: 30px 0px;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+   }
+
+   .hover-container {
+      right: 8px;
+   }
+
+   .portfolio-information2 {
+      font-size: 12px;
+      width: 90%;
+      margin-left: 20px;
+      margin-top: 49px;
+   }
+
+   .portfolio-information2 p {
+      font-family: 'izmir1', sans-serif !important;
+   }
+
+   #our-team {
+      height: 707px;
+   }
+
+   #profile-container-id {
+      height: 733px !important;
+   }
+
+   .img-team {
+      width: 100px;
+      height: 100px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      margin: 30px;
+   }
+
+   .company-name {
+      width: 98%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0px;
+      justify-content: space-evenly;
+      padding: 0px;
+   }
+
+   .boxess {
+      width: 185px;
+   }
+
+   .boxess:hover>.hover-container {
+      display: block;
+   }
+
+   .boxess:hover>.imge {
+      display: block;
+   }
+
+   .venture-partner {
+      margin-top: 70px;
+   }
+
+   .advisor-img {
+      margin-top: 30px;
+   }
+
+   .advisor-inner {
+      /* width: 90%; */
+      /* display: flex; */
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+      max-width: 1200px;
+      color: white;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      padding: 0% 5%;
+      display: block;
+   }
+
+   .img-team1 {
+      width: 100px;
+      height: 100px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      margin: 15px;
+   }
+
+   .input-newsletter {
+      width: 100%;
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      margin-left: 25px;
+   }
+
+   #submit-news {
+      background-color: #106570;
+      border: solid #106570;
+      color: white;
+      padding: 10px;
+      font-size: small;
+      font-family: 'izmir1';
+      font-size: 10px;
+      border: none;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      left: -25px;
+      bottom: 2px;
+   }
+
+   #email-input-subscribe {
+      padding: 7px;
+      border-radius: 10px;
+      width: 160px;
+      padding-left: 14px;
+      /* padding-bottom: 7px; */
+      border: none;
+   }
+
+   #email-input-subscribe::placeholder {
+      font-size: 10px;
+   }
+
+   .newletter-container {
+      justify-content: center;
+   }
+
+   .final-container p {
+      width: 90%;
+      color: #ffffffb5;
+      background-color: #1E181C;
+      font-weight: lighter;
+      font-family: 'izmir1' !important;
+   }
+
+   .team-name-details p {
+      max-width: 165px !important;
+   }
+
+   .newletter-container {
+      width: 80%;
+      justify-content: space-around;
+   }
+
+   .mob-prot-2 img {
+      position: absolute;
+      bottom: 47px !important;
+   }
+
+   #text-1 {
+      left: 44%;
+      top: 10px;
+      visibility: hidden;
+   }
+
+   #text-2 {
+      left: 44%;
+      top: -0px;
+      visibility: hidden;
+   }
+
+   #origin-wood {
+      display: block;
+      position: relative;
+      top: 10px;
+   }
+
+   #text-3 {
+      left: 44%;
+      top: -40px;
+   }
+
+   #text-4 {
+      left: 44%;
+      top: -100px;
+      visibility: hidden;
+   }
+
+
+
+
+
+
+   #second-stop-mob,
+   #three-stop-mob,
+   #four-stop-mob {
+      display: none;
+   }
+
+   #anm-box-mob {
+      background-color: #087d5c;
+      height: 0px;
+      max-height: 1200px !important;
+      width: 10px;
+      z-index: 99999;
+      border-radius: 10px;
+      margin-left: 21px;
+   }
+
+   #anm-box-side-mob {
+      background-color: #C0BEC2;
+      height: 1200px;
+      max-height: 1200px !important;
+      width: 5px;
+      position: relative;
+      left: 2px;
+      margin-left: 22px;
+   }
+
+   .leave-container img {
+      width: 33px;
+      margin-bottom: 220px;
+      position: relative;
+   }
+
+   .quick-links-container {
+      display: flex;
+      width: 85%;
+      max-width: 1200px;
+      justify-content: center;
+   }
+
+   .quick-link-boxes {
+      margin: 30px;
+      display: none;
+   }
+
+
+
+}
+
+@media screen and (max-width: 370px) {
+   #email-input-subscribe {
+      width: 100px;
+   }
+
+   #email-input-subscribe {
+      padding: 6px;
+      border-radius: 10px;
+      width: 100px !important;
+      padding-left: 14px;
+
+      border: none;
+   }
+
+   #subscribe {
+      padding: 15px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      width: 45%;
+      position: relative;
+      left: 20px;
+   }
+
+   .team-name-details p {
+      max-width: 147px !important;
+   }
+
+   .input-newsletter {
+      width: 100%;
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      margin-left: 19px;
+   }
+
+   #email-input-subscribe {
+      padding: 6px;
+      border-radius: 10px;
+      width: 135px !important;
+      padding-left: 14px;
+      border: none;
+   }
+}
+
+@media screen and (max-width: 370px) {
+   #email-input-subscribe {
+      padding: 6px;
+      border-radius: 10px;
+      width: 100px !important;
+      padding-left: 14px;
+      border: none;
+   }
+
+   .news-text {
+      margin-left: 2%;
+      font-weight: bold;
+      font-family: 'izmir-bold' !important;
+      font-size: 14px;
+   }
+}
+.hs-form-cf0dc107-07b1-40cc-9e85-19c54af6ad12_4aa160bd-4590-44f9-b96b-da27daf02ce5 .hs-form-field label:not(.hs-error-msg) {
+   color: #ffffff !important;
+}
+.hs-form-cf0dc107-07b1-40cc-9e85-19c54af6ad12_db264ab1-4635-4651-accb-a08f84433dde .hs-form-field label:not(.hs-error-msg){
+   color: white !important;
+}
+#label-email-cf0dc107-07b1-40cc-9e85-19c54af6ad12{
+   display: none;
+}
+#hs-recaptcha-response{display: none !important;}

@@ -1,0 +1,104 @@
+.contact-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 85vw;
+   max-width: 1650px;
+   padding: 20px;
+   background-color: white;
+   border-radius: 10px;
+   margin: auto;
+   margin-bottom: 80px;
+   margin-top: 40px;
+}
+.building-img{
+   width: 97%;
+}
+.contact-img{
+   width: 48vw;
+}
+.contact-form{
+   width: 30vw;
+   margin:50px 50px;
+}
+.contact-form input{
+   width: 90%;
+   padding: 20px;
+   margin: 15px 0px;
+   border: none;
+   background-color: #f5f5f5;
+   border-radius: 3px;
+}
+.contact-form ::placeholder{
+   color: #353535f0;
+   font-size: 14px;
+}
+.contact-form p{
+   margin-bottom: 30px;
+   font-family: 'izmir1' !important;
+}
+#submit-btn{
+   background-color: #106570;
+   color: white;
+   font-size: 16px;
+   width: 98%;
+}
+
+
+@media screen and (max-width: 1500px){
+   .contact-form {
+      width: 30vw;
+      margin: -13px 9px;
+  }
+  .contact-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 91vw;
+   max-width: 1650px;
+   padding: 26px;
+   background-color: white;
+   border-radius: 10px;
+   margin: auto;
+   margin-bottom: 80px;
+   margin-top: 40px;
+}
+}
+
+
+@media screen and (max-width: 900px){
+   nav{
+      background-color: #181D1B !important;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+   }
+   .contact-img {
+      width: 90vw;
+      margin-bottom: 50px;
+  }
+  .contact-form {
+   width: 90vw;
+   margin: -13px 9px;
+}
+.contact-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 84vw;
+   max-width: 1650px;
+   padding: 13px;
+   background-color: white;
+   border-radius: 10px;
+   margin: auto;
+   margin-bottom: 80px;
+   margin-top: 40px;
+}
+.contact-form h1{
+   font-size: 1.3rem;
+   margin-bottom: 12px;
+}
+.contact-form p{
+   font-size: 12px;
+}
+}
+

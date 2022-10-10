@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="Career.css">
+   <link rel="icon" type="image/x-icon" href="/favicons.ico">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+
+
+   <title>Career | Workstock</title>
+</head>
+
+<body>
+
+   <div id="apply-id-popup" class="apply-now-btn-pup">
+      <span onclick="closepopup()" class="apply-now-x">X</span>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "19859707",
+    formId: "416e3d0a-2fb8-458c-b2ff-1b8a1da71794"
+  });
+</script>
+   </div>
+
+   <div id="btn-cookies" class="cookies">
+      Woodstockfund.com uses cookies to ensure you get the best experience on our website <a style="color: white;" href="LearnMore">Learn More</a>
+      <div onclick="controlcoo()" class="btn-cookie"><button>Accept</button></div>
+   </div>
+
+   <!-- NAVBAR -->
+   <div style="background-color: #1e181c;" class="nav-div">
+      <nav class="nav">
+         <img id="img-logo-new" onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img>
+         <div class="logo-div">
+            <!-- <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img> -->
+            <!-- <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img> -->
+            <ul class="nav-ul">
+               <li onclick="window.location.href='/'" id="about-main">About <span></span>
+
+               </li>
+               <li class="blog-main" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png">
+                  <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p id="about-p"><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis"
+                           target="_blank">Thesis </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art"
+                           target="_blank">Article</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf"
+                           target="_blank">Newsletter</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog() {
+                        document.getElementById('blog-div').style.display = 'block';
+                     }
+                     function hideBlog() {
+                        document.getElementById('blog-div').style.display = 'none';
+                     }
+                     window.onload(checkcook());
+                     function checkcook() {
+                        let cookie = localStorage.getItem('accept');
+                        if (cookie == 'yes') {
+                           document.getElementById('btn-cookies').style.display = 'none';
+                        }
+                        console.log(cookie);
+                     }
+                     function controlcoo() {
+                        localStorage.setItem('accept', 'yes');
+                        document.getElementById('btn-cookies').style.display = 'none';
+
+                     }
+                  </script>
+               </li>
+               <li class="blog-main" id="about-main">Career<img id="downarrow" src="./assets/Designs/down-arrow.png">
+                  <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p id="about-p"><a style="text-decoration: none;" href="Career" target="_blank">Woodstock opening
+                        </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://jobs.woodstockfund.com/companies"
+                           target="_blank">Portfolio Openings</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog() {
+                        document.getElementById('blog-div').style.display = 'block';
+                     }
+                     function hideBlog() {
+                        document.getElementById('blog-div').style.display = 'none';
+                     }
+                  </script>
+               </li>
+               <!-- <li><a class="a-text" href="/Career">Career</a>
+                  <img style="margin:auto;display: block;width: 35px;height: 2px;position: relative;right: 10px;"
+                     src="./assets/Images/Rectangle 1421.png"></img>
+               </li> -->
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
+            </ul>
+
+            <div class="nav-contact">
+               <button style="cursor: pointer;color: white;background-color: #106570"
+                  onclick="window.location='/contact'">Contact Us</button>
+
+            </div>
+         </div>
+
+         <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
+         <div onclick="hidemobNav()" id="mob-navbar" class="mob-navbar">
+            <h2 id="x">X</h2>
+            <ul class="mov-nav-ul">
+               <li class="a-text">About</li>
+               <hr>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li>
+               <hr>
+               <li><a class="a-text active" href="/Career">Career</a></li>
+               <hr>
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
+               <hr>
+            </ul>
+         </div>
+      </nav>
+   </div>
+   <script>
+      function showmobNav() {
+         document.getElementById('mob-navbar').style.display = 'block';
+      }
+      function hidemobNav() {
+         document.getElementById('mob-navbar').style.display = 'none';
+      }
+
+      // function ourOrigin(a){
+      //    let element;
+      //    if(a==1)
+      //    element='our-origin';
+      //    else if(a==2)
+      //    element='our-journey';
+      //    else if(a==3)
+      //    element='our-portfolio';
+      //    else if(a==4)
+      //    element='our-team';
+      //    document.getElementById(element).scrollIntoView(true);
+      // }
+
+   </script>
+
+   <!-- HEADER -->
+
+   <div class="career-header">
+      <img id="hide-mob" src="./assets/Designs/career-header.png"></img>
+      <img id="phone-img-head" src="./assets/Designs/AdobeStock_373166994.png"></img>
+      <img id="phone-img-2head" src="./assets/Designs/pexels-alexander-suhorucov-6457515.png"></img>
+      <p class="take-step-head">Take the next steps in your career!</p>
+   </div>
+
+
+   <div class="portfolio-section">
+      <h3 id="career-open" class="below-header-container-heading">Career at Woodstock </h3>
+      <img id="img-open" style="margin:auto;display: block;" src="./assets/Images/Rectangle 1421.png"></img>
+
+
+      <div class="career-information">
+         Woodstock, founded in 2019, is a Web 3.0 focused fund house currently investing in Blockchain and Distributed
+         Ledger Technology (DLT) with emphasis on four areas - Infrastructure layer, Decentralized Finance (DeFi), Web
+         3.0 protocols and Tokenization (both fungible and non-fungible). Woodstock works diligently with portfolio
+         companies to help them scale and grow their ecosystem globally.
+
+         At Woodstock, we aim to attract the best talent at all levels and across all disciplines. If you wish to learn,
+         grow and accelerate your career, come join us at Woodstock!
+      </div>
+
+
+
+
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Chief Marketing Officer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Woodstock is looking for a self driven full-time Chief Marketing Officer (CMO), to lead the branding, public relations, communication and marketing strategy & plans of the fund. As the CMO, reporting to the General Partner, you will own our WS brand, with the responsibility to design the overall marketing roadmap for the fund across media channels, leveraging your media relationships to build, strengthen and scale our brand globally with a focus on deep roots in India.
+               </div>
+               <div class="apply-btn">
+                  <button onclick="openjobDesc(1)"
+                     style="background-color: rgb(231, 231, 231);color: #106570;border: 1px solid #106570;"
+                     id="dt1">More Details</button>
+                  <button onclick="openpopup()">Apply Now</button>
+               </div>
+            </div>
+            <div id="d1" class="job-desc-drop">
+               <div class="job-desc-drop-inner-main">
+                  <div class="left-drop">
+                     <ul>
+                     </ul>
+                     <h3>What you'll do</h3>
+
+                     <strong>Brand & Positioning:</strong><br><br>
+                     <ul>
+                        <li><b>Brand &amp; Positioning:</b><br>
+                          • Build and scale our WS brand as a strategic competitive advantage, building a brand of choice for investors and investees<br>
+                          • Shape and communicate our vision and mission<br>
+                          • Translate brand elements into plans and go-to-market strategies with a targeted audience approach
+                        </li>
+                        <br>
+                        <li><b>Communication &amp; Public Relations:</b><br>
+                          • Leverage the Web 3 communities and media channels, including events, to strengthen our brand presence, creating visibility &amp; thought leadership<br>
+                          • Build and execute a strong Communications Strategy &amp; Plan, internally &amp; externally<br>
+                          • Define our Value Proposition and work closely with the HR team to embed its elements to strengthen our culture<br>
+                          • Coach and prepare our WS leaders for external events
+                        </li>
+                        <br>
+                        <li><b>Marketing &amp; growth for Portfolio companies:</b><br>
+                          • Set marketing goals and milestones, execute impactful marketing campaigns for WS on a global and national scale<br>
+                          • Advise individual investees, running programs, making connections &amp; driving outcomes<br>
+                          • Plan, implement and manage marketing strategy<br>
+                          • Identify &amp; work closely with agencies to execute on marketing plan
+                        </li>
+                        <br><br>
+                        <li><b>Scope includes Global, emerging technology and network of relationships</b></li>
+                      </ul>
+                 
+                  </div>
+                  <div class="right-drop">
+
+                     <h3>Job requirements and qualifications:</h3>
+
+                     <br><br>
+                     <ul>
+                        <li>• 10+ years of experience in Marketing/ Brand/ Communication leadership roles.</li>
+                        <li>• Should have led brands, campaigns &amp; marketing strategies to drive outcomes.</li>
+                        <li>• Strong Communications background, Public Relations experience is a plus.</li>
+                        <li>• Prior experience in building and scaling a start up brand is preferred.</li>
+                        <li>• Relevant understanding of/ experience with CRM and SEO tools like Google Analytics, Google AdWords, HubSpot, WebTrends, Salesforce, etc.</li>
+                        <li>• Self driven &amp; passionate, with excellent communication and interpersonal skills.</li>
+                        <li>• MBA in Marketing, Management or similar relevant field preferred.</li>
+                        <li>• Some experience/knowledge of blockchain/VC/ Web 3 space is good to have.</li>
+                        <li>• Role will be based out of UAE (preferable)/ India, mostly remote working, in/outside country travel expected.</li>
+                      </ul>
+                  <br>
+                  <h4>Level: Senior Management</h4>
+                  <button onclick="window.location.href='../Jobs/JD_CMO_Woodstock.pdf'" class="Download-job">Download Job Description</button>
+                  </div>
+               </div>
+               
+            </div>
+            
+         </div>
+      </div>
+
+
+
+
+
+
+      
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Research Associate
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Woodstock is looking at a research associate to join its Investments and Research team. As a member of the team, you will learn about blockchain, venture capital, meet inspiring entrepreneurs, and get exposure to emerging technologies and products.
+               </div>
+               <div class="apply-btn">
+                  <button onclick="openjobDesc(2)"
+                     style="background-color: rgb(231, 231, 231);color: #106570;border: 1px solid #106570;"
+                     id="dt2">More Details</button>
+                  <button onclick="openpopup()">Apply Now</button>
+               </div>
+            </div>
+            <div id="d2" class="job-desc-drop">
+               <div class="job-desc-drop-inner-main">
+                  <div class="left-drop">
+                     <ul>
+                     </ul>
+                     <h3>What you'll do</h3>
+                     <br>
+                     <!-- <strong>Brand & Positioning:</strong><br><br> -->
+                     <ul>
+                        <li>• Stay updated with industry news plus grants, hackathons, and accelerator programs to find early-stage companies as per the fund’s thesis and build a network of sources. Develop a keen point of view on investment in
+                          various categories and companies. Work on well-rounded and informed theses.</li>
+                        <li>• Connect with prospective investments and entrepreneurs on calls. Carry out extensive due diligence of their product, business plan, go-to market strategy, token economics, team, competitive position, and the like.</li>
+                        <li>• Take up complete ownership of the deal – from introduction, due-diligence, financial modeling, investment notes, investment committee presentations to closing. Act as the primary point of contact for portfolio
+                          company management. Provide ongoing support to portfolio companies.</li>
+                        <li>• Engage in building financial models and token models, write and publish research articles to build thought leadership in the space.</li>
+                      </ul>
+                 
+                  </div>
+                  <div class="right-drop">
+
+                     <h3>Job requirements and qualifications:</h3>
+
+                     <br><br>
+                     <ul>
+                        <li style="list-style: circle;">• At least 1-2 years of experience working in a blockchain, traditional finance, venture capital, or product management role.</li>
+                        <li>• Genuine interest and belief in blockchain and digital assets’ value propositions and deeply optimistic about the future of Web 3.0.</li>
+                        <li>• Fluent in spoken and written English. Analytical and organized mind with remarkable attention to detail.</li>
+                        <li>• In-depth knowledge of performing financial, valuation, and comprehensive quantitative analysis.</li>
+                      </ul>
+                      <br>
+                      <h5>Added Advantage</h5>
+                      <ul>
+                        <li>• Previous experience in Web 3.0 role and in-depth understanding of the space. <br>
+                          <p style="font-size:75%;">(experience in coding, understanding blockchain consensus mechanisms, technical security risks)</p>
+                        </li>
+                      </ul>
+                  <br>
+                  
+                  </div>
+                  <br>
+                  <div>
+                     <h2>Problem Statement</h2>
+                  
+                  <hr>
+                  <br>
+                  <div class="col-12 col-md-4" id="desc">
+                      <p><strong style="color: #106570;">NFT Problem Statement <br><span>(Upto 2 Pages)</span></strong></p><br>
+                      <ul>
+                        <li>What is the macro trend for collectible NFTs for a 3 year time horizon?</li>
+                        <li>Open problem statement: a brief article on any topic in the NFT sub sector that interests you.</li>
+                      </ul>
+                      <br><br>
+                      <p><strong style="color: #106570;">DeFi Problem Statement <br><span>(Upto 2 Pages)</span></strong></p><br>
+                      <ul>
+                        <li>One Pager Investment Memo on any DeFi project that interests you.</li>
+                        <li>What are some DeFi primitives - Instruments that haven’t been implemented in Traditional Finance before and what excites you the most?</li>
+                      </ul>
+                      <br><br>
+                      <p><strong  style="color: #106570;">Layer-1 Problem Statement <br><span>(Upto 2 Pages)</span></strong></p><br>
+                      <ul>
+                        <li>Develop a valuation framework for layer-1 blockchain tokens, and use it to arrive at a valuation for Ethereum.</li>
+                        
+                      </ul>
+                  </div>
+
+                  <br><br>
+
+                  <p style="font-size:10px">*Kindly submit/upload your response to any 1 problem statement while applying for the position.</p>
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+      
+      
+
+
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Research Associate (Tech)
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Woodstock is looking at a research associate to join its Investments and Research team. As a member of the team, you will learn about blockchain, work with founders on emerging technologies, manage nodes, and perform on-chain data analytics for various blockchains.
+               </div>
+               <div class="apply-btn">
+                  <button onclick="openjobDesc(3)"
+                     style="background-color: rgb(231, 231, 231);color: #106570;border: 1px solid #106570;"
+                     id="dt3">More Details</button>
+                  <button onclick="openpopup()">Apply Now</button>
+               </div>
+            </div>
+            <div id="d3" class="job-desc-drop">
+               <div class="job-desc-drop-inner-main">
+                  <div class="left-drop">
+                     <ul>
+                     </ul>
+                     <h3>What you'll do</h3>
+                     <br>
+                     <!-- <strong>Brand & Positioning:</strong><br><br> -->
+                     <ul>
+                        <li>• Stay updated with industry news plus grants, hackathons, and accelerator programs to find early-stage companies as per the fund’s thesis and build a network of sources. Develop a keen point of view on investment in
+                          various categories and companies. Work on well-rounded and informed theses.</li>
+                        <li>• Connect with prospective investments and entrepreneurs on calls. Carry out extensive due diligence of their product, business plan, go-to market strategy, token economics, team, competitive position, and the like.</li>
+                        <li>• Take up complete ownership of the technical due diligence process for companies being considered for investment. Provide ongoing support to portfolio companies.</li>
+                        <li>• Write and publish research articles to build thought leadership in the space.</li>
+                      </ul>
+                 
+                  </div>
+                  <div class="right-drop">
+
+                     <h3>Job requirements and qualifications:</h3>
+
+                     <br><br>
+                     <ul>
+                        <li>• Genuine interest and belief in blockchain and digital assets’ value propositions and deeply optimistic about the future of Web 3.0.</li>
+                        <li>• Experience in one scripting language (Python, Ruby) and one object-oriented programming language (C++, Java)</li>
+                        <li>• Versatility when encountered with new programming languages</li>
+                        <li>• Fluent in spoken and written English. Analytical and organized mind with remarkable attention to detail.</li>
+                      </ul>
+                      <br>
+                      <h5>Added Advantage</h5>
+                      <ul>
+                        <li>• Previous experience in Web 3.0 role and in-depth understanding of the space. <br>
+                           <p style="font-size:75%;">(experience in coding, understanding blockchain consensus mechanisms, technical security risks)</p>
+                         </li>
+                          
+                      </ul>
+                  <br>
+                  
+                  </div>
+                  <div>
+                     <h2>Problem Statement</h2>
+                  
+                  <hr>
+                  <br>
+                  <div class="col-12 col-md-4" id="desc">
+                      
+                      <ul>
+                        <li>A brief article on the architecture of Oracles and which according to you is the best design.</li>
+                       
+                      </ul>
+                      <br><br>
+                      
+                      <ul>
+                        <li>A brief article on the architecture of ZKRollups and Differentiate between different ZK based projects.</li>
+                        
+                      </ul>
+                      <br><br>
+                     
+                      <ul>
+                        <li>A brief article on the MEV projects such as Chainlink Fair sequence services, submarine sends, Flashbots.</li>
+                        
+                      </ul>
+                  </div>
+
+                  <br><br>
+
+                  <p style="font-size:10px">*Kindly submit/upload your response to any 1 problem statement while applying for the position.</p>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Security Engineer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  The primary responsibility of this role is for Woodstock Fund’s security-related services.
+               </div>
+               <div class="apply-btn">
+                  <button onclick="openjobDesc(4)"
+                     style="background-color: rgb(231, 231, 231);color: #106570;border: 1px solid #106570;"
+                     id="dt4">More Details</button>
+                  <button onclick="openpopup()">Apply Now</button>
+               </div>
+            </div>
+            <div id="d4" class="job-desc-drop">
+               <div class="job-desc-drop-inner-main">
+                  <div class="left-drop">
+                     <ul>
+                     </ul>
+                     <h3>Key responsibilities for this role include</h3>
+                     <br>
+                     <!-- <strong>Brand & Positioning:</strong><br><br> -->
+                     <ul>
+                        <li>• Proactively monitor/review smart contracts of portfolio companies and corresponding important third-party partnerships for vulnerabilities</li>
+                        <li>• Conduct security reviews for portfolio companies</li>
+                        <li>• Work directly with the external blockchain developers to audit their code and secure their products including smart contracts, protocols and dapp.</li>
+                        <li>• Conduct security research and publish findings in technical blog posts / conferences.</li>
+                        <li>• Improve our processes and offering and strive for the satisfaction of our clients</li>
+                        <li>• Contribute to our internal security tools and create new ones that help improve the security services by following good engineering practices.</li>
+                        <li>• If you are excited about hacking, threat modeling, scanning, auditing, designing, and enhancing the security of smart contracts across the board then you will be a great fit in this role.</li>
+                      </ul>
+                      <br>
+                      <p>While you work with investee companies, we will also provide you with great opportunities to get involved with research and development efforts to help us raise the standards of blockchain security.</p><br>
+                 
+                  </div>
+                  <div class="right-drop">
+
+                     <h3>Job requirements and qualifications:</h3>
+
+                     <br><br>
+                     <ul>
+                        <li>• Passion for Cryptocurrency/Defi/Blockchain</li>
+                        <li>• 2+ years of experience with solidity, the EVM and blockchain technology</li>
+                        <li>• Experience in <span style="color: #434343;">security auditing of smart contracts, formal verification of smart contracts or penetration testing</span></li>
+                        <li>• Bachelors or above in Computer Science/Information Technology/Computer Security or a related field</li>
+                        <li>• Experienced in threat and vulnerability management, penetration testing and SecOps (intrusion detection, security logging, malware analysis, and forensics)</li>
+                        <li>• Experience developing tooling in Solidity, Vyper, Javascript and Python</li>
+                      </ul>
+                      <br>
+                      <h5>Added Advantage</h5>
+                      <ul>
+                        <ul>
+                           <li>• Working knowledge of threat analysis, APT or threat response</li>
+                           <li>• Professional experience as SWE, or Security Engineer</li>
+                           <li>• Strong Math background</li>
+                         </ul>
+                          
+                      </ul>
+                  <br>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Tech Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  The primary responsibility of this role is to engage with Woodstock’s portfolio companies from a technology perspective.
+               </div>
+               <div class="apply-btn">
+                  <button onclick="openjobDesc(5)"
+                     style="background-color: rgb(231, 231, 231);color: #106570;border: 1px solid #106570;"
+                     id="dt5">More Details</button>
+                  <button onclick="openpopup()">Apply Now</button>
+               </div>
+            </div>
+            <div id="d5" class="job-desc-drop">
+               <div class="job-desc-drop-inner-main">
+                  <div class="left-drop">
+                     <ul>
+                     </ul>
+                     <h3>Key responsibilities for this role include</h3>
+                     <br>
+                     <!-- <strong>Brand & Positioning:</strong><br><br> -->
+                     <ul>
+                        <li>• Building and maintaining a development report/dashboard for tracking developer growth across major ecosystems</li>
+                        <li>• Tracking code and product progress of all portfolio companies</li>
+                        <li>• Helping teams on development tasks</li>
+                        <li>• Sharing insights for improvement</li>
+                        <li>• Contributing to our internal tools and create new ones</li>
+                        <li>• Following all partnerships formed and integrations made by portfolio companies</li>
+                      </ul>
+                      <br>
+                      <p>We are looking to hire someone with a full-stack development skill set, and expect the candidates to have the ability to write robust code, analyse data, present insights, build relationships, and provide value end-to-end. The role will help the individual build great connections, work on various new technologies, and understand the blockchain development space.</p><br>
+                 
+                  </div>
+                  <div class="right-drop">
+
+                     <h3>Job requirements and qualifications:</h3>
+
+                     <br><br>
+                     <ul>
+                        <li>• Passion for blockchain tech and development</li>
+                        <li>• Proficiency in at least one frontend and one backend language, besides basic understanding of C, C++, Java, Python, and JavaScript</li>
+                        <li>• Bachelors or above in Computer Science/Information Technology or a related field</li>
+                        <li>• Prior experience in independent development</li>
+                        <li>• Familiarity with API integrations, GitHub, and CICD pipeline</li>
+                      </ul>
+                      <br>
+                      <h5>Additional advantageous skills</h5>
+                      <ul>
+                        <ul>
+                           <li>• Professional experience as SDE</li>
+                           <li>• Strong CS background</li>
+                         </ul>
+                          
+                      </ul>
+
+                  <br>
+                  
+                  
+                  </div>
+                  <div>
+                     <br>
+                     <h2>Problem Statement (Any 1)</h2>
+                  
+                  <hr>
+                  <br>
+                  1. Build a dashboard of on-chain metrics for any blockchain and draw relevant insights from it and present it to us.
+                  <br>
+                  2. Build a developer report which gives dev activity on various blockchains (at least 2) and this should be a GitHub project which generates the report.
+                  <br><br>
+                  <p style="font-size:10px">*Kindly submit/upload your response to any 1 problem statement while applying for the position.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+   <!-- <div style="margin-bottom: 150px;" class="portfolio-section">
+      <h3 style="margin-top: 70px;" class="below-header-container-heading">Woodstock Opening </h3>
+      <img id="img-open" style="margin:auto;display: block;" src="./assets/Images/Rectangle 1421.png"></img>
+
+
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> -->
+   <br><br><br><br><br><br>
+
+
+
+
+
+
+
+   <div class="subscribe-news-letter">
+      <div onclick="document.getElementById('subscribe-popup1').style.display='flex'" class="subscribe-container">
+         <div class="subscribe-now-us"> Subscribe to Our Newsletter</div>
+         <div class="subcribe-now-us-btn"><button>Subscribe</button></div>
+      </div>
+   </div>
+   <div id="subscribe-popup1" class="subscribe-popup-main1">
+      <div class="subscribe-poup1">
+         <div class="subscribe-popup-container1">
+            <span class="cut-x1" onclick="document.getElementById('subscribe-popup1').style.display='none'">X</span>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script>
+            <script>
+               hbspt.forms.create({
+                  region: "na1",
+                  portalId: "19859707",
+                  formId: "cf0dc107-07b1-40cc-9e85-19c54af6ad12"
+               });
+
+            </script>
+         </div>
+      </div>
+   </div>
+   <style>
+      .subscribe-popup-main1 {
+         width: 100vw;
+         display: flex;
+         justify-content: center;
+         position: relative;
+         bottom: 200px;
+         z-index: 9999999;
+      }
+
+      .subscribe-poup1 {
+         width: 30vw;
+         box-shadow: 1px 1px 2px 2px rgba(193, 193, 193, 0.676);
+         margin: 10px;
+         padding: 20px;
+         border-radius: 10px;
+         background-color: white;
+         position: relative;
+
+      }
+
+      #subscribe-popup1 {
+         display: none;
+      }
+
+      .subscribe-poup {
+         padding: 50px 10px;
+         position: absolute;
+         display: flex;
+         justify-content: center;
+         top: 0;
+         width: 30vw;
+         z-index: 9999999;
+         background-color: rgb(255, 255, 255);
+         overflow: hidden;
+         margin-left: 33%;
+         border-radius: 15px;
+         margin-top: 30vh;
+      }
+
+      .cut-x,
+      .cut-x1 {
+         position: absolute;
+         right: 10%;
+         cursor: pointer;
+      }
+
+      .cut-x:hover {
+         position: absolute;
+         right: 10%;
+         cursor: pointer;
+         font-weight: bolder;
+         scale: 1.1;
+      }
+
+      .cut-x1:hover {
+         position: absolute;
+         right: 10%;
+         cursor: pointer;
+         font-weight: bolder;
+         scale: 1.1;
+      }
+
+      #subscribe-popup {
+         display: none;
+      }
+
+      .subscribe-popup-main {
+         height: 200vh;
+         width: 100vw;
+         background-color: rgba(0, 0, 0, 0.768);
+         position: absolute;
+         top: 0;
+         z-index: 99999999;
+      }
+
+      .subscribe-container {
+         display: flex;
+         background-color: #1e181c;
+         border: 0.5px solid rgba(255, 255, 255, 0.531);
+         padding: 20px;
+         color: white;
+         border-radius: 20px;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+      }
+
+      .subscribe-now-us {
+         margin: 0px 15px;
+         margin-top: 5px;
+
+      }
+
+      .subcribe-now-us-btn button {
+         margin: 0px 15px;
+         padding: 7px 10px;
+         background-color: #106570;
+         color: white;
+         border: none;
+         cursor: pointer;
+         border-radius: 8px;
+         transition-duration: 0.5s;
+      }
+
+      .subcribe-now-us-btn:hover {
+         scale: 1.05;
+         transition-duration: 0.5s;
+      }
+
+      @media screen and (max-width: 900px) {
+         .subscribe-poup {
+            padding: 50px 10px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            width: 90vw;
+            z-index: 9999999;
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+            margin-left: 3%;
+            border-radius: 15px;
+            margin-top: 30vh;
+         }
+
+         .subscribe-poup1 {
+            width: 90vw;
+         }
+
+         .subcribe-now-us-btn button {
+            margin-top: 15px;
+         }
+
+         .subscribe-container {
+            margin: 10px;
+         }
+      }
+   </style>
+   <div class="final-container">
+
+      <div class="quick-link-parent-container">
+         <div class="quick-links-container">
+            <div>
+               <div>
+                  <img id="workstock-quick-logo" src="./assets/Logos/brand.png"></img>
+                  <div class="social-icons">
+                     <a href="https://www.linkedin.com/company/woodstock-fund/"><img
+                           src="./assets/Logos/linkedin-sign.png"></img></a>
+                     <a href="https://t.me/woodstockfund"><img src="./assets/Logos/telegram.png"></img></a>
+                     <a href="https://woodstockfund.medium.com/"><img src="./assets/Logos/medium.png"></img></a>
+                     <a href="https://twitter.com/Woodstockfund"><img src="./assets/Logos/twitter-sign.png"></img></a>
+                  </div>
+               </div>
+            </div>
+            <div id="one-link" class="quick-link-boxes">
+               <ul>
+                  <li id="strong"><a href="/#our-origin">About</a></li>
+                  <li onclick="ourOrigin(2)">Journey</li>
+                  <li <a href="https://studiorawcanvas.com/fund-thesis/">Fund Thesis</a></li>
+                  <li onclick="ourOrigin(3)">Portfolio</li>
+                  <li onclick="ourOrigin(4)">Team</li>
+               </ul>
+            </div>
+            <div class="quick-link-boxes">
+               <ul>
+                  <li id="strong">Blog</li>
+                  <li><a href="https://blog.woodstockfund.com/#thesis">Thesis</a></li>
+                  <li><a href="https://blog.woodstockfund.com/#art">Article</a></li>
+                  <li><a href="https://blog.woodstockfund.com/#pdf">Newsletter</a></li>
+               </ul>
+            </div>
+            <div class="quick-link-boxes">
+               <ul>
+                  <li id="strong">Career</li>
+                  <li><a href="/Career">Portfolio Openings</a></li>
+                  <li><a href="https://jobs.woodstockfund.com/companies">Woodstock Openings</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <p>The information provided on this website is for educational purposes only and should not be construed to be
+         investment advice or considered to be a recommendation of any particular security, strategy or investment
+         product. No portion of this content should be construed as an offer or solicitation for the purchase or sale of
+         any security or investment. An offering may be made available only to certain sophisticated investors through
+         official delivery of confidential offer documents along with other documents. Readers must understand that past
+         performance is not a guarantee of future results.</p>
+      <br><br>
+   </div>
+
+
+
+   <div class="footer">
+      READ OUR <a href="https://woodstockfund.com/legal.html#section-Privacy">PRIVACY POLICY</a>, <a
+         href="https://woodstockfund.com/legal.html#section-Terms">TERMS OF USE</a> AND <a
+         href="https://woodstockfund.com/legal.html#section-Cookies">COOKIE POLICY</a> HERE.
+   </div>
+
+
+
+
+   <script>
+
+      function openjobDesc(n) {
+
+         if (document.getElementById('dt' + n).innerHTML == "Hide Details") {
+            document.getElementById('d' + n).style.height = "0";
+            document.getElementById('dt' + n).innerHTML = "More Details";
+         }
+         else {
+            document.getElementById('d' + n).style.height = "auto";
+            document.getElementById('dt' + n).innerHTML = "Hide Details";
+         }
+         
+      }
+
+      function openpopup(){
+         document.getElementById('apply-id-popup').style.display='block';
+      }
+      function closepopup(){
+         document.getElementById('apply-id-popup').style.display='none';
+      }
+   </script>
+</body>
+
+</html>

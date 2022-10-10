@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <!-- HOSTED ON MAKE ME GLOBAL SERVER-->
+   <link rel="icon" type="image/x-icon" href="/favicons.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <title>Privacy Policy | Woodstock</title>
+</head>
+
+<body>
+
+   <!-- TOPNAVBAR -->
+   <div  id="top-nav" class="top-nav">
+      Read our Investment Thesis 2022 <a href="" style="color:white">here</a>
+      <span onclick="hideTopNav()" id="cut-nav">X</span>
+   </div>
+   <div id="btn-cookies" class="cookies">
+      Woodstockfund.com uses cookies to ensure you get the best experience on our website <a style="color: white;" href="#">Learn More</a>
+      <div onclick="controlcoo()" class="btn-cookie"><button class="accept-btn">I Accept</button></div>
+   </div>
+   <script>
+      function hideTopNav() {
+         document.getElementById('top-nav').style.display = "none";
+      }
+   </script>
+
+   <!-- NAVBAR -->
+   <div style="background-color: #1e181c;" class="nav-div">
+      <nav class="nav">
+         <img id="img-logo-new" onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img>
+         <div class="logo-div">
+            <!-- <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img> -->
+            <!-- <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img> -->
+            <ul class="nav-ul">
+               <li id="about-main">About<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="about-div" class="about-div">
+
+                     <!-- <p id="about-p" style="position:relative" onclick="ourOrigin(1)">  Our Origins -->
+
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img> -->
+                     <!-- </p> -->
+
+                     <div class="break-line"></div>
+                     <p id="about-p" onclick="ourOrigin(1)">Origin</p>
+                     <div class="break-line"></div>
+                     <p id="about-p" onclick="">Fund Thesis</p>
+                     <div class="break-line"></div>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>  -->
+                     <p id="about-p" onclick="ourOrigin(3)">Portfolio</p>
+                     <div class="break-line"></div>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
+                     <p id="about-p" onclick="ourOrigin(4)">Team</p>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
+                  </div>
+               </li>
+               <li class="blog-main" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png">
+                  <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p id="about-p"><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis"
+                           target="_blank">Thesis </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art"
+                           target="_blank">Article</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf"
+                           target="_blank">Newsletter</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog() {
+                        document.getElementById('blog-div').style.display = 'block';
+                     }
+                     function hideBlog() {
+                        document.getElementById('blog-div').style.display = 'none';
+                     }
+                     window.onload(checkcook());
+                     function checkcook() {
+                        let cookie = localStorage.getItem('accept');
+                        if (cookie == 'yes') {
+                           document.getElementById('btn-cookies').style.display = 'none';
+                        }
+                        console.log(cookie);
+                     }
+                     function controlcoo() {
+                        localStorage.setItem('accept', 'yes');
+                        document.getElementById('btn-cookies').style.display = 'none';
+
+                     }
+                  </script>
+               </li>
+               <li class="blog-main" id="about-main">Career<img id="downarrow" src="./assets/Designs/down-arrow.png">
+                  <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p id="about-p"><a style="text-decoration: none;" href="Career" target="_blank">Woodstock Openings
+                        </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://jobs.woodstockfund.com/companies"
+                           target="_blank">Portfolio
+                           Openings</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog() {
+                        document.getElementById('blog-div').style.display = 'block';
+                     }
+                     function hideBlog() {
+                        document.getElementById('blog-div').style.display = 'none';
+                     }
+                  </script>
+               </li>
+               <!-- <li><a class="a-text" href="/Career">Career</a>
+                  <img style="margin:auto;display: block;width: 35px;height: 2px;position: relative;right: 10px;"
+                     src="./assets/Images/Rectangle 1421.png"></img>
+               </li> -->
+
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
+            </ul>
+
+            <div class="nav-contact">
+               <button style="cursor: pointer;color: white;background-color: #106570"
+                  onclick="window.location='/contact'">Contact Us</button>
+
+            </div>
+         </div>
+
+         <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
+         <div onclick="hidemobNav()" id="mob-navbar" class="mob-navbar">
+            <h2 id="x">X</h2>
+            <ul class="mov-nav-ul">
+               <li class="active">About</li>
+               <hr>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li>
+               <hr>
+               <li><a class="a-text" href="Career">Career</a></li>
+               <hr>
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
+               <hr>
+            </ul>
+         </div>
+      </nav>
+   </div>
+   <script>
+      function showmobNav() {
+         document.getElementById('mob-navbar').style.display = 'block';
+      }
+      function hidemobNav() {
+         document.getElementById('mob-navbar').style.display = 'none';
+      }
+
+      function ourOrigin(a) {
+         let element;
+         if (a == 1)
+            element = 'our-origin';
+         else if (a == 2)
+            element = 'our-journey';
+         else if (a == 3)
+            element = 'our-portfolio';
+         else if (a == 4)
+            element = 'our-team';
+         document.getElementById(element).scrollIntoView(true);
+      }
+
+   </script>
+   <style>
+    .learn-more-container{
+        width: 90%;
+        max-width: 1400px;
+        text-align: justify;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+    }
+    a{
+        color: #106570;
+    }
+   </style>
+  
+   <div class="learn-more-container">
+        <h2>Privacy Policy</h2><br><br><br>
+
+      <div class="container pt-4 pb-4 lang">
+         <div class="row">
+           <p>In this Privacy Policy, <strong>'us'</strong> <strong>'we'</strong> or <strong>'our'</strong> means Woodstock, Inc., or any other group entity. This Privacy Policy comprises part of our terms of use (“<strong><a href="/legal.html#section-Terms">Terms of Use</a></strong>”). All capitalised terms used in this Privacy Policy have the same meaning as in the Terms of Use unless otherwise indicated.</p>
+           <p>This Privacy Policy describes the privacy practices that we follow when collecting and using information about you on our Platform or through other means including e-mails. We ask that you please read this Privacy Policy before using the Platform. It describes what information we gather from you and others who visit or use the Platform, how we use that information, and what we do to protect it. When you access or use the Platform, certain information, including Personal Information may be collected, transferred, processed, stored, and in certain circumstances, disclosed as described in this Privacy Policy.</p>
+           <p>BY CREATING AN ACCOUNT ON, ACCESSING, OR USING OUR PLATFORM OR OTHERWISE PROVIDING US WITH YOURS OR OTHERS’ PERSONAL INFORMATION, YOU EXPRESSLY CONSENT TO THE INFORMATION HANDLING PRACTICES DESCRIBED IN THIS PRIVACY POLICY AND YOU ACKNOWLEDGE AND CONFIRM THAT YOU HAVE PERMISSION TO PROVIDE US WITH ALL PERSONAL INFORMATION PROVIDED. IF YOU DO NOT AGREE WITH THIS PRIVACY POLICY OR THE TERMS OF USE, PLEASE DO NOT ACCESS, USE, OR REGISTER FOR AN ACCOUNT ON THE PLATFORM.BY CREATING AN ACCOUNT ON, ACCESSING, OR USING OUR PLATFORM OR OTHERWISE PROVIDING US WITH YOURS OR OTHERS’ PERSONAL INFORMATION, YOU EXPRESSLY CONSENT TO THE INFORMATION HANDLING PRACTICES DESCRIBED IN THIS PRIVACY POLICY AND YOU ACKNOWLEDGE AND CONFIRM THAT YOU HAVE PERMISSION TO PROVIDE US WITH ALL PERSONAL INFORMATION PROVIDED. IF YOU DO NOT AGREE WITH THIS PRIVACY POLICY OR THE TERMS OF USE, PLEASE DO NOT ACCESS, USE, OR REGISTER FOR AN ACCOUNT ON THE PLATFORM.</p>
+ 
+           <br><br>
+           <h3 class="sub-heading-text pb-4">Table of Contents</h3>
+           <br>
+           <ol>
+               <li><strong><a href="#Definitions">Definitions</a></strong></li>
+               <li><strong><a href="#Use_Platform">Use of this Platform and Application of the Policy</a></strong></li>
+               <li><strong><a href="#Key_Principles">Key Principles of collection of Personal Information</a></strong></li>
+               <li><strong><a href="#Process">How do we process your Personal Information?</a></strong></li>
+               <li><strong><a href="#How_process">Who decides why and how we process your personal data?</a></strong></li>
+               <li><strong><a href="#what_info">What Personal Information do we collect?</a></strong></li>
+               <li><strong><a href="#whose_info">Whose Personal Information do we process?</a></strong></li>
+               <li><strong><a href="#when">When do we collect Personal Information?</a></strong></li>
+               <li><strong><a href="#Use_info">How we use your information?</a></strong></li>
+               <li><strong><a href="#Disclose">When we disclose of Personal Information?</a></strong></li>
+               <li><strong><a href="#Legal_grounds">Our Legal grounds for processing your Personal Information</a></strong></li>
+               <li><strong><a href="#transfer">Transfers of Personal Information</a></strong></li>
+               <li><strong><a href="#Rights">Your rights relating to Personal Information</a></strong></li>
+               <li><strong><a href="#Retention">Retention</a></strong></li>
+               <li><strong><a href="#Safety">Safety and information security measures</a></strong></li>
+               <li><strong><a href="#Third_party">Third Party Analytics Providers</a></strong></li>
+               <li><strong><a href="#Exclusions">Exclusions</a></strong></li>
+               <li><strong><a href="#Cookies_use">Use of cookies or similar devices</a></strong></li>
+               <li><strong><a href="#Changes_policy">Changes to our Privacy Policy</a></strong></li>
+               <li><strong><a href="#Complaint">Making a complaint</a></strong></li>
+               <li><strong><a href="#Contact">Contact Us</a></strong></li>
+           </ol>
+           <ol>
+            <br><br>
+               <li>
+           <h4 id="Definitions">Definitions</h4><br>
+           <ol>
+               <li>In this Privacy Policy, the following capitalised terms have the following meanings:
+           <ol>
+               <li>“<strong>Automatic Data</strong>” have the meaning as provided in clause 8.</li>
+               <li>“<strong>Non-personal Information</strong>” means information which does not relate to a person and/or cannot be used to identify a person.</li>
+               <li>“<strong>Personal Information</strong>” means any information which can be used to identify an individual.</li>
+               <li>“<strong>Platform</strong>” means this website, app, platform and any service offered by us.</li>
+               <li>“<strong>Users</strong>” means any user of the Platform including a Partner.</li>
+           </ol>
+           </li>
+           </ol>
+           </li>
+               <li>
+                <br><br>
+           <h4 id="Use_Platform">Use of this Platform and Application of the Policy</h4>
+ 
+ 
+           <ol style="list-style-type: none;">
+               <li><u>Use by Us</u>: We oversee the Platform itself and we may sometimes offer goods or services through the Platform. We may collect some Personal Information about all of our Users, and this Personal Information is used, disclosed and protected according to this Privacy Policy.</li>
+               <li><u>Use by the Users (excluding Partners)</u>: The Users may use the Platform to access information about us and for enquiries.</li>
+               <li><u>Use by the Partner</u>: The Partner may use the Platform to access information about us, enquiries and in relation to information related to the Investment Services.</li>
+ 
+           </ol>
+           </li>
+               <li>
+                <br><br>
+           <h4 id="Key_Principles">Key Principles of collection of Personal Information</h4>
+           <ol>
+               <li>We will aim to adhere to the following key principles while processing Personal Information:
+           <ol>
+               <li><u>Lawfulness</u>: We will only collect your personal data in a fair, lawful and transparent manner.</li>
+               <li><u>Data minimization</u>: We will limit the collection of your personal data to what is directly relevant and necessary for the purposes for which they have been collected.</li>
+               <li><u>Purpose limitation</u>: We will only collect your personal data for specified, explicit and legitimate purposes and not process your personal data further in a way incompatible with those purposes.</li>
+               <li><u>Accuracy</u>: We will keep your personal data accurate and up to date.</li>
+               <li><u>Data security and protection</u>: We will implement technical and organizational measures to ensure an appropriate level of data security and protection considering, amongst other things, the nature of your personal data to be protected. Such measures provide for the prevention of any unauthorized disclosure or access, accidental or unlawful destruction or accidental loss, or alteration and any other unlawful form of processing.</li>
+               <li><u>Access and rectification</u>: We will process your personal data in line with your legal rights.</li>
+               <li><u>Retention limitation</u>: We will retain your personal data in a manner consistent with the applicable laws, and no longer than is necessary for the purposes for which they have been collected.</li>
+               <li><u>Protection for international transfers</u>: We will ensure that any of your personal data transferred outside the EEA is adequately protected.</li>
+               <li><u>Safeguards towards third parties</u>: We will ensure that personal data access by, and transfers to, third parties are carried out in accordance with applicable law and with suitable contractual safeguards.</li>
+           </ol>
+           </li>
+           </ol>
+           </li>
+               <li>
+                <br><br>
+           <h4 id="Process">How do we process your Personal Information</h4>
+           <ol>
+               <li>We will only process your Personal Information where we are permitted to do so by law, meaning when we have one or more legal basis to do so. The following subsections explain how we process your Personal Information.</li>
+           </ol>
+           </li>
+               <li>
+                <br><br>
+           <h4 id="How_process">Who decides why and how we process your personal data</h4>
+           <ol>
+               <li>We are the data controller of the Personal Information that we process, i.e., the organisation which determines, alone or jointly with another party, how your Personal Information is processed and for what purposes. This means that we are legally responsible for ensuring our systems, processes, suppliers and people comply with data protection laws in relation to the Personal Information that we handle.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="what_info">What Personal Information do we collect</h4>
+           <ol>
+               <li>We collect different types of personal data for different reasons. This may include:
+           <ol>
+               <li><u>Contact information</u><strong>:</strong>Information such as your name, job title, postal address, home address where you provide this to us, business address, telephone number, mobile number, fax number and email address.</li>
+               <li><u>Payment data:</u>Data necessary for us to process payments and implement fraud prevention measures, bank details and other such relevant details.</li>
+               <li><u>Business details</u>:&nbsp;Business information which we necessarily process as part of our instructions or projects we are involved in or otherwise provided by you voluntarily.</li>
+               <li><u>Compliance details</u><strong>:</strong>Information we are legally required to collect for compliance purposes, such as "know your client" information, details relevant to international sanctions and restrictive measures and information about relevant and significant litigation, which may impact our ability to act.</li>
+               <li><u>Preferences</u><strong>:</strong>Information about your preferences, where it is relevant to the services we provide.</li>
+               <li><u>Platform information</u>:&nbsp;Your password and other related log-in details for platforms maintained by us, where you have access to any.</li>
+               <li><u>Publicly available information</u>:&nbsp;Information collected from publicly available resources, including but not limited to information collected from databases we use to carry out compliance checks or credit rating agencies.</li>
+               <li><u>Statutory Register Information</u>: Information about you on account of an interest or office you may hold in or certain relationships you may have with a corporate entity, partnership, trust or other vehicle to which we provide services.</li>
+           </ol>
+           </li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="whose_info">Whose Personal Information do we process</h4>
+           <ol>
+               <li>We collect and process the Personal Information of:
+           <ol>
+               <li>Users of the Platform such as those who use our website and online services, attend our events, and subscribe to our newsletters, email services and other promotional services;</li>
+               <li>The Partners;</li>
+               <li>Those who apply for a job or work placement with us;</li>
+               <li>Our people;</li>
+               <li>Contractors, suppliers and other third parties connected to the operation of our business.</li>
+           </ol>
+           </li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="when">When do we collect Personal Information</h4>
+           <ol>
+               <li>We may collect Personal Information about you when you use the Platform, received through e-mail or interact with us in anyway.</li>
+               <li><u>Information you provide to us</u>: We collect all information which the Users voluntarily provide to us through using the Platform or interacting with us. This includes information provided:
+           <ol>
+               <li>When you or your organisation seek our services, or use any of our Platform;</li>
+               <li>During registration in the Platform;</li>
+               <li>When you or your organisation make an enquiry through our website, in person, over email or over the telephone; or</li>
+               <li>When you attend a seminar or other events we may organise, or sign up to receive communications from us, including training;</li>
+               <li>When you or your organisation provide services to us, or otherwise offer to do so;</li>
+               <li>When you uploaded any information onto the Platform in any way.</li>
+           </ol>
+           </li>
+               <li><u>Information we automatically collect</u>: We also automatically collect certain technical data that is sent to us from the computer, mobile device and/or browser through which you access the Platforms (“<strong>Automatic Data</strong>”). Automatic Data, includes without limitation, a unique identifier associated with your access device and/or browser (including, for example, your Internet Protocol (IP) address) characteristics about your access device and/or browser, statistics on your activities on the Platforms, details of the products and services we have provided to you or that you have enquired about, including any additional information necessary to deliver those products and services and respond to your enquiries, or information about how you came to the Platforms.</li>
+               <li><u>Information we obtain from others</u>: We may also collect or receive Personal Information from third party sources, other Partners, social media or other third-party integrations.</li>
+               <li><u>Non-personal Information</u>: When you interact with the Platform, we may collect Non-personal Information. The limitations and requirements in this Privacy Policy on our collection, use, disclosure, transfer and storage/retention of Personal Information do not apply to Non-personal Information. When you register for the Platforms or otherwise submit Personal Information to us, we may associate other Non-Personal Information (including Non-Personal Information we collect from third parties) with your Personal Information. At such instance, we will treat any such combined data as your Personal Information until such time as it can no longer be associated with you or used to identify you.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Use_info">How we use your information</h4>
+           <ol>
+               <li><u>General</u>: We may collect, hold, use and disclose your Personal Information for the following purposes:
+           <ol>
+               <li><em><u>Your name and contact details</u></em>: We use your name and contact details, such as email, postal address and contact number to continue communications with you.</li>
+               <li><em><u>Investment Service</u></em>: To provide services related to investment and partnership with us.</li>
+               <li><em><u>Manage Business</u></em>: To manage and administer your or your organisation's business relationship with us.</li>
+               <li><em><u>Compliance</u></em>: For compliance with our legal obligations (such as record keeping obligations), compliance screening or recording obligations (such as under antitrust laws, export controls, trade sanction and embargo laws, for anti-money laundering, financial and credit check and fraud and crime prevention and detection purposes), which may include automated checks of your contact data or other information you provide about your identity against applicable sanctioned-party lists and contacting you to confirm your identity in case of a potential match or recording interaction with you which may be relevant for compliance purposes.</li>
+               <li><em><u>Photograph</u></em>: For special events. We will always inform you if this is happening.</li>
+               <li><em><u>Other Reasons</u></em>:
+           <ol>
+               <li>To enable you to access and use our Platform;</li>
+               <li>To operate, protect, improve and optimise our Platform, business and our users’ experience, such as to perform analytics, conduct research and for advertising and marketing;</li>
+               <li>To send you service, support and administrative messages, reminders, technical notices, updates, security alerts, and information requested by you;</li>
+               <li>To send you marketing and promotional messages and other information that may be of interest to you, including information sent by, or on behalf of, our business partners that we think you may find interesting;</li>
+               <li>To administer surveys or other promotional activities or events sponsored or managed by us or our business partners;</li>
+               <li>To comply with our legal and regulatory obligations and requests anywhere in the world, including reporting to and/or being audited by national and international regulatory, law enforcement and tax reporting bodies; and</li>
+               <li>For any purpose related and/or ancillary to any of the above or any other purpose for which your personal data was provided to us.</li>
+           </ol>
+           </li>
+           </ol>
+           </li>
+               <li><u>Account-Related Emails</u><strong>: </strong>When you create an account with us and provide us with your email address we may, subject to applicable law, use your email address to send you Platform-related notices (including any notices required by law, in lieu of communication by postal mail), updates, news, and marketing messages. For example, when you register for an account, you may receive a welcome email. If the Platform or our services are temporarily unavailable, we may also send you an email notice. Email communications you receive from us will generally provide an unsubscribe link or instructions allowing you to opt out of receiving future emails or to change your contact preferences. Please remember that even if you opt out of receiving marketing e-mails, we may still send you important service information related to your account and the Platform. If you correspond with us by email, we may retain the content of your email messages, your email address, and our responses.</li>
+               <li><u>Non-Personally Identifiable Information</u>: We may use non-personally identifiable information, such as anonymized and/or aggregated Platform usage data, in any manner that does not identify individual users for the purpose of improving the operation and management of the Platform, including to develop new features, functionality, and services, to conduct internal research, to better understand Platform usage patterns, to resolve disputes, to troubleshoot problems, to fulfill user requests, or for security and compliance purposes. Any non-personally identifiable information that is combined with Personal Information will be treated by us as Personal Information.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Disclose">When we disclose of Personal Information</h4>
+           <ol>
+               <li>When we disclose Personal Information, we work with our partners to ensure that your Personal Information is protected in accordance with applicable laws. We share your information, including any Personal Information, in the circumstances described below.</li>
+               <li><u>Business Purpose</u>: We disclose your Personal Information for a business purpose to the following categories:
+           <ol>
+               <li>Our employees and related bodies corporate;</li>
+               <li>Third-party suppliers and service providers (including providers for the operation of our Platform and/or our business or in connection with providing our products and services to you);</li>
+               <li>Professional advisers, dealers and agents;</li>
+               <li>Payment systems operators;</li>
+               <li>Our existing or potential agents, business partners or partners; and/or</li>
+               <li>Specific third-parties authorised by you to receive information held by us.</li>
+           </ol>
+           </li>
+               <li><u>Legal Requirements</u>: We reserve the right to disclose all information collected via the Platform or other means, internally, to affiliates, or to third parties, for any lawful purpose or to prevent harm to us or others. For example, and without limitation, in our discretion we may disclose information to government regulators, law enforcement authorities or alleged victims of identity theft. We will notify you in the event of a government or legal request for your information unless otherwise prohibited by law.</li>
+               <li><u>Organizational Transitions</u>: If we should ever transfer or restructure the operational ownership of the Platform, such as through a merger with another entity or a reorganization of all or a part of our operational responsibilities or assets, we may disclose, transfer, assign our rights, and/or delegate our duties to your information without notice and consent, including to prospective or actual recipient or acquiring entities. Should this occur, we will contractually require any third party receiving your Personal Information as described under this subsection to provide the same level of privacy protection as provided by us under this Privacy Policy.</li>
+               <li><u>Disclaimer</u>: We cannot ensure that all of your Personal Information will be disclosed only in the ways described in this Privacy Policy. For example, third parties may unlawfully intercept or access transmissions or private communications, or users may abuse or misuse your Personal Information that they collect from the Platform. Even with the most rigorous information security standards, no transmission of data over the internet can be 100% secure.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Legal_grounds">Our legal grounds for processing your Personal Information</h4>
+           <ol>
+               <li>Our legal grounds for us processing your Personal Information for the purposes set out in clause 9 and 10 above will typically because:
+           <ol>
+               <li>you provided your consent;</li>
+               <li>it is necessary for our contractual relationship;</li>
+               <li>the processing is necessary for us to comply with our legal or regulatory obligations; and/or</li>
+               <li>the processing is in our legitimate interest (for example, to protect the security and integrity of our systems and to provide you with service, etc.).</li>
+           </ol>
+           </li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="transfer">Transfers of Personal Information</h4>
+           <ol>
+               <li>As we are a global company, we may need to transfer your Personal Information outside of the country from which it was originally provided. This may be intra-group or to third parties that we work with who may be located in jurisdictions outside the European Economic Area (<strong>EEA</strong>), which have no data protection laws or laws that are less strict compared with those in Europe.</li>
+               <li>When making such transfers, we will ensure that they are subject to appropriate safeguards in accordance with the General Data Protection Regulation (Regulation 2016/679) or other relevant data protection legislation. This may include entering into the EU Commission’s Standard Contractual Clauses. Please get in touch with us for more information about the safeguards we have put in place to protect your Personal Information and privacy rights in these circumstances.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Rights">Your rights relating to Personal Information</h4>
+           <ol>
+               <li><u>You can choose not to provide Personal Information</u>: You may always decline to provide your Personal Information to us. Registering for an account or otherwise providing your Personal Information is not required to access some of our online content. If you choose not to provide certain Personal Information to us, some of your experiences may be affected.</li>
+               <li><u>You may decline other requests</u>: We use the Personal Information of our Users as needed for the purposes for which it was collected or where you have consented to our use of such information. If you do not wish to provide information to us or do not wish to consent to the uses described in this Privacy Policy, please do not use the Platform, set up an account, or supply the requested information to us.</li>
+               <li><u>Right to access specific information and data portability right</u>: You may have the right to request us that we disclose certain information to you about our collection and use of your Personal Information. Once we receive and confirm your verifiable consumer request, we will disclose to you:
+           <ol>
+               <li>The categories of Personal Information that we have collected about you;</li>
+               <li>The categories of sources for the Personal Information that we have collected about you;</li>
+               <li>Our business or commercial purpose for collecting or making available that Personal Information;</li>
+               <li>The categories of third parties with whom we share that Personal Information;</li>
+               <li>The specific pieces of Personal Information that we have collected about you (also called a data portability request);</li>
+               <li>If we disclosed your Personal Information for a business purpose, the business purpose for which such Personal Information was disclosed, and the Personal Information categories that each category of recipient obtained;</li>
+               <li>If applicable:
+           <ol>
+               <li>The categories of your Personal Information that we have made available for valuable consideration;</li>
+               <li>The categories of third parties to whom such Personal Information was made available; and</li>
+               <li>The category or categories of Personal Information that we have made available to each category of third parties.</li>
+           </ol>
+           </li>
+           </ol>
+           </li>
+               <li><u>Right to correct Personal Information</u>: Where any Personal Information you have provided us with has changed, or where you believe the Personal Information we hold is inaccurate, please let us know through contact us function below. In addition, please note that if you hold an office or are interested in or have certain relationships with a third party to which we provide services, you and/or the third party may have a contractual or legal obligation to notify us of any change within a prescribed time period. We cannot be responsible for any loss that may arise due to us having any inaccurate, incomplete, inauthentic or otherwise deficient personal data which you or a third party have provided to us.</li>
+               <li><u>Right</u><u> to delete Personal Information</u>: You have the right to request that we delete your Personal Information that we have collected from you and retained. Once we receive and confirm your verifiable consumer request, we will delete (and direct our service providers to delete) your Personal Information from our records.We may deny your deletion request if retaining the information is necessary for us or our service provider(s) or vendor(s) to:
+           <ol>
+               <li>Complete the transaction for which we collected the Personal Information, provide a good or service that you requested, take actions reasonably anticipated within the context of our ongoing business relationship with you, or otherwise perform our contract with you;</li>
+               <li>Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities;</li>
+               <li>Debug products to identify and repair errors that impair existing intended functionality;</li>
+               <li>Exercise free speech, ensure the right of another consumer to exercise their free speech rights, or exercise another right provided for by law;</li>
+               <li>Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the information’s deletion may likely render impossible or seriously impair the research’s achievement, if you previously provided informed consent;</li>
+               <li>Enable solely internal uses that are reasonably aligned with consumer expectations based on your relationship with us;</li>
+               <li>Comply with a legal obligation or legal order;</li>
+               <li>Make other internal and lawful uses of that information that are compatible with the context in which you provided it.</li>
+           </ol>
+           </li>
+               <li>&nbsp;<u>Right to opt-out</u>:
+           <ol>
+               <li>If at any time, we make your information available to third parties other than for a business purpose, you may direct us not to (the “<strong>right to opt-out</strong>”). Consumers who opt-in may opt-out at any time.</li>
+               <li>To exercise the right to opt-out or right to opt-in, you (or your authorized representative) may submit a request to us by contacting us through contact us provided below. However, you may change your mind and opt back in at any time by contacting us through contact us provided below. We will only use Personal Information provided in an opt-out request to review and comply with the request.</li>
+           </ol>
+           </li>
+               <li><u>Exercising your rights</u>:
+           <ol>
+               <li>To exercise the access, correct, data portability, and deletion rights described above, please submit a verifiable consumer request to us by contacting us through contact us provided below.</li>
+               <li>Only you, or a person you authorize to act on your behalf, may make a verifiable consumer request related to your Personal Information. You may also make a verifiable consumer request on behalf of your minor child.</li>
+               <li>You may only make such a request for access or data portability twice within a twelve-month period. The verifiable consumer request must provide sufficient information that allows us to reasonably verify you are the person about whom we collected Personal Information or an authorized representative, and describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it.</li>
+               <li>We cannot respond to your request or provide you with Personal Information if we cannot verify your identity or authority to make the request and confirm the Personal Information relates to you. Making a verifiable consumer request does not require you to create an account with us. We will only use Personal Information provided in a verifiable consumer request to verify the requestor’s identity or authority to make the request.</li>
+               <li>We endeavor to respond to a verifiable consumer request within thirty (30) days of its receipt. If we require more time (up to ninety (90) days), we will inform you of the reason and extension period in writing. We will deliver our written response electronically. The response we provide will also explain the reasons we cannot comply with a request, if applicable. For data portability requests, we will select a format to provide your Personal Information that is readily useable and should allow you to transmit the information from one entity to another entity without hindrance.</li>
+               <li>We do not charge a fee to process or respond to your verifiable consumer request unless it is excessive, repetitive, or manifestly unfounded. If we determine that the request warrants a fee, we will tell you why we made that decision and provide you with a cost estimate before completing your request.</li>
+           </ol>
+           </li>
+               <li><u>Non-discrimination</u>: We will not discriminate against you for exercising any of your rights under GDPR.</li>
+               <li><u>Online tracking choices: </u>
+           <ol>
+               <li>Most browsers are initially set up to accept Cookies, but you can reset your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, some features and services of the Platform (particularly those that require sign-in) may not function properly if your Cookies are disabled.</li>
+               <li>Some web browsers incorporate a “Do Not Track” (“<strong>DNT</strong>”) or similar feature that signals to websites that a user does not want to have the user’s online activity and behavior tracked. If a website that responds to a particular DNT signal receives the DNT signal, the browser can block that website from collecting certain information about that browser’s user. Not all browsers offer a DNT option and DNT signals are not yet uniform. For this reason, many websites, including the Platform, do not respond to DNT signals.</li>
+           </ol>
+           </li>
+               <li><u>Limitation on right</u>: Not all of these rights are absolute, which means that they may only apply in certain situations and may be subject to legal exceptions and exemptions.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Retention">Retention</h4>
+           <ol>
+               <li>We may retain your Personal Information as long as you are registered to the Platform as a User or a Partner. You may close your account by contacting us. However, we may retain Personal Information for an additional period as is permitted or required under applicable laws. Even if we delete your Personal Information it may persist on backup or archival media for an additional period of time for legal, tax or regulatory reasons or for legitimate and lawful business purposes.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Safety">Safety and information security measures</h4>
+           <ol>
+               <li><u>Security</u>: We use certain physical, managerial, and technical safeguards designed to preserve the security of your information that we maintain in connection with your use of the Platform. This, however, does not guarantee that your information may not be accessed, disclosed, altered, or destroyed by any breach of our physical, technical or managerial safeguards. In the event that any of your Personal Information under our control is compromised as a result of a breach of security, we will take reasonable steps to investigate the situation and will notify you, as appropriate, in accordance with pertinent laws and regulations.</li>
+               <li><u>Storage</u>: We or our third-party hosting providers store Personal Information in operating environments that are safeguarded against public or unauthorized access and protected from internal access with physical and technical security measures. While these measures are helpful to safeguard your Personal Information after we receive it, no transmission of data over the internet is 100% secure.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Third_party">Third Party Analytics Providers</h4>
+           <ol>
+               <li>We may use third party analytics providers (“<strong>Analytics Providers</strong>”) to collect information about Platform usage and the users of the Platform. These Analytics Providers use cookies in order to collect demographic and interest-level information and usage information from users that visit the Platform, including information about the pages where users enter and exit the Platform and what pages users view on the Platform, time spent, browser, operating system, and IP address. Cookies allow Analytics Providers to recognize a user when a user visits the Platform and when the user visits other websites. Analytics Providers use the information they collect from the Platform and other websites to share with us and other website operators’ information about users including age range, gender, geographic regions, general interests, and details about devices used to visit the Platform and other websites and purchase items.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Exclusions">Exclusions</h4>
+           <ol>
+               <li><u>External Links</u>: The Platform may contain links to third party websites and services. We are not responsible for any of the content or features or functionality of other linked websites or services. We are also not responsible for the privacy practices and the terms and conditions of use for any external websites or services. The linked websites and services may collect Personal Information from you that is not subject to our control. The data collection practices of linked third party websites and services will be governed by that third party’s privacy policy and terms of use.</li>
+               <li><u>Children's Online Privacy:</u> We do not knowingly collect Personal Information from children under the age of 13. If you are under the age of 13, please do not submit any Personal Information through the Platform. We encourage parents and legal guardians to monitor their children's internet usage and to help enforce our Privacy Policy by instructing their children never to provide Personal Information without their permission. If you have reason to believe that a child under the age of 13 has provided Personal Information to us, please&nbsp;<a href="https://www.eventbrite.com.au/support/contact-us">contact us</a>and we will endeavour to delete that information from our databases.</li>
+               <li><u>Personal Information Provided to Others:</u>This Privacy Policy does not apply to any Personal Information that you provide to another user of the Platform or a Partner through the Platform or through any other means, information posted by you to any public areas of the Platform.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Cookies_use">Use of cookies or similar devices</h4>
+           <ol>
+               <li>We use cookies on our website. &nbsp;This helps us to provide you with a better experience when you browse our website and also allows us to make improvements to our site. You may be able to change the preferences on your browser or device to prevent or limit your device’s acceptance of cookies, but this may prevent you from taking advantage of some of our features.&nbsp;If you click on a link to a third-party website or service, a third party may also transmit cookies to you.&nbsp;This policy does not cover the use of cookies by any third parties, and we aren’t responsible for their privacy policies and practices.</li>
+               <li>For more on our cookies policy, please click on [Cookies Policy].</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Changes_policy">Changes to our Privacy Policy</h4>
+           <ol>
+               <li>Because our privacy practices and privacy law necessarily evolve over time, we reserve the right to revise this Privacy Policy from time-to-time in our sole discretion, upon notice to you such as by posting updated Privacy Policy on the Platform, sending you an email, or by any other reasonable means. You should periodically review this Privacy Policy to ensure that you are familiar with the most current version. Your continued use of the Platform will constitute your acceptance of the updated Privacy Policy.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Complaint">Making a complaint</h4>
+           <ol>
+               <li>If you think we have breached any data privacy law, or you wish to make a complaint about the way we have handled your Personal Information, you can contact us using the contact us feature below. Please include your name, email address and/or telephone number and clearly describe your complaint. We will acknowledge your complaint and respond to you regarding your complaint within a reasonable period of time. If you think that we have failed to resolve the complaint satisfactorily, we will provide you with information about the further steps you can take.</li>
+           </ol>
+           </li>
+               <li>
+                <br>
+           <h4 id="Contact">Contact Us</h4>
+           <ol>
+               <li>For further information about our Privacy Policy or practices, or to access or correct your Personal Information, or make a complaint, please contact us using the details set out below:
+           <ul>
+               <li>Email: contact@woodstockfund.com </li>
+               <li>Address: Woodstock Inc, WB Corporate Services (Cayman) Limited, Artemis House, 67 Fort Street, PO Box 2775, Grand Cayman KY1-1111</li>
+           </ul>
+           </li>
+           </ol>
+           </li>
+           </ol>
+           <br><br><br>
+ 
+         </div>
+ 
+ 
+ 
+       </div>
+
+
+   </div>
+</body>
+</html>
