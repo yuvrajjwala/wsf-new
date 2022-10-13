@@ -2143,12 +2143,45 @@ line .line {
       height: 1470px;
       overflow: hidden;
   }
+
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 1270px) {
    #workstock-img {
       height: 22px;
    }
+   .img-meida-img {
+      width: 600px;
+      width: 40vw;
+      background-color: white;
+      height: 30vw;
+      position: relative;
+      top: 100px;
+  }
+  .content-inner-content {
+   width: 86%;
+}
+.img-meida-img-2 {
+   width: 650px;
+   width: 40vw;
+   background-color: #f9fafe;
+   height: 550px;
+   height: 30vw;
+   position: relative;
+   top: 100px;
+}
+.inner-content-2 p {
+   font-size: 18px;
+   color: #9197A7;
+}
+.people-left {
+   width: 40vw;
+   padding-left: 4.3vw;
+   padding-top: 100px;
+}
+.image-list-team{
+   margin-left: 4.3vw;
+}
    .plant-container {
       display: flex;
       justify-content: left;
