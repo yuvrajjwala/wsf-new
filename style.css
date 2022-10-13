@@ -17,6 +17,11 @@
    font-family: 'izmir-medium';
    src: url(./fonts/Gilroy/Gilroy-Medium.ttf);
 }
+@font-face {
+   font-family: 'izmir-semi-bold';
+   src: url(./fonts/Gilroy/Gilroy-SemiBold.ttf);
+}
+
 
 * {
    margin: 0;
@@ -44,7 +49,8 @@ body {
    border-radius: 10px;
    font-size: 0.7rem;
    padding: 3px 7px;  
-   font-family: 'izmir-bold';
+   margin-right: 10px;
+   font-family: 'izmir-semi-bold';
 
 }
 
@@ -87,7 +93,7 @@ body {
 .lower-header-main{
    width: 60vw;
    opacity: 0.9;
-   font-size: 1.5rem;
+   font-size: 1.7rem;
     max-width: 980px;
     display: block;
     margin: auto;
@@ -261,7 +267,7 @@ body {
 }
 
 .right-header-container {
-   width: 45%;
+   width: 37%;
 }
 
 .subscribe-form-up form {
@@ -269,10 +275,10 @@ body {
 }
 
 .right-header-container img {
-   width: 50%;
-    position: absolute;
-    right: 20px;
-    bottom: 100px;
+   width: 45%;
+   position: absolute;
+   right: 150px;
+   bottom: 240px;
 }
 
 #woodstock {
@@ -283,7 +289,7 @@ body {
 .woodstock-container {
    color: rgb(0, 0, 0);
    font-weight: bold;
-   font-family: 'izmir-bold' !important;
+   font-family: 'izmir-medium' !important;
    margin-left: 8%;
    margin-bottom: 50px;
    font-size: 3rem;
@@ -302,7 +308,7 @@ body {
 .subscribe-form-up {
    width: 75%;
    color: #9197A7;
-   font-family: 'izmir', sans-serif;
+   font-family: 'izmir-semi-bold', sans-serif;
    font-size: 1.2rem;
    line-height: 30px;
    margin-left: 20px;
@@ -317,8 +323,9 @@ body {
 #subscribe {
    background-color: #ffffff;
    border: none;
-   padding: 13px;
-   width: 56%;
+   padding: 25px;
+   width: 65%;
+   max-width: 470px;
    border: 1px solid #ffffff;
    border-radius: 0px;
    color: #000000;
@@ -345,14 +352,14 @@ line .line {
 }
 
 #subscribe-button {
-   padding: 14px;
-   position: relative;
-   right: 50px;
-   background-color: #106570;
-   border: none;
-   font-family: 'izmir1' !important;
-   width: 44px;
-   color: rgb(255, 255, 255);
+   padding: 23px;
+    position: relative;
+    right: 67px;
+    background-color: #106570;
+    border: none;
+    font-family: 'izmir1' !important;
+    width: 60px;
+    color: rgb(255, 255, 255);
    
 }
 
@@ -366,8 +373,9 @@ line .line {
 }
 
 .below-header-container-heading {
-   font-family: 'izmir', sans-serif;
+   font-family: 'izmir-bold', sans-serif;
    font-size: 2rem;
+   line-height: 60px;
    text-align: center;
    font-weight: 600;
 }
@@ -377,33 +385,43 @@ line .line {
    justify-content: center;
    flex-wrap: wrap;
    padding-top: 70px;
+   padding-bottom: 50px;
 }
 
 .below-header-box {
-   width: 20%;
-   max-width: 264px;
+   width: 22%;
+    max-width: 370px;
    font-family: 'izmir', sans-serif;
    justify-content: space-evenly;
    font-size: small;
    margin: 20px;
    text-align: center;
    border: 0.1px solid #106570;
-   border-radius: 15px;
+   border-radius: 25px;
    padding: 25px;
    padding-top: 52px;
+   transition-duration: 0.5s;
+}
+
+.below-header-box:hover{
+   box-shadow: 30px 30px 60px rgba(17, 0, 140, 0.05);
+   transform: scale(1.05);
+   cursor: pointer;
 }
 
 .below-header-box p {
-   color: #000000cd;
-   font-weight: lighter;
-   font-family: 'izmir1' !important;
-   font-family: 'izmir1';
+   color: #9197A7;
+    font-weight: lighter;
+    font-size: 1.08rem;
+    line-height: 32px;
+    font-family: 'izmir' !important;
 }
 
 .below-header-box img {
-   padding-bottom: 15px;
-   width: 60px;
-   height: 60px;
+   padding-bottom: 29px;
+    padding-top: 0px;
+    width: 100px;
+    height: 100px;
 }
 
 #add-more-btn {
@@ -628,13 +646,15 @@ line .line {
    justify-content: center;
 }
 .about-img-right{
-   width: 27vw;
+   width: 22vw;
    margin: 50px;
+   padding-left: 5px;
  
 }
 .about-img-left{
-   width: 28vw;
+   width: 22vw;
    margin: 50px;
+   padding-right: 5px;
   
 }
 .about-img-left img{
@@ -657,7 +677,8 @@ line .line {
    width: 37px;
 }
 .about-stock-content{
-   width: 80%;
+   width: 90%;
+    line-height: 26px;
     text-align: justify;
     text-align: center;
     display: block;
@@ -797,10 +818,14 @@ line .line {
 #mangage{
    color: white;
    transition-duration: 0.5s;
+   position: relative;
+   right: -10px;
 }
 #invest{
    color: #5d5d5d;
    transition-duration: 0.5s;
+   position: relative;
+   right: -10px;
 }
 .people-inner-container p{
    font-size: 20px;
@@ -826,6 +851,7 @@ line .line {
    background-color: rgb(255, 255, 255);
    margin: 10px;
    margin-left: 20px;
+   box-shadow: 2px 2px 10px 1px rgba(240, 240, 240, 0.554);
    /* position: absolute; */
    /* top: 50px; */
 }
@@ -864,6 +890,8 @@ line .line {
    margin-left: 46px;
    margin-top: 40px;
    height: 400px;
+   margin-bottom: 15px;
+   box-shadow: 2px 2px 10px 1px rgba(240, 240, 240, 0.554);
    background-color: rgb(255, 255, 255);
   
 }
@@ -1757,6 +1785,10 @@ line .line {
 
 #font-bold {
    font-family: 'izmir-bold' !important;
+   font-size: 1.8rem !important;
+   margin-bottom: 14px;
+    overflow: hidden;
+    color: black;
 }
 
 #color-white {
@@ -1924,7 +1956,7 @@ line .line {
 
 @media screen and (min-width: 1620px) {
    .subscribe-form-up {
-      font-size: 1.1rem;
+      font-size: 1.35rem;
    }
 
    .images-illustration {
@@ -1940,12 +1972,13 @@ line .line {
    }
 
    .ideology-text h3 {
-      font-size: 40px;
+      font-size: 35px;
       margin-bottom: 40px;
       font-family: 'izmir-bold';
       overflow: hidden;
       color: black;
       font-weight: bold;
+      padding-bottom: 5px;
    }
 
    .ideology-container {
@@ -1964,10 +1997,10 @@ line .line {
    .woodstock-container {
       color: rgb(0, 0, 0);
       font-weight: bold;
-      font-family: 'izmir-bold' !important;
+      font-family: 'izmir-medium' !important;
       margin-left: 5%;
       margin-bottom: 50px;
-      font-size: 3.5rem;
+      font-size: 4rem;
    }
 
    #woodstock {
@@ -1977,20 +2010,22 @@ line .line {
    
 
    .subscribe-form-up {
-      width: 100%;
+      width: 90%;
     color: #9197A7;
-    font-family: 'izmir', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'izmir-semi-bold', sans-serif;
+    font-size: 1.35rem;
     line-height: 37px;
     margin-left: 0px;
    }
 
    .ideology-text {
       width: 45%;
+      max-width: 653px;
       color: rgba(145, 151, 167, 0.8);
       font-size: 20px;
       font-weight: lighter;
-      font-family: 'izmir1' !important;
+      line-height: 30px;
+      font-family: 'izmir' !important;
    }
 
    #contact-us-btn {
@@ -2137,7 +2172,7 @@ line .line {
    .woodstock-container {
       color: rgb(0, 0, 0);
       font-weight: bold;
-      font-family: 'izmir-bold' !important;
+      font-family: 'izmir-medium' !important;
       margin-left: 8%;
       margin-bottom: 50px;
       font-size: 2rem;
@@ -2266,7 +2301,7 @@ line .line {
    }
 
    .subscribe-form-up {
-      font-size: 0.9rem;
+      font-size: 1rem;
    }
 
    #subscribe {
@@ -2302,7 +2337,10 @@ line .line {
    }
 
    .subscribe-form-up {
-      width: 90%;
+     
+    width: 87%;
+    max-width: 615px;
+
       color: #9197A7;
       display: block;
       margin: auto;
