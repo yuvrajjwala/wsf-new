@@ -157,15 +157,19 @@ body {
 }
 
 #mob-navbar {
-   display: none;
+   /* display: none; */
+   transition-duration: 0.5s;
+   width: 0px;
+   background-color: white;
 }
 
 #x {
    color: rgba(255, 255, 255, 0.864);
    position: absolute;
-   top: 2%;
+   top: 7%;
    font-size: 2rem;
    right: 13%;
+   filter: invert(1);
 }
 
 #woodstock-img {
@@ -654,6 +658,7 @@ line .line {
 .about-image-container{
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
 }
 .about-img-right{
    width: 22vw;
@@ -674,6 +679,10 @@ line .line {
    padding: 20px;
    width: 91%;
   
+}
+#three-line {
+   display: block;
+   filter: invert(1);
 }
 .about-img-right img{
    overflow: hidden;
@@ -974,6 +983,41 @@ line .line {
    font-size: 1rem;
    z-index: 99999999;
    }
+   .about-img-left {
+      width: 100vw;
+      margin: 25px;
+      padding-right: 25px;
+      margin-right: 13px;
+  }
+  .about-img-right {
+   width: 83vw;
+   margin: 20px;
+   padding-left: 0px;
+   margin-top: 60px;
+}
+.media-new{
+   flex-direction: column-reverse;
+}
+.content-inner-content {
+   width: 100%;
+}
+  .people{
+   flex-wrap: wrap;
+  }
+  .people-first-container{
+   flex-wrap: wrap;
+  }
+  .lower-header-main-container {
+   padding: 10px;
+  }
+  .lower-header-main {
+   width: 94vw;
+   opacity: 0.9;
+   font-size: 1rem;
+  }
+  .about-stock-content {
+   width: 103%;
+  }
    .btn-cookie{
       position: relative;
       top:0;
@@ -1573,6 +1617,8 @@ line .line {
    width: 60%;
    max-width: 1200px;
    margin: auto;
+   opacity: 0.7;
+   line-height: 25px;
    margin-top: 40px;
    color: white;
    font-size: small;
@@ -1601,7 +1647,7 @@ line .line {
    font-weight: bold;
    font-size: 11px;
    text-align: center;
-   font-family: 'izmir-medium';
+   font-family: 'izmir';
 }
 
 .footer a {
@@ -1993,7 +2039,7 @@ line .line {
       bottom: 150px;
    }
 
-   #small-vertical img {
+content-inner-content   #small-vertical img {
       height: 340px;
    }
 
@@ -2168,19 +2214,56 @@ line .line {
    height: 550px;
    height: 30vw;
    position: relative;
-   top: 100px;
+   top: 125px;
 }
+.people-container-main img {
+   filter: grayscale(100%);
+   transition-duration: 1s;
+   height: 222px;
+}
+.image-box-new {
+   height: 315px;
+}
+.image-box-newd {
+   margin-left: 46px;
+   margin-top: 40px;
+   height: 315px;
+}
+.people {
+   display: flex;
+   height: 336px;
+}
+
 .inner-content-2 p {
    font-size: 18px;
    color: #9197A7;
 }
 .people-left {
    width: 40vw;
-   padding-left: 4.3vw;
-   padding-top: 100px;
+   padding-left: 7.3vw;
+   padding-top: 30px;
 }
 .image-list-team{
    margin-left: 4.3vw;
+}
+.people-2-left-bg {
+   width: 44.5vw;
+   height: 950px;
+}
+.people-inner-container p {
+   font-size: 18px;
+}
+.people-btn{
+   padding: 0px;
+}
+#invest{
+   font-size: 15px;
+}
+#mangage{
+   font-size: 15px;
+}
+.people-first-section {
+   width: 49vw;
 }
    .plant-container {
       display: flex;
@@ -2341,7 +2424,7 @@ line .line {
       position: relative;
       width: 113vw;
       /* padding-right: 82px; */
-      padding-top: 0px;
+      padding-top: 150px;
       position: relative;
       left: -41px;
    }
@@ -2459,9 +2542,9 @@ line .line {
    }
 
    .ideology-text {
-      width: 90%;
-      color: #ffffffa8;
-      font-size: 12px;
+      width: 100%;
+      color: #000000a8;
+      font-size: 15px;
       font-weight: lighter;
       line-height: 25px;
       font-family: 'izmir1' !important;
@@ -2470,7 +2553,7 @@ line .line {
 
    .bg-woodstock {
       background-image: none;
-      color: white;
+      color: rgb(0, 0, 0);
       font-family: 'izmir-bold' !important;
       position: relative;
       right: 10px;
@@ -3250,6 +3333,89 @@ line .line {
    .subscribe-container {
       margin: 10px;
    }
+   .content-inner-content{
+      width: 96vw;
+   }
+   .content-media-2 {
+      width: 90vw;
+      line-height: 35px;
+      margin-top: 40px;
+      margin-left: 0px;
+  }
+  .img-meida-img-2 {
+   width: 650px;
+   width: 89vw;
+   background-color: #f9fafe;
+   height: 550px;
+   height: 250px;
+  }
+  .img-media{
+   overflow: hidden;
+   background-color: #f9fafe;
+  }
+  .content-media {
+   width: 96vw;
+   line-height: 35px;
+   margin: 10px;
+   margin-top: 40px;
+   /* margin: 13px; */
+}
+.img-meida-img {
+   width: 600px;
+   width: 90vw;
+   display: block;
+   margin: auto;
+   background-color: white;
+   /* height: 70vw; */
+   height: 350px;
+   position: relative;
+   /* top: 100px; */
+}
+.people-inner-container {
+   width: 94%;
+}
+.people-left {
+   width: 95vw;
+}
+.people-left {
+   width: 100vw;
+   overflow: hidden;
+   padding-left: 5.3vw;
+}
+.flower-img img {
+   scale: 0.85;
+   margin-right: 0px;
+   width: 85vw;
+   position: relative;
+   bottom: 13px;
+}
+.ideology-container {
+   width: 100vw;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   height: 680px;
+   margin-top: 0px;
+   padding-top: 0px;
+   margin-bottom: 0px !important;
+   padding-bottom: 50px;
+}
+.ideology-text h3{
+   padding-bottom: 0;
+}
+.media-new {
+   background-color: #f9fafe;
+   width: 100vw;
+   padding-top: 0px;
+}
+.subscribe-now-us {
+
+   margin-top: 5px;
+   font-size: 1.7rem;
+}
+.subscribe-container{
+   padding: 50px;
+}
 }
 
 
