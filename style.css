@@ -2232,6 +2232,7 @@ content-inner-content   #small-vertical img {
 .people {
    display: flex;
    height: 336px;
+   overflow: hidden;
 }
 
 .inner-content-2 p {
@@ -3415,6 +3416,38 @@ content-inner-content   #small-vertical img {
 }
 .subscribe-container{
    padding: 50px;
+}
+.people {
+   display: flex;
+   height: auto;
+}
+.people-2-left-bg{
+   display: none;
+}
+.people-first-section {
+   width: 95vw;
+   /* display: none; */
+}
+.people-first-container {
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+.people-first-section{
+   padding-left: 0px;
+   justify-content: center;
+}
+.image-list-team {
+   display: flex;
+   z-index: 99;
+   position: relative;
+   width: 100vw;
+   padding-top: 0px;
+   width: 90vw;
+   padding-left: 10px;
+}
+.people-first-section{
+   background-color: white;
 }
 }
 
