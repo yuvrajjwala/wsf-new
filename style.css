@@ -3317,9 +3317,16 @@ content-inner-content   #small-vertical img {
    margin: 0px 15px;
    margin-top: 5px;
    font-size: 2.2rem;
-   font-family: 'izmir-medium';
+   font-family: 'izmir-bold';
    margin-bottom: 20px;
 
+}
+.portfolio-new p {
+   width: 90vw;
+   font-size: 15px;
+}
+.about-stock-content p {
+   font-size: 15px;
 }
 .subscribe-news-letter p{
    opacity: 0.7;
@@ -3449,7 +3456,7 @@ content-inner-content   #small-vertical img {
 .subscribe-now-us {
 
    margin-top: 5px;
-   font-size: 1.7rem;
+   font-size: 1.75rem;
 }
 .subscribe-container{
    padding: 50px;
