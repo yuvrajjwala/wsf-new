@@ -823,7 +823,7 @@ line .line {
    padding: 5px;
    position: relative;
    z-index: 99;
-   left: 10px;
+   left: 25px;
    justify-content: space-around;
 }
 .people-inner-container{
