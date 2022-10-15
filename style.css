@@ -939,13 +939,13 @@ line .line {
    transform: scale(1.05);
 }
 .image-box-newd h3{
-   margin-left: 20px;
-    margin-right: 20px;
    margin-bottom: 10px;
    margin-top: 20px;
+   text-align: center;
 }
 .image-box-newd p{
-   margin-left: 25px;
+   margin-left: 0px;
+    text-align: center;
 }
 
 
@@ -3245,6 +3245,11 @@ content-inner-content   #small-vertical img {
 
 #subscribe-popup1 {
    display: none;
+}
+
+.flower-img{
+   height: 275px;
+   overflow: hidden;
 }
 
 .subscribe-poup {
