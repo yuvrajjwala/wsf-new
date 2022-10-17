@@ -186,6 +186,9 @@ body {
 .active {
    color: #106570;
 }
+.show-mob-txt{
+   display: none;
+}
 
 .mob-navbar ul li {
    margin: 25px 5px;
@@ -424,7 +427,7 @@ line .line {
 .below-header-box p {
    color: #9197A7;
     font-weight: lighter;
-    font-size: 1.08rem;
+    font-size: 14px;
     line-height: 32px;
     font-family: 'izmir' !important;
 }
@@ -1000,6 +1003,12 @@ line .line {
    font-size: 1rem;
    z-index: 99999999;
    }
+   .portfolio-new p{
+      line-height: 30px;
+   }
+   .our-portfolio-company {
+      margin: 10px 3vw;
+   }
    #three-line {
       display: block;
       filter: invert(1);
@@ -1034,7 +1043,7 @@ line .line {
   .lower-header-main {
    width: 94vw;
    opacity: 0.9;
-   font-size: 1rem;
+   font-size: 1.3rem;
   }
   .about-stock-content {
    width: 103%;
@@ -1772,6 +1781,9 @@ line .line {
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
+#hide-mob-txt{
+   display: none;
+}
 
 #des-3:hover {
    opacity: 1;
@@ -2397,7 +2409,7 @@ content-inner-content   #small-vertical img {
    #img-logo-new {
       margin-left: 5px;
    }
-
+   
    .nav {
       display: flex;
       width: 100vw;
@@ -2409,7 +2421,38 @@ content-inner-content   #small-vertical img {
       left: 0px;
       margin-right: 290px;
    }
-
+   .people-btn {
+      display: flex;
+      border: 1px solid rgb(76, 76, 76);
+      width: 95%;
+      padding: 5px;
+      position: relative;
+      z-index: 99;
+      left: 0px;
+      justify-content: space-around;
+  }
+  .image-box-newd {
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-top: 40px;
+   height: 233px;
+}
+.people-container-main img {
+   filter: grayscale(100%);
+   transition-duration: 1s;
+   height: 150px;
+}
+.image-box-newd h3{
+   font-size: 15px;
+}
+.image-box-newd p {
+   margin-left: 0px;
+   text-align: center;
+   font-size: 12px;
+}
+.image-list-team {
+   padding-left: 0px !important;
+}
    #workstock-img {
       height: 15px;
    }
@@ -2478,6 +2521,7 @@ content-inner-content   #small-vertical img {
 
    .lower-div-form-header {
       margin-left: 1%;
+      padding-bottom: 90px;
    }
 
    #small-vertical img {
@@ -3371,6 +3415,13 @@ content-inner-content   #small-vertical img {
       border-radius: 15px;
       margin-top: 30vh;
    }
+   .show-mob-txt{
+      display: block;
+      font-size: 32px;
+      margin: 10px;
+      text-align: center;
+      font-family: 'izmir-bold';
+   }
 
    .subscribe-poup1 {
       width: 90vw;
@@ -3448,7 +3499,7 @@ content-inner-content   #small-vertical img {
    margin-top: 0px;
    padding-top: 0px;
    margin-bottom: 0px !important;
-   padding-bottom: 50px;
+   padding-bottom: 0px;
 }
 .ideology-text h3{
    padding-bottom: 0;
