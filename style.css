@@ -826,7 +826,8 @@ line .line {
    padding: 5px;
    position: relative;
    z-index: 99;
-   left: 25px;
+   /* left: 14px; */
+   margin: auto;
    justify-content: space-around;
 }
 .people-inner-container{
@@ -916,7 +917,7 @@ line .line {
    z-index: 99;
    position: relative;
    width: 100vw;
-   margin-left: 12.3vw;
+   margin: auto;
    padding-top: 50px;
    width: 90vw;
    max-width: 1450px;
@@ -3292,7 +3293,6 @@ content-inner-content   #small-vertical img {
 }
 
 .flower-img{
-   height: 275px;
    overflow: hidden;
 }
 
