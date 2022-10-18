@@ -393,7 +393,7 @@ line .line {
    line-height: 60px;
    text-align: center;
    font-weight: 600;
-   color: #106570;
+   color: #000000;
 }
 
 .below-header-four-box {
@@ -3411,7 +3411,7 @@ content-inner-content   #small-vertical img {
 }
 .portfolio-new p {
    width: 90vw;
-   font-size: 15px;
+   font-size: 20px;
 }
 .about-stock-content p {
    font-size: 15px;
