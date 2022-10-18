@@ -393,6 +393,7 @@ line .line {
    line-height: 60px;
    text-align: center;
    font-weight: 600;
+   color: #106570;
 }
 
 .below-header-four-box {
@@ -2474,6 +2475,7 @@ content-inner-content   #small-vertical img {
 .image-box-newd h3{
    font-size: 15px;
 }
+
 .image-box-newd p {
    margin-left: 0px;
    text-align: left;
@@ -3241,7 +3243,7 @@ content-inner-content   #small-vertical img {
       padding: 15px;
       margin-top: 30px;
       margin-bottom: 20px;
-      width: 45%;
+      width: 65%;
       position: relative;
       left: 20px;
    }
