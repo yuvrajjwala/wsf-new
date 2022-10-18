@@ -968,7 +968,7 @@ line .line {
 .image-box-newd h3{
    margin-bottom: 6px;
    margin-top: 20px;
-   text-align: center;
+   text-align: left;
 }
 .image-box-newd p{
    margin-left: 0px;
@@ -1300,6 +1300,8 @@ line .line {
 .portfolio-heading-names p {
    font-family: 'izmir' !important;
    cursor: pointer;
+   font-weight: bold;
+   font-size: 1.2rem;
    transition-duration: 0.4s;
 }
 .portfolio-heading-names p:hover{
@@ -1988,8 +1990,7 @@ line .line {
 #companyName4,
 #companyName3,
 #companyName2,
-#companyName1,
-#companyName01,
+#companyName0,
 #companyName05,
 #companyName04,
 #companyName03,
@@ -2288,7 +2289,7 @@ content-inner-content   #small-vertical img {
    margin-left: 31px;
    margin-right: 31px;
    margin-top: 40px;
-   height: 330px;
+   height: 320px;
 }
 .people {
    display: flex;
@@ -2475,7 +2476,7 @@ content-inner-content   #small-vertical img {
 }
 .image-box-newd p {
    margin-left: 0px;
-   text-align: center;
+   text-align: left;
    font-size: 12px;
 }
 .image-list-team {
