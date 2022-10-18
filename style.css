@@ -361,14 +361,14 @@ line .line {
 }
 
 #subscribe-button {
-   padding: 23px;
-    position: relative;
-    right: 67px;
     background-color: #106570;
     border: none;
     font-family: 'izmir1' !important;
-    width: 60px;
+    width: 61px;
     color: rgb(255, 255, 255);
+    padding: 24px;
+    position: relative;
+    right: 67px;
    
 }
 #subscribe::placeholder{
@@ -822,13 +822,25 @@ line .line {
 .people-btn{
    display: flex;
    border: 1px solid rgb(76, 76, 76) ;
-   width: 95%;
+   width: 85%;
    padding: 5px;
    position: relative;
-   z-index: 99;
+   z-index: 999;
    /* left: 14px; */
+   
+
    margin: auto;
+   margin-top: 30px;
    justify-content: space-around;
+}
+.linkedin-people-img-new img{
+   width: 30px !important;
+   height: 30px !important;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   margin-top: 25px;
+   
 }
 .people-inner-container{
    width: 50%;
@@ -838,7 +850,8 @@ line .line {
     margin-bottom: 0px;
 }
 .people-2-section{
-   background-color: #f9fafe;
+   background-color: #ffffff;
+   position: relative;
 }
 #green-active-btn{
    height: 86%;
@@ -850,6 +863,15 @@ line .line {
     transition-duration: 0.5s;
     left: 5px;
     background-color: #106570;
+}
+.people-new-right-shadow{
+   width: 50vw;
+   height: 500px;
+   background-color: #F9FAFE;
+   position: absolute;
+   right: 0;
+   height: 400px;
+   z-index: 99;
 }
 #mangage{
    color: white;
@@ -911,6 +933,7 @@ line .line {
    height: 1150px;
    background-color: #F9FAFE;
    position: absolute;
+   bottom: 0px;
 }
 .image-list-team{
    display: flex;
@@ -928,7 +951,7 @@ line .line {
    margin-left: 31px;
     margin-right: 31px;
    margin-top: 40px;
-   height: 400px;
+   height: 410px;
    margin-bottom: 15px;
    box-shadow: 2px 2px 10px 1px rgba(240, 240, 240, 0.554);
    background-color: rgb(255, 255, 255);
@@ -943,13 +966,14 @@ line .line {
    transform: scale(1.05);
 }
 .image-box-newd h3{
-   margin-bottom: 10px;
+   margin-bottom: 6px;
    margin-top: 20px;
    text-align: center;
 }
 .image-box-newd p{
    margin-left: 0px;
-    text-align: center;
+    margin-bottom: 3px;
+    text-align: left;
 }
 
 
@@ -964,6 +988,9 @@ line .line {
    margin-bottom: 50px;
 }
 
+.content-people-box{
+   display: flex;justify-content: space-between;padding:0px 5%;
+}
 .plant-information-information p {
    text-align: justify;
    margin: 18px 5px;
@@ -1782,9 +1809,7 @@ line .line {
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
-#hide-mob-txt{
-   display: none;
-}
+
 
 #des-3:hover {
    opacity: 1;
@@ -2263,7 +2288,7 @@ content-inner-content   #small-vertical img {
    margin-left: 31px;
    margin-right: 31px;
    margin-top: 40px;
-   height: 315px;
+   height: 330px;
 }
 .people {
    display: flex;
@@ -2410,7 +2435,9 @@ content-inner-content   #small-vertical img {
    #img-logo-new {
       margin-left: 5px;
    }
-   
+   #hide-mob-txt{
+      display: none;
+   }
    .nav {
       display: flex;
       width: 100vw;
@@ -2428,7 +2455,7 @@ content-inner-content   #small-vertical img {
       width: 95%;
       padding: 5px;
       position: relative;
-      z-index: 99;
+      z-index: 999;
       left: 0px;
       justify-content: space-around;
   }
@@ -2436,7 +2463,7 @@ content-inner-content   #small-vertical img {
    margin-left: 5px;
    margin-right: 5px;
    margin-top: 40px;
-   height: 233px;
+   height: 245px;
 }
 .people-container-main img {
    filter: grayscale(100%);
