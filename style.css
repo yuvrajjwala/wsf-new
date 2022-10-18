@@ -946,6 +946,7 @@ line .line {
    width: 90vw;
    max-width: 1450px;
    flex-wrap: wrap;
+   overflow: hidden;
    justify-content: center;
 }
 .image-box-newd{
