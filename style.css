@@ -1,25 +1,25 @@
 @font-face {
    font-family: 'izmir';
-   src: url(./fonts/Gilroy/Gilroy-Regular.ttf);
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Regular.otf);
 }
 
 @font-face {
    font-family: 'izmir-bold';
-   src: url(./fonts/Gilroy/Gilroy-Bold.ttf);
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Bold.otf);
 }
 
 @font-face {
    font-family: 'izmir1';
-   src: url(./fonts/Gilroy/Gilroy-Light.ttf);
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Thin.otf);
 }
 
 @font-face {
    font-family: 'izmir-medium';
-   src: url(./fonts/Gilroy/Gilroy-Medium.ttf);
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Medium.otf);
 }
 @font-face {
    font-family: 'izmir-semi-bold';
-   src: url(./fonts/Gilroy/Gilroy-SemiBold.ttf);
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Semibold.otf);
 }
 
 
@@ -250,7 +250,7 @@ body {
    position: relative;
    bottom: 100px;
    z-index: 0;
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(251 251 255);;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
@@ -2091,10 +2091,10 @@ line .line {
    font-size: 20px;
 }
   .lower-header-main {
-   width: 60vw;
+   width: 70vw;
    opacity: 0.9;
    font-size: 1.7rem;
-   max-width: 980px;
+   max-width: 1020px;
    display: block;
    margin: auto;
    line-height: 61px;
