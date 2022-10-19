@@ -284,7 +284,7 @@ body {
 }
 
 .right-header-container img {
-   width: 45%;
+   width: 47%;
     position: absolute;
     right: 7vw;
     bottom: 215px;
@@ -1302,19 +1302,30 @@ line .line {
    margin: 50px 0px;
    justify-content: space-evenly;
 }
-
+.portfolio-heading-names span{
+   font-family: 'izmir1';
+   font-size: 1rem;
+   padding-top: 20px;
+}
 .portfolio-heading-names p {
    font-family: 'izmir' !important;
    cursor: pointer;
    font-weight: bold;
    font-size: 1.2rem;
+   text-align: center;
    transition-duration: 0.4s;
+   padding: 20px 40px;
+   background-color: #ffffff;
+   color: rgb(0, 0, 0);
 }
 .portfolio-heading-names p:hover{
   color: green;
   transition-duration: 0.4s;
- 
 
+}
+#companyName001{
+   background-color: #106570;
+   color: white;
 }
 .company-name {
    display: flex;
@@ -2398,12 +2409,13 @@ content-inner-content   #small-vertical img {
       font-family: 'izmir-medium' !important;
       margin-left: 8%;
       margin-bottom: 50px;
-      font-size: 2rem;
+      font-size: 2.5rem;
    }
 
    #woodstock {
       font-family: 'izmir-bold';
-      font-size: 2rem;
+      font-size: 2.5rem;
+
    }
 
    #big-portfolio-img img {
@@ -2840,6 +2852,7 @@ content-inner-content   #small-vertical img {
       /* border: 0.5px solid rgb(167, 167, 167); */
       font-size: 12px;
       margin: 10px;
+      text-align: center !important;
       padding: 5px;
    }
 

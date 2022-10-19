@@ -45,7 +45,7 @@
                   <div id="about-div" class="about-div">
 
 
-                     <div class="break-line"></div>
+                    
                      <p id="about-p" onclick="ourOrigin(1)">Origin</p>
                      <div class="break-line"></div>
                      <p id="about-p"><a style="text-decoration: none;"
@@ -170,9 +170,9 @@
          else if (a == 2)
             element = 'our-journey';
          else if (a == 3)
-            element = 'our-portfolio';
+            element = 'portfolio-new';
          else if (a == 4)
-            element = 'our-team';
+            element = 'team-new';
          document.getElementById(element).scrollIntoView(true);
       }
 
@@ -348,8 +348,8 @@
 
 
    <!-- Portfolio -->
-   <div data-aos="fade-up" data-aos-duration="1000" style="background-color: #F9FAFE;">
-      <div class="portfolio-new">
+   <div id="portfolio-new" data-aos="fade-up" data-aos-duration="1000" style="background-color: #F9FAFE;">
+      <div  class="portfolio-new">
          <div data-aos="fade-up" data-aos-duration="1000">Portfolio</div>
          <p>If you are an inspired team, have grit and are hustling your way through building technologies, tools,
             infrastructure or applications that will define the future of the internet, and if you are looking for a
@@ -363,13 +363,10 @@
       <div  class="our-portfolio-company">
 
          <div class="portfolio-heading-names">
-            <p onclick="showcompany(1)">CONVERGENCE-  Infrastructure / Web3.0 <img id="companyName01" class="company-border"
-                  src="./assets/Images/Rectangle 1421.png"></img> </p>
+            <p id="companyName001" onclick="showcompany(1)">CONVERGENCE<br>  <span>Infrastructure / Web3.0</span> </p>
             
-                  <p onclick="showcompany(4)">FINANCIALISATION - DeFi <img id="companyName04" class="company-border"
-                     src="./assets/Images/Rectangle 1421.png"></img></p>
-            <p onclick="showcompany(3)">VIRTUALISATION - NFTs, Metaverse & Gaming<img id="companyName03" class="company-border"
-                  src="./assets/Images/Rectangle 1421.png"></img></p>
+                  <p id="companyName004" onclick="showcompany(4)">FINANCIALISATION <br> <span>DeFi</span> </p>
+            <p id="companyName003" onclick="showcompany(3)">VIRTUALISATION <br> <span>NFTs, Metaverse & Gaming</span></p>
            
           
                   
@@ -1545,12 +1542,14 @@
                  
                   if (i != a) {
                      document.getElementById(`companyName${i}`).style.display = "none";
-                     document.getElementById(`companyName0${i}`).style.display = "none";
+                     document.getElementById(`companyName00${i}`).style.background = "white";
+                     document.getElementById(`companyName00${i}`).style.color = "black";
                   }
 
                   else {
                      document.getElementById(`companyName${i}`).style.display = "flex";
-                     document.getElementById(`companyName0${i}`).style.display = "block";
+                     document.getElementById(`companyName00${i}`).style.background = '#106570';
+                     document.getElementById(`companyName00${i}`).style.color = "white";
                   }
                }
                }
@@ -1610,7 +1609,7 @@
 
 
    <!-- TEAM SECTION -->
-   <div data-aos="fade-up" data-aos-duration="1000" class="portfolio-new">
+   <div id="team-new" data-aos="fade-up" data-aos-duration="1000" class="portfolio-new">
       <div>Team</div>
       <p style="max-width: 1039px;">The collective experience of the Woodstock team spans sectors as diverse as start-ups, conventional financial
          service and technology development businesses. Together we have built companies grounds up, achieved consumer
