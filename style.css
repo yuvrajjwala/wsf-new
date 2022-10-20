@@ -2849,13 +2849,18 @@ content-inner-content   #small-vertical img {
    }
 
    .portfolio-heading-names p {
-      font-family: 'izmir1' !important;
+      font-family: 'izmir' !important;
       /* border: 0.5px solid rgb(167, 167, 167); */
-      font-size: 12px;
+      font-size: 16px;
       margin: 10px;
       text-align: center !important;
-      padding: 5px;
+      padding: 8px 20px;
    }
+   .portfolio-heading-names span {
+      font-family: 'izmir1';
+      font-size: 12px;
+      padding-top: 20px;
+  }
 
    .portfolio-heading-names {
       display: flex;
@@ -3483,6 +3488,9 @@ content-inner-content   #small-vertical img {
 
    .subcribe-now-us-btn button {
       margin-top: 15px;
+   }
+   .font-bold{
+      height: 40px;
    }
 
    .subscribe-container {
