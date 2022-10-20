@@ -1043,6 +1043,9 @@ line .line {
    .our-portfolio-company {
       margin: 10px 3vw;
    }
+   .font-bold{
+      height: 40px !important;
+   }
    #three-line {
       display: block;
       filter: invert(1);
@@ -2013,6 +2016,10 @@ line .line {
 #companyName03,
 #companyName02 {
    display: none;
+   padding-bottom: 50px;
+}
+#companyName01,#companyName1{
+   padding-bottom: 50px;
 }
 
 .company-border {
@@ -2452,7 +2459,10 @@ content-inner-content   #small-vertical img {
 
 @media screen and (max-width: 900px) {
    #img-logo-new {
-      margin-left: 5px;
+      margin-left: 15px;
+    /* margin-top: -5px; */
+    position: relative;
+    bottom: 3px;
    }
    #hide-mob-txt{
       display: none;
@@ -2468,6 +2478,13 @@ content-inner-content   #small-vertical img {
       left: 0px;
       margin-right: 290px;
    }
+   #companyName001,#companyName004,#companyName003{
+      width: 80vw;
+      max-width: 500px;
+   }
+   #companyName003,#companyName004{
+      border: 1px solid;
+   }
    .people-btn {
       display: flex;
       border: 1px solid rgb(76, 76, 76);
@@ -2478,6 +2495,14 @@ content-inner-content   #small-vertical img {
       left: 0px;
       justify-content: space-around;
   }
+  .top-nav {
+   text-align: left;
+   padding: 10px 10px;
+   padding-bottom: 18px;
+   background-color: #000000;
+   color: white;
+   /* padding-right: 40px; */
+}
   .t111px_class{
    width: 110px;
   }
