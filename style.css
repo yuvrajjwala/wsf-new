@@ -1928,6 +1928,7 @@ line .line {
    margin-bottom: 14px;
     overflow: hidden;
     color: black;
+    height: 40px !important;
 }
 
 #color-white {
@@ -3645,3 +3646,17 @@ content-inner-content   #small-vertical img {
 
 
 
+
+
+
+
+@media screen and(min-width:1600px){
+   .right-header-container img {
+      width: 50%;
+      position: absolute;
+      right: 7vw;
+      bottom: 250px !important; 
+  }
+
+
+}
