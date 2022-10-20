@@ -2543,6 +2543,7 @@ content-inner-content   #small-vertical img {
    .left-header-container {
       padding-top: 0vh;
       width: 100%;
+      overflow: hidden;
    }
 
    .right-header-container {
