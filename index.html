@@ -1628,18 +1628,22 @@
                      const name1 = ["Pranav Sharma","Himanshu Yadav","Prashanth","Adam Mastrelli","Trrishant Sidhwaani","Rajesh Pathania","Shailesh Puthran","Indrajeet Sirsikar","Angelika Hajela"];
                      const desg1 = ["General Partner","General Partner","Partner","Partner (US)","Partner","General Counsel","Partner","Partner","Talent Director"];
                      const name2 = ["Abhinav Pathak","Ankur Choudhary","Neel Daftary","Kratik Lodha","Srikanth Yeleswarapu","Divesh Agrawal","Vokkant Thakkar","Jaskirat Singh","Sarthak Dwivedi"];
-                     const desg2 = ["Research Partner","Research Partner","Research Lead","Research Lead","Head of Technology","Head of Investment Communication","Research Associate","Product and Ecosystem","Research Associate"]
+                     const desg2 = ["Research Partner","Research Partner","Research Lead","Research Lead","Head of Technology","Head of Investment Communication","Research Associate","Product and Ecosystem","Research Associate"];
+                     const lnk1 = ["https://www.linkedin.com/in/pranav-sharma-7a05b13/","https://www.linkedin.com/in/hyws/","https://www.linkedin.com/in/prashanth-swaminathan-a345934/","https://www.linkedin.com/in/adammastrelli/","https://www.linkedin.com/in/trishant-sidhwani-81620326/","https://www.linkedin.com/in/rajeshpathania/"," ","https://www.linkedin.com/in/indrajeet-sirsikar-a6616813/","https://www.linkedin.com/in/angelika-hajela/"];
+                     const lnk2 = ["https://www.linkedin.com/in/iamabhinavpathak/","https://www.linkedin.com/in/ankurc07/","https://www.linkedin.com/in/neeldaftary/","https://www.linkedin.com/in/kratik-lodha-576987149/","https://www.linkedin.com/in/srikanth-yeleswarapu/","https://www.linkedin.com/in/divesh-agrawal/","https://www.linkedin.com/in/vokkant-thakkar-5055b114a/","https://www.linkedin.com/in/jaskirat21/","https://www.linkedin.com/in/sarthakdwivedi/"];
                      function toggleBtn(btn) {
                         if (btn === 'invest') {
                            document.getElementById('green-active-btn').style.left = '49%';
                            document.getElementById('invest').style.color = 'white';
                            document.getElementById('mangage').style.color = '#5d5d5d';
+
                            setImg(1);
                         }
                         else {
                            document.getElementById('green-active-btn').style.left = '5px';
                            document.getElementById('invest').style.color = '#5d5d5d';
                            document.getElementById('mangage').style.color = 'white';
+                           
                            setImg(2);
                         }
                      }
@@ -1647,14 +1651,16 @@
                         if (array == 1) {
                            for (let i = 1; i < 10; i++) {
                               console.log(i)
-                              console.log("./assets/Team/" + pic1[i]);
+                              console.log("./assets/Team/" + pic1[i-1]);
                               document.getElementById("p" + i).src = "./assets/Team/" + pic2[i - 1];
                               document.getElementById("n"+i).innerHTML=name2[i-1];
                               document.getElementById("g"+i).innerHTML=desg2[i-1];
+                              document.getElementById('ln'+i).setAttribute("href",lnk2[i-1]);
                            }
                         }
                         else {
                            for (let i = 1; i < 10; i++) {
+                              document.getElementById('ln'+i).setAttribute("href",lnk1[i]);
                               console.log('working');
                               document.getElementById("p" + i).src = "./assets/Team/" + pic1[i - 1];
                               document.getElementById("n"+i).innerHTML=name1[i-1];
@@ -1684,7 +1690,7 @@
                    <p id="g1">General Partner</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln1" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln1" href="https://www.linkedin.com/in/pranav-sharma-7a05b13/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
                
@@ -1700,7 +1706,7 @@
                    <p id="g2">General Partner</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln2" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln2" href="https://www.linkedin.com/in/hyws/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 
@@ -1713,7 +1719,8 @@
                    <p id="g3">Partner</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln3" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln3" href="https://www.linkedin.com/in/prashanth-swaminathan-a345934/
+                     "><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 
@@ -1726,7 +1733,7 @@
                    <p id="g4">Partner (US)</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln4" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln4" href="https://www.linkedin.com/in/adammastrelli/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 
@@ -1739,7 +1746,7 @@
                    <p id="g5">Partner</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln5" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln5" href="https://www.linkedin.com/in/trishant-sidhwani-81620326/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 
@@ -1752,7 +1759,7 @@
                    <p id="g6">General Counsel</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln6" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln6" href="https://www.linkedin.com/in/rajeshpathania/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 
@@ -1779,7 +1786,7 @@
                    <p id="g8">Partner</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln8" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln8" href="https://www.linkedin.com/in/indrajeet-sirsikar-a6616813/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 
@@ -1792,7 +1799,7 @@
                    <p id="g9">Talent Director</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln9" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln9" href="https://www.linkedin.com/in/angelika-hajela/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 

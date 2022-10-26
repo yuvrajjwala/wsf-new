@@ -2141,6 +2141,7 @@ content-inner-content   #small-vertical img {
       color: black;
       font-weight: bold;
       padding-bottom: 5px;
+      height: 40px;
    }
 
    .ideology-container {
