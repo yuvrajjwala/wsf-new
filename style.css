@@ -386,7 +386,9 @@ line .line {
    margin: 5px;
    width: 25px !important;
 }
-
+#companyName003,#companyName004{
+   border: 1px solid;
+}
 .below-header-container-heading {
    font-family: 'izmir-bold', sans-serif;
    font-size: 2rem;
