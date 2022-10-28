@@ -251,7 +251,7 @@ body {
    position: relative;
    bottom: 100px;
    z-index: 0;
-   background-color: rgb(255, 255, 255);;
+   background: linear-gradient(184deg, rgba(254,254,254,1) 0%, rgba(252,252,252,1) 100%);
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
