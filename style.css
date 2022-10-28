@@ -391,7 +391,7 @@ line .line {
    border: 1px solid;
 }
 .below-header-container-heading {
-   font-family: 'izmir-bold', sans-serif;
+   font-family: 'poppins', sans-serif !important;
    font-size: 2rem;
    line-height: 50px;
    text-align: center;
@@ -656,7 +656,8 @@ line .line {
 }
 .about-woodstock{
    text-align: center;
-   font-family: 'izmir-bold';
+   font-family: 'poppins' !important;
+   font-weight: bold !important;
    font-size: 2rem;
    margin-bottom: 40px;
 }
@@ -731,8 +732,9 @@ line .line {
    
 }
 .portfolio-new div{
-   font-family: 'izmir-bold';
+   font-family: 'poppins' !important;
    font-size: 1.7rem;
+   font-weight: bold !important;
    margin-bottom: 40px;
 }
 .portfolio-new p{
@@ -1904,7 +1906,7 @@ line .line {
 .ideology-text h3 {
    font-size: 40px;
    overflow: hidden;
-   font-family: 'izmir-bold';
+   font-family: 'poppins';
    font-weight: bold;
    margin-bottom: 40px;
 }
@@ -1926,7 +1928,7 @@ line .line {
 }
 
 #font-bold {
-   font-family: 'izmir-bold' !important;
+   font-family: 'poppins' !important;
    font-size: 1.8rem !important;
    margin-bottom: 14px;
     overflow: hidden;
@@ -2139,7 +2141,7 @@ content-inner-content   #small-vertical img {
    .ideology-text h3 {
       font-size: 35px;
       margin-bottom: 40px;
-      font-family: 'izmir-bold';
+      font-family: 'poppins' !important;
       overflow: hidden;
       color: black;
       font-weight: bold;
@@ -2412,7 +2414,7 @@ content-inner-content   #small-vertical img {
     margin-bottom: 40px;
     font-weight: bold;
     color: black;
-    font-family: 'izmir-bold';
+    font-family: 'poppins' !important;
    }
 
    .woodstock-container {
@@ -2873,7 +2875,7 @@ content-inner-content   #small-vertical img {
       font-size: 22px;
       overflow: hidden;
       font-weight: bold;
-      font-family: 'izmir-bold';
+      font-family: 'poppins' !important;
       padding-bottom: 20px;
    }
 
@@ -3454,7 +3456,8 @@ content-inner-content   #small-vertical img {
    margin: 0px 15px;
    margin-top: 5px;
    font-size: 2.2rem;
-   font-family: 'izmir-bold';
+   font-family: 'poppins' !important;
+   font-weight: bold !important;
    margin-bottom: 20px;
 
 }
