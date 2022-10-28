@@ -251,7 +251,7 @@ body {
    position: relative;
    bottom: 100px;
    z-index: 0;
-   background-color: rgb(251 251 255);;
+   background-color: rgb(255, 255, 255);;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
