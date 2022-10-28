@@ -62,7 +62,7 @@ body {
 .cookies{
    position: fixed;
    bottom: 0;
-   background-color: #106570;
+   background-color: #000000;
    color: white;
    width: 100vw;
    padding-left: 12%;
@@ -97,7 +97,7 @@ body {
     max-width: 980px;
     display: block;
     margin: auto;
-    line-height: 40px;
+    line-height: 35px;
 }
 /* NAVBAR */
 .nav {
@@ -114,6 +114,7 @@ body {
 
 #img-logo-new {
    margin-left: 11vw;
+   cursor: pointer;
 }
 
 .nav-div {
@@ -256,8 +257,8 @@ body {
    justify-content: space-evenly;
 }
 .accept-btn{
-   background-color: #0f9257;
-   color: white;
+   background-color: #ffffff;
+   color: rgb(0, 0, 0);
    padding: 4px 5px;
    border: none;
 }
@@ -392,7 +393,7 @@ line .line {
 .below-header-container-heading {
    font-family: 'izmir-bold', sans-serif;
    font-size: 2rem;
-   line-height: 60px;
+   line-height: 50px;
    text-align: center;
    font-weight: 600;
    color: #000000;
@@ -415,7 +416,7 @@ line .line {
    margin: 20px;
    text-align: center;
    border: 0.1px solid #106570;
-   border-radius: 25px;
+   border-radius: 0px;
    padding: 25px;
    padding-top: 52px;
    transition-duration: 0.5s;
@@ -682,7 +683,7 @@ line .line {
 }
 .about-img-left img{
    overflow: hidden;
-   border-radius: 20px;
+   border-radius: 0px;
    border: 0.5px solid rgb(110, 110, 110);
    padding: 20px;
    width: 91%;
@@ -694,7 +695,7 @@ line .line {
 }
 .about-img-right img{
    overflow: hidden;
-   border-radius: 20px;
+   border-radius: 0px;
    border: 0.5px solid rgb(110, 110, 110);
    opacity: 0.8;
    width: 99%;
@@ -945,7 +946,7 @@ line .line {
    width: 100vw;
    margin: auto;
    padding-top: 50px;
-   width: 90vw;
+   width: 68vw;
    max-width: 1450px;
    flex-wrap: wrap;
    overflow: hidden;
@@ -967,7 +968,7 @@ line .line {
   
 }
 .new-img{
-   height: 320px;
+   height: 280px;
 }
 .people-container-main img:hover{
    filter: grayscale(0%);
@@ -1701,6 +1702,7 @@ line .line {
    max-width: 1200px;
    margin: auto;
    opacity: 0.7;
+   letter-spacing: 1px;
    line-height: 25px;
    margin-top: 40px;
    color: white;
@@ -1768,8 +1770,7 @@ line .line {
    color: rgba(0, 0, 0, 0.8);
    opacity: 0.8;
    font-size: 16px;
-   font-weight: lighter;
-   font-family: 'izmir1' !important;
+   font-family: 'izmir' !important;
    width: 39vw;
 }
 
@@ -2308,7 +2309,7 @@ content-inner-content   #small-vertical img {
 .people-container-main img {
    filter: grayscale(100%);
    transition-duration: 1s;
-   height: 222px;
+   height: 190px;
 }
 .image-box-new {
    height: 315px;
@@ -2339,7 +2340,8 @@ content-inner-content   #small-vertical img {
    padding: 20px;
 }
 .image-list-team{
-   margin-left: 4.3vw;
+   width: 70vw;
+   margin: auto;
 }
 .people-2-left-bg {
    width: 44.5vw;
