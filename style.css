@@ -327,6 +327,9 @@ body {
    font-size: 34px;
    
 }
+#p11{
+   display: none;
+}
 #plant-information-3th{
    overflow: hidden;
 }
