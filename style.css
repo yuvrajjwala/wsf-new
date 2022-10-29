@@ -467,7 +467,8 @@ line .line {
 
 .a-text:hover {
    transform: scale(1.2);
-   color: rgb(220, 220, 220);
+   color: #6f3119 !important;
+   font-weight: bold;
 
 
 }
@@ -948,7 +949,7 @@ line .line {
    width: 100vw;
    margin: auto;
    padding-top: 50px;
-   width: 68vw;
+   width: 82vw;
    max-width: 1450px;
    flex-wrap: wrap;
    overflow: hidden;
@@ -1175,7 +1176,7 @@ line .line {
    position: relative;
    border-left: 6px solid #85200C;
    left: -13px;
-   transition-duration: 0.3s;
+   transition-duration: 0s;
    /* margin-right: -53px; */
 
    margin: 1px;
@@ -2342,7 +2343,7 @@ content-inner-content   #small-vertical img {
    padding: 20px;
 }
 .image-list-team{
-   width: 70vw;
+   width: 95vw;
    margin: auto;
 }
 .people-2-left-bg {
@@ -3665,4 +3666,18 @@ content-inner-content   #small-vertical img {
   }
 
 
+}
+
+@media screen and (max-width: 1270px){
+   .image-list-team {
+      width: 80vw;
+      margin: auto;
+}
+}
+
+@media screen and (max-width: 995px){
+   .image-list-team {
+      width: 100vw;
+      margin: auto;
+}
 }
