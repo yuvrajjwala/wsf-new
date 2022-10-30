@@ -318,7 +318,8 @@ body {
 .subscribe-form-up {
    width: 75%;
    color: #9197A7;
-   font-family: 'izmir-semi-bold', sans-serif;
+   font-family: 'poppins', sans-serif !important;
+   font-weight: 600;
    font-size: 1.2rem;
    line-height: 30px;
    margin-left: 20px;
@@ -465,6 +466,7 @@ line .line {
    text-decoration: none;
    color: rgb(0, 0, 0);
    cursor: pointer;
+   font-family: 'izmir-medium';
 
 }
 
@@ -953,7 +955,7 @@ line .line {
    margin: auto;
    padding-top: 50px;
    width: 82vw;
-   max-width: 1450px;
+   max-width: 1355px;
    flex-wrap: wrap;
    overflow: hidden;
    justify-content: center;
@@ -1005,6 +1007,7 @@ line .line {
 
 .content-people-box{
    display: flex;justify-content: space-between;padding:0px 5%;
+   padding-bottom: 15px;
 }
 .plant-information-information p {
    text-align: justify;
