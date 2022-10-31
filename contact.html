@@ -25,119 +25,158 @@
 
 
 
-    <!-- NAVBAR -->
-    <div  class="nav-div">
+   <!-- TOPNAVBAR -->
+   <!-- <div id="top-nav" class="top-nav">
+      <span class="new-btn">NEW</span> <span style="opacity: 0.7;">Read our Investment Thesis</span> <a
+         href="https://studiorawcanvas.com/fund-thesis/" style="color:white">here</a>
+      <span onclick="hideTopNav()" id="cut-nav"><img src="./assets/Images/x.svg"></span>
+   </div> -->
+   <div id="btn-cookies" class="cookies">
+      Woodstockfund.com uses cookies to ensure you get the best experience on our website <a style="color: white;"
+         href="LearnMore">Learn More</a>
+      <div onclick="controlcoo()" class="btn-cookie"><button class="accept-btn">I Accept</button></div>
+   </div>
+   <script>
+      function hideTopNav() {
+         document.getElementById('top-nav').style.display = "none";
+      }
+   </script>
+
+   <!-- NAVBAR -->
+   <div class="nav-div">
       <nav class="nav">
-         <img id="img-logo-new" onclick="window.location='/'" src="./assets/Logos/Mask Group 9.png"></img>
+         <img id="img-logo-new" onclick="window.location='/'" src="./assets/Logos/Mask Group 9.svg"></img>
          <div class="logo-div">
-            <!-- <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img> -->
-            <!-- <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img> -->
             <ul class="nav-ul">
-               <li style="color: black;" onclick="window.location.href='/'"  id="about-main">About <span></span>
-                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
-                  <!-- <div id="about-div" class="about-div"> -->
-                 
-                        <!-- <p id="about-p" style="position:relative" onclick="ourOrigin(1)">  Our Origins -->
-                        
-                           <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img> -->
-                        <!-- </p> -->
+               <li><a class="a-text">Thesis</a></li>
+               <li  onclick="window.location='/'" id="about-main">About <span></span>
                   
-                     <!-- <div class="break-line"></div> -->
-                     <!-- <p id="about-p" onclick="ourOrigin(2)">Journey</p><div class="break-line"></div> -->
-                        <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>  -->
-                     <!-- <p id="about-p" onclick="ourOrigin(3)">Portfolio</p><div class="break-line"></div> -->
-                        <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
-                     <!-- <p id="about-p" onclick="ourOrigin(4)">Team</p> -->
-                        <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
-                  <!-- </div> -->
+                  
                </li>
-               <li style="color: black;" class="blog-main" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+               <li class="blog-main" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png">
+                  <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="blog-div" class="about-div">
-                     <p id="about-p"><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis </a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p><div class="break-line"></div>
-                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> <div class="break-line"></div>
-                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
+                     <p id="about-p"><a style="text-decoration: none;" href="https://studiorawcanvas.com/blog/#thesis"
+                           target="_blank">Thesis </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;"
+                           href="https://studiorawcanvas.com/blog/#article1" target="_blank">Article</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://studiorawcanvas.com/blog"
+                           target="_blank">Newsletter</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
                      <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
                   </div>
                   <script>
-                     function showBlog(){
-                        document.getElementById('blog-div').style.display='block';
+                     function showBlog() {
+                        document.getElementById('blog-div').style.display = 'block';
                      }
-                     function hideBlog(){
-                        document.getElementById('blog-div').style.display='none';
+                     function hideBlog() {
+                        document.getElementById('blog-div').style.display = 'none';
+                     }
+                     window.onload(checkcook());
+                     function checkcook() {
+                        let cookie = localStorage.getItem('accept');
+                        if (cookie == 'yes') {
+                           document.getElementById('btn-cookies').style.display = 'none';
+                        }
+                        console.log(cookie);
+                     }
+                     function controlcoo() {
+                        localStorage.setItem('accept', 'yes');
+                        document.getElementById('btn-cookies').style.display = 'none';
+
                      }
                   </script>
                </li>
-               <li style="color: black;" class="blog-main" id="about-main">Career<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+               <li class="blog-main" id="about-main">Career<img id="downarrow" src="./assets/Designs/down-arrow.png">
+                  <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="blog-div" class="about-div">
-                     <p id="about-p"><a style="text-decoration: none;" href="Career" target="_blank">Woodstock opening </a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p><div class="break-line"></div>
-                     <p id="about-p"> <a style="text-decoration: none;" href="https://jobs.workstockfund.com/companies" target="_blank">Portfolio Openings</a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
-                     
+                     <p id="about-p"><a style="text-decoration: none;" href="Career" target="_blank">Woodstock Openings
+                        </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://jobs.woodstockfund.com/companies"
+                           target="_blank">Portfolio
+                           Openings</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+
                      <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
                   </div>
                   <script>
-                     function showBlog(){
-                        document.getElementById('blog-div').style.display='block';
+                     function showBlog() {
+                        document.getElementById('blog-div').style.display = 'block';
                      }
-                     function hideBlog(){
-                        document.getElementById('blog-div').style.display='none';
+                     function hideBlog() {
+                        document.getElementById('blog-div').style.display = 'none';
                      }
                   </script>
                </li>
-               <!-- <li><a class="a-text" href="/Career">Career</a>
-                  <img style="margin:auto;display: block;width: 35px;height: 2px;position: relative;right: 10px;"
-                     src="./assets/Images/Rectangle 1421.png"></img>
-               </li> -->
-               <li><a style="color: black;" class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
+
+
+               <li><a class="a-text" onclick="window.location.href='index/#portfolio-new'">Portfolio</a></li>
+               
             </ul>
 
             <div class="nav-contact">
-               <button style="cursor: pointer;color: white;background-color: #106570"  onclick="window.location='/contact'">Contact Us</button>
-               
+               <button style="cursor: pointer;color: white;background-color: #106570"
+                  onclick="window.location='contact'">Contact Us</button>
+
             </div>
          </div>
-         
+
          <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
          <div onclick="hidemobNav()" id="mob-navbar" class="mob-navbar">
             <h2 id="x">X</h2>
             <ul class="mov-nav-ul">
-               <li class="a-text">About</li><hr>
-               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li><hr>
-               <li><a class="a-text" href="/Career">Career</a></li><hr>
-               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li><hr>
+               <li><a class="a-text" onclick="ourOrigin(3)">Thesis</a></li>
+               <hr>
+               <li onclick="window.location.href='/'" class="a-text">About</li>
+               <hr>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li>
+               <hr>
+               <li><a class="a-text" href="Career">Career</a></li>
+               <hr>
+               
+               <li><a class="a-text" href="Contact">Contact</a></li>
+               <hr>
+               
+              
             </ul>
          </div>
       </nav>
    </div>
    <script>
-      function showmobNav(){
-         document.getElementById('mob-navbar').style.display='block';
+      function showmobNav() {
+         document.getElementById('mob-navbar').style.width = '100vw';
       }
-      function hidemobNav(){
-         document.getElementById('mob-navbar').style.display='none';
+      function hidemobNav() {
+         document.getElementById('mob-navbar').style.width = '0%';
       }
-      
-      // function ourOrigin(a){
-      //    let element;
-      //    if(a==1)
-      //    element='our-origin';
-      //    else if(a==2)
-      //    element='our-journey';
-      //    else if(a==3)
-      //    element='our-portfolio';
-      //    else if(a==4)
-      //    element='our-team';
-      //    document.getElementById(element).scrollIntoView(true);
-      // }
+
+      function ourOrigin(a) {
+         let element;
+         if (a == 1)
+            element = 'our-origin';
+         else if (a == 2)
+            element = 'our-journey';
+         else if (a == 3)
+            element = 'portfolio-new';
+         else if (a == 4)
+            element = 'team-new';
+         document.getElementById(element).scrollIntoView(true);
+      }
 
    </script>
-
 
 
 
@@ -171,80 +210,104 @@
 
 
 
-  <!-- SUBSCRIBE NEWS LETTER -->
-  <div class="subscribe-news-letter">
-   <div onclick="document.getElementById('subscribe-popup1').style.display='flex'" class="subscribe-container">
-      <div class="subscribe-now-us"> Subscribe to Our Newsletter</div>
-      <div class="subcribe-now-us-btn"><button>Subscribe </button></div>
-   </div>
-</div>
-<div id="subscribe-popup1" class="subscribe-popup-main1">
-   <div  class="subscribe-poup1">
-      <div class="subscribe-popup-container1"> 
-         <span class="cut-x1" onclick="document.getElementById('subscribe-popup1').style.display='none'">X</span>
-         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script>
-         <script>
-            hbspt.forms.create({
-               region: "na1",
-               portalId: "19859707",
-               formId: "cf0dc107-07b1-40cc-9e85-19c54af6ad12"
-            });
+ 
 
-         </script>   
+
+
+
+
+
+
+
+
+
+
+
+   <div class="subscribe-news-letter">
+      <div onclick="document.getElementById('subscribe-popup1').style.display='flex'" class="subscribe-container">
+         <div class="subscribe-now-us"> Subscribe to Our Newsletter</div>
+         <br>
+         <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanting.</p> -->
+         <div class="subcribe-now-us-btn"><button>Subscribe</button></div>
       </div>
    </div>
-</div>
+   <div id="subscribe-popup1" class="subscribe-popup-main1">
+      <div class="subscribe-poup1">
+         <div class="subscribe-popup-container1">
+            <span class="cut-x1" onclick="document.getElementById('subscribe-popup1').style.display='none'">X</span>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script>
+            <script>
+               hbspt.forms.create({
+                  region: "na1",
+                  portalId: "19859707",
+                  formId: "cf0dc107-07b1-40cc-9e85-19c54af6ad12"
+               });
 
-<div class="final-container">
-   <!-- <img src="./assets/Logos/brand.png"></img> -->
-   <div class="quick-link-parent-container">
-      <div class="quick-links-container">
-         <div>
+            </script>
+         </div>
+      </div>
+   </div>
+
+   <div class="final-container">
+      <!-- <img src="./assets/Logos/brand.png"></img> -->
+      <div class="quick-link-parent-container">
+         <div class="quick-links-container">
             <div>
-               <img id="workstock-quick-logo" src="./assets/Logos/brand.png"></img>
-               <div class="social-icons">
-                  <a href="https://www.linkedin.com/company/woodstock-fund/"><img src="./assets/Logos/Icon awesome-linkedin.png"></img></a>
-                  <a href="https://www.linkedin.com/company/woodstock-fund/"><img src="./assets/Logos/Group 9720.png"></img></a>
-                  <a href="https://woodstockfund.medium.com/"><img src="./assets/Logos/Group 9721.png"></img></a>
-                  <a href="https://twitter.com/Woodstockfund"><img src="./assets/Logos/Icon awesome-twitter-square.png"></img></a>
+               <div>
+                  <img id="workstock-quick-logo" src="./assets/Logos/brand.png"></img>
+                  <div class="social-icons">
+                     <a href="https://www.linkedin.com/company/woodstock-fund/"><img
+                           src="./assets/Images/k4.svg"></img></a>
+                     <a href="https://t.me/woodstockfund"><img src="./assets/Images/k2.svg"></img></a>
+                     <a href="https://woodstockfund.medium.com/"><img src="./assets/Images/k3.svg"></img></a>
+                     <a href="https://twitter.com/Woodstockfund"><img src="./assets/Images/k1.svg"></img></a>
+                  </div>
                </div>
             </div>
-         </div>
-         <div id="one-link" class="quick-link-boxes">
-            <ul>
-               <li id="strong">About</li>
-               <li onclick="ourOrigin(2)">Journey</li>
-               <li onclick="ourOrigin(2)">Fund Thesis</li>
-               <li onclick="ourOrigin(3)">Portfolio</li>
-               <li onclick="ourOrigin(4)">Team</li>
-            </ul>
-         </div>
-         <div class="quick-link-boxes">
-            <ul>
-               <li id="strong">Blog</li>
-               <li><a href="https://blog.woodstockfund.com/#thesis">Thesis</a></li>
-               <li><a href="https://blog.woodstockfund.com/#art">Article</a></li>
-               <li><a href="https://blog.woodstockfund.com/#pdf">Newsletter</a></li>
-            </ul>
-         </div>
-         <div class="quick-link-boxes">
-            <ul>
-               <li id="strong">Career</li>
-               <li><a href="/Career">Portfolio Openings</a></li>
-               <li><a href="/Career">Woodstock Openings</a></li>
-            </ul>
+            <div id="one-link" class="quick-link-boxes">
+               <ul>
+                  <li id="strong">About</li>
+                  <li onclick="ourOrigin(2)">Journey</li>
+                  <li><a href="https://studiorawcanvas.com/fund-thesis/">Fund Thesis</a></li>
+                  <li onclick="window.location.href='/'">Portfolio</li>
+                  <li onclick="ourOrigin(4)">Team</li>
+               </ul>
+            </div>
+            <div class="quick-link-boxes">
+               <ul>
+                  <li id="strong">Blog</li>
+                  <li><a href="https://blog.woodstockfund.com/#thesis">Thesis</a></li>
+                  <li><a href="https://blog.woodstockfund.com/#art">Article</a></li>
+                  <li><a href="https://blog.woodstockfund.com/#pdf">Newsletter</a></li>
+               </ul>
+            </div>
+            <div class="quick-link-boxes">
+               <ul>
+                  <li id="strong">Career</li>
+                  <li><a href="/Career">Woodstock Openings</a></li>
+                  <li><a href="https://jobs.woodstockfund.com/companies">Portfolio Openings</a></li>
+               </ul>
+            </div>
          </div>
       </div>
+
+      <p>The information provided on this website is for educational purposes only and should not be construed to be
+         investment advice or considered to be a recommendation of any particular security, strategy or investment
+         product. No portion of this content should be construed as an offer or solicitation for the purchase or sale of
+         any security or investment. An offering may be made available only to certain sophisticated investors through
+         official delivery of confidential offer documents along with other documents. Readers must understand that past
+         performance is not a guarantee of future results.</p>
+
    </div>
-   
-   <p>The information provided on this website is for educational purposes only and should not be construed to be investment advice or considered to be a recommendation of any particular security, strategy or investment product. No portion of this content should be construed as an offer or solicitation for the purchase or sale of any security or investment. An offering may be made available only to certain sophisticated investors through official delivery of confidential offer documents along with other documents. Readers must understand that past performance is not a guarantee of future results.</p><br><br>
-  
-</div>
 
 
-<div class="footer">
-   READ OUR <a href="LearnMore">PRIVACY POLICY</a>, <a href="LearnMore">TERMS OF USE</a> AND <a href="https://woodstockfund.com/legal.html#section-Cookies">COOKIE POLICY</a> HERE.
-</div>
+   <br><br>
+   <div class="footer">
+      READ OUR <a href="https://woodstockfund.com/legal.html#section-Privacy">PRIVACY POLICY</a>, <a
+         href="https://woodstockfund.com/legal.html#section-Terms">TERMS OF USE</a> AND <a
+         href="https://woodstockfund.com/legal.html#section-Cookies">COOKIE POLICY</a> HERE.
+
+   </div>
 </body>
 </html>  
 
@@ -253,128 +316,3 @@
 
 
 
-<style>
-   .subscribe-popup-main1{
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      position: relative;
-      bottom: 200px;
-      z-index: 9999999;
-   }
-   .subscribe-poup1{
-      width: 30vw;
-      box-shadow: 1px 1px 2px 2px rgba(193, 193, 193, 0.676);
-      margin: 10px;
-      padding: 20px;
-      border-radius: 10px;
-      background-color: white;
-      position: relative;
-      
-   }
-   #subscribe-popup1{
-      display: none;
-   }
-
-      .subscribe-poup{
-         padding: 50px 10px;
-         position: absolute;
-         display: flex;
-         justify-content: center;
-         top:0;
-         width: 30vw;
-         z-index: 9999999;
-         background-color: rgb(255, 255, 255);
-         overflow: hidden;
-         margin-left: 33%;
-         border-radius: 15px;
-         margin-top: 30vh;
-      }
-   
-      .cut-x,.cut-x1{
-         position: absolute;
-         right: 10%;
-         cursor: pointer;
-      }
-      .cut-x:hover{
-         position: absolute;
-         right: 10%;
-         cursor: pointer;
-         font-weight: bolder;
-         scale: 1.1;
-      }
-      .cut-x1:hover{
-         position: absolute;
-         right: 10%;
-         cursor: pointer;
-         font-weight: bolder;
-         scale: 1.1;
-      }
-      #subscribe-popup{
-         display: none;
-      }
-      .subscribe-popup-main{
-         height: 200vh;
-         width: 100vw;
-         background-color: rgba(0, 0, 0, 0.768) ;
-         position: absolute;
-         top: 0;
-         z-index: 99999999;
-      }
-
-   .subscribe-container{
-      display: flex;
-      background-color: #1e181c;
-      border:0.5px solid rgba(255, 255, 255, 0.531);
-      padding: 20px;
-      color: white;
-      border-radius: 20px;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-   }
-   .subscribe-now-us{
-      margin:0px 15px;
-      margin-top: 5px;
-      
-   }
-   .subcribe-now-us-btn button{
-      margin: 0px 15px;
-      padding: 7px 10px;
-      background-color: #106570;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 8px;
-      transition-duration: 0.5s;
-   }
-   .subcribe-now-us-btn:hover{
-      scale: 1.05;
-      transition-duration: 0.5s;
-   }
-
-   @media screen and (max-width: 900px) {
-         .subscribe-poup{
-         padding: 50px 10px;
-         position: absolute;
-         display: flex;
-         justify-content: center;
-         top:0;
-         width: 90vw;
-         z-index: 9999999;
-         background-color: rgb(255, 255, 255);
-         overflow: hidden;
-         margin-left: 3%;
-         border-radius: 15px;
-         margin-top: 30vh;
-      }
-      .subscribe-poup1{
-         width: 90vw;
-      }
-      .subcribe-now-us-btn button {
-         margin-top: 15px;
-      }
-      .subscribe-container{
-         margin: 10px;
-      }
-   }
-</style>
