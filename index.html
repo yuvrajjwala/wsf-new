@@ -1671,7 +1671,7 @@
                      const desg1 = ["General Partner","General Partner","Partner","Partner (US)","Partner","General Counsel","Partner","Partner","Talent Director"];
                      const name2 = ["Abhinav Pathak","Ankur Choudhary","Neel Daftary","Kratik Lodha","Srikanth Yeleswarapu","Divesh Agrawal","Vokkant Thakkar","Jaskirat Singh","Sarthak Dwivedi"];
                      const desg2 = ["Research Partner","Research Partner","Research Lead","Research Lead","Head of Technology","Head of Investment Communication","Research Associate","Product and Ecosystem","Research Associate"];
-                     const lnk1 = ["https://www.linkedin.com/in/pranav-sharma-7a05b13/","https://www.linkedin.com/in/hyws/","https://www.linkedin.com/in/prashanth-swaminathan-a345934/","https://www.linkedin.com/in/adammastrelli/","https://www.linkedin.com/in/trishant-sidhwani-81620326/","https://www.linkedin.com/in/rajeshpathania/"," ","https://www.linkedin.com/in/indrajeet-sirsikar-a6616813/","https://www.linkedin.com/in/angelika-hajela/"];
+                     const lnk1 = ["https://www.linkedin.com/in/pranav-sharma-7a05b13/","https://www.linkedin.com/in/hyws/","https://www.linkedin.com/in/prashanth-swaminathan-a345934/","https://www.linkedin.com/in/adammastrelli/","https://www.linkedin.com/in/trishant-sidhwani-81620326/","https://www.linkedin.com/in/rajeshpathania/","https://www.linkedin.com/in/shailesh-puthran-2759883/","https://www.linkedin.com/in/indrajeet-sirsikar-a6616813/","https://www.linkedin.com/in/angelika-hajela/"];
                      const lnk2 = ["https://www.linkedin.com/in/iamabhinavpathak/","https://www.linkedin.com/in/ankurc07/","https://www.linkedin.com/in/neeldaftary/","https://www.linkedin.com/in/kratik-lodha-576987149/","https://www.linkedin.com/in/srikanth-yeleswarapu/","https://www.linkedin.com/in/divesh-agrawal/","https://www.linkedin.com/in/vokkant-thakkar-5055b114a/","https://www.linkedin.com/in/jaskirat21/","https://www.linkedin.com/in/sarthakdwivedi/"];
                      function toggleBtn(btn) {
                         if (btn === 'invest') {
@@ -1704,7 +1704,7 @@
                         }
                         else {
                            for (let i = 1; i < 10; i++) {
-                              document.getElementById('ln'+i).setAttribute("href",lnk1[i]);
+                              document.getElementById('ln'+i).setAttribute("href",lnk1[i-1]);
                               console.log('working');
                               document.getElementById("p" + i).src = "./assets/Team/" + pic1[i - 1];
                               document.getElementById("n"+i).innerHTML=name1[i-1];
@@ -1816,7 +1816,7 @@
                    <p id="g7">Partner</p>
                   </div>
                   <div class="linkedin-people-img-new">
-                     <a id="ln7" target="_blank" href=""><img src="./assets/Logos/linkedin (1).png"></a>
+                     <a id="ln7" target="_blank" href="https://www.linkedin.com/in/shailesh-puthran-2759883/"><img src="./assets/Logos/linkedin (1).png"></a>
                   </div>
                </div>
 
