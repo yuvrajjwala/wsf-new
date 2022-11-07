@@ -1211,7 +1211,7 @@ line .line {
 .blog-main:hover>#blog-div {
    visibility: visible;
    opacity: 1;
-   height: 117px;
+   height: 60px;
    overflow: hidden;
    transition-duration: 0.8s;
 }
