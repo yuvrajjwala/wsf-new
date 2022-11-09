@@ -49,68 +49,51 @@
          <div class="logo-div">
             <ul class="nav-ul">
                <li><a class="a-text">Thesis</a></li>
-               <li  onclick="window.location='/'" id="about-main">About <span></span>
+               <li id="about-main">About<img id="downarrow" src="./assets/Designs/down-arrow.png"><span></span>
                   
-                  
-               </li>
-               <li class="blog-main" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png">
-                  <span></span>
-                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
-                  <div id="blog-div" class="about-div">
-                     <p id="about-p"><a style="text-decoration: none;" href="https://studiorawcanvas.com/blog/#thesis"
-                           target="_blank">Thesis </a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
-                     </p>
-                     <div class="break-line"></div>
-                     <p id="about-p"> <a style="text-decoration: none;"
-                           href="https://studiorawcanvas.com/blog/#article1" target="_blank">Article</a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
-                     </p>
-                     <div class="break-line"></div>
-                     <p id="about-p"> <a style="text-decoration: none;" href="https://studiorawcanvas.com/blog"
-                           target="_blank">Newsletter</a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
-                     </p>
-                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
-                  </div>
-                  <script>
-                     function showBlog() {
-                        document.getElementById('blog-div').style.display = 'block';
-                     }
-                     function hideBlog() {
-                        document.getElementById('blog-div').style.display = 'none';
-                     }
-                     window.onload(checkcook());
-                     function checkcook() {
-                        let cookie = localStorage.getItem('accept');
-                        if (cookie == 'yes') {
-                           document.getElementById('btn-cookies').style.display = 'none';
-                        }
-                        console.log(cookie);
-                     }
-                     function controlcoo() {
-                        localStorage.setItem('accept', 'yes');
-                        document.getElementById('btn-cookies').style.display = 'none';
+                  <div id="about-div" class="about-div">
 
-                     }
-                  </script>
+
+                    
+                     <p id="about-p" onclick="ourOrigin(1)">Origin</p>
+                     <div class="break-line"></div>
+                     <p id="about-p">Fund Thesis</p>
+                     <div class="break-line"></div>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>  -->
+                     <p id="about-p" onclick="ourOrigin(3)">Portfolio</p>
+                     <div class="break-line"></div>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
+                     <p id="about-p" onclick="ourOrigin(4)">People</p>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
+                  </div> 
                </li>
-               <li class="blog-main" id="about-main">Career<img id="downarrow" src="./assets/Designs/down-arrow.png">
-                  <span></span>
-                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+               <li id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png"><span></span>
+                  
+                  <div id="about-div" class="about-div">
+
+
+                    
+                     <p id="about-p">Articles</p>
+                     <div class="break-line"></div>
+                     <p id="about-p">Newsletters</p>
+                     <div class="break-line"></div>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>  -->
+                     <p id="about-p">Investments</p>
+                     <div class="break-line"></div>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
+                     <p id="about-p">Media</p>
+                     <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
+                  </div> 
+               </li>
+               <li class="blog-main" id="about-main" style="text-decoration: none;color:black;"><a href="career">Career</a>
+                  <!-- <span></span>
+                  
                   <div id="blog-div" class="about-div">
                      <p id="about-p"><a style="text-decoration: none;" href="Career" target="_blank">Woodstock Openings
                         </a>
                         <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
                      </p>
-                     <!-- <div class="break-line"></div>
-                     <p id="about-p"> <a style="text-decoration: none;" href="https://jobs.woodstockfund.com/companies"
-                           target="_blank">Portfolio
-                           Openings</a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img>
-                     </p> -->
-
-                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                     
                   </div>
                   <script>
                      function showBlog() {
@@ -119,7 +102,7 @@
                      function hideBlog() {
                         document.getElementById('blog-div').style.display = 'none';
                      }
-                  </script>
+                  </script> -->
                </li>
 
 
@@ -281,9 +264,10 @@
             <div class="quick-link-boxes">
                <ul>
                   <li id="strong">Blog</li>
-                  <li><a href="https://blog.woodstockfund.com/#thesis">Thesis</a></li>
-                  <li><a href="https://blog.woodstockfund.com/#art">Article</a></li>
-                  <li><a href="https://blog.woodstockfund.com/#pdf">Newsletter</a></li>
+                  <li>Articles</li>
+                  <li>Newsletters</li>
+                  <li>Investments</li>
+                  <li>Media</li>
                </ul>
             </div>
             <div class="quick-link-boxes">

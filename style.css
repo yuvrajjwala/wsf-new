@@ -3690,3 +3690,22 @@ content-inner-content   #small-vertical img {
       margin: auto;
 }
 }
+
+#about-main a{
+   text-decoration: none;
+   color: black;
+   font-family: izmir-medium;
+}
+
+.nav-ul li:hover{
+   font-weight: bold;
+   color:#6f3119;
+}
+#about-main a:hover{
+   color: #6f3119;
+}
+.quick-link-boxes ul li a{
+   font-family: 'izmir1';
+   opacity: 1;
+   
+}
